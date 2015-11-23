@@ -3,18 +3,18 @@
 
 Connection status of a GPRS socket
 
-**Namespace:**&nbsp;<a href="N_Eclo_NetMF_SIM800H">Eclo.NetMF.SIM800H</a><br />**Assembly:**&nbsp;Eclo.NetMF.SIM800H (in Eclo.NetMF.SIM800H.dll) Version: 1.1.54.0 (1.1.54.0)
+**Namespace:**&nbsp;<a href="N_Eclo_NetMF_SIM800H">Eclo.NetMF.SIM800H</a><br />**Assembly:**&nbsp;Eclo.NetMF.SIM800H (in Eclo.NetMF.SIM800H.dll) Version: 1.1.57.0 (1.1.57.0)
 
 ## Syntax
 
 **C#**<br />
 ``` C#
-public GprsSocket.ConnectionStatus Status { get; }
+public ConnectionStatus Status { get; }
 ```
 
 
 #### Property Value
-Type: <a href="T_Eclo_NetMF_SIM800H_GprsSocket_ConnectionStatus">GprsSocket.ConnectionStatus</a>
+Type: <a href="T_Eclo_NetMF_SIM800H_ConnectionStatus">ConnectionStatus</a>
 
 ## See Also
 

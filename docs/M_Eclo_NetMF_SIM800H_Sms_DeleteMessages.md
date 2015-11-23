@@ -3,23 +3,23 @@
 
 Deletes text messages according to delete option
 
-**Namespace:**&nbsp;<a href="N_Eclo_NetMF_SIM800H">Eclo.NetMF.SIM800H</a><br />**Assembly:**&nbsp;Eclo.NetMF.SIM800H (in Eclo.NetMF.SIM800H.dll) Version: 1.1.54.0 (1.1.54.0)
+**Namespace:**&nbsp;<a href="N_Eclo_NetMF_SIM800H">Eclo.NetMF.SIM800H</a><br />**Assembly:**&nbsp;Eclo.NetMF.SIM800H (in Eclo.NetMF.SIM800H.dll) Version: 1.1.57.0 (1.1.57.0)
 
 ## Syntax
 
 **C#**<br />
 ``` C#
 public ATCommandResult DeleteMessages(
-	Sms.MessageDeleteOption deleteOption
+	MessageDeleteOption deleteOption
 )
 ```
 
 
 #### Parameters
-&nbsp;<dl><dt>deleteOption</dt><dd>Type: <a href="T_Eclo_NetMF_SIM800H_Sms_MessageDeleteOption">Eclo.NetMF.SIM800H.Sms.MessageDeleteOption</a><br />option to delete messages that match a criteria or are at specific storage</dd></dl>
+&nbsp;<dl><dt>deleteOption</dt><dd>Type: <a href="T_Eclo_NetMF_SIM800H_MessageDeleteOption">Eclo.NetMF.SIM800H.MessageDeleteOption</a><br />option to delete messages that match a criteria or are at specific storage</dd></dl>
 
 #### Return Value
-Type: <a href="T_Eclo_NetMF_SIM800H_ATCommandResult">ATCommandResult</a><br />\[Missing <returns> documentation for "M:Eclo.NetMF.SIM800H.Sms.DeleteMessages(Eclo.NetMF.SIM800H.Sms.MessageDeleteOption)"\]
+Type: <a href="T_Eclo_NetMF_SIM800H_ATCommandResult">ATCommandResult</a><br />\[Missing <returns> documentation for "M:Eclo.NetMF.SIM800H.Sms.DeleteMessages(Eclo.NetMF.SIM800H.MessageDeleteOption)"\]
 
 ## See Also
 
