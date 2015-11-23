@@ -16,15 +16,10 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Eclo/SIM800h-IoT-module">View on GitHub</a>
 
           <h1 id="project_title">SIM800H IoT Module</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/Eclo/SIM800h-IoT-module/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/Eclo/SIM800h-IoT-module/tarball/master">Download this project as a tar.gz file</a>
-            </section>
+          <h2 id="project_tagline">Tiny module with .NET Micro Framework driver</h2>
+          
         </header>
     </div>
 
@@ -32,41 +27,112 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
-<a id="sim800h-iot-module" class="anchor" href="#sim800h-iot-module" aria-hidden="true"><span class="octicon octicon-link"></span></a>SIM800H IoT Module</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
-
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating pages manually</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+          <a id="sim800h-iot-module" class="anchor" href="#sim800h-iot-module" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+        </h3>
+        <p><img src="images/sim800h_module_eclo_solutions_1.jpg"/></p>
+          
+        <p>Tiny GSM/GPRS module with SIMCOM's SIM800H. Mesuring only 39x48[mm] this module has everything you need to "IoT enable" your next project. We provide a .NET Micro Framework driver that makes using it a breeze.</p>
+        <p>Features (supported by the .NET Micro Framework driver)<sup>1)</sup>:</p>
+        <ul>
+          <li>Quad band 850/900/1800/1900MHz</li>
+          <li>GPRS multi-slot class 12/10; mobile station class B</li>
+          <li>Supply voltage range 3.4 to 4.3V</li>
+          <li>TCP sockets (with TLS support)</li>
+          <li>HTTP(S) client</li>
+          <li>SMS</li>
+          <li>SNTP</li>
+          <li>GPS like location service through SIMCOM API</li>  
+          <li>UART pins supporting 3.0V and 3.3V levels</li>
+          <li>Power and network status LEDs</li>
+          <li>SIM card holder</li>
+          <li>uFL antenna connector</li>
+          <li>Castellation pins for easy prototyping and production use</li>
+          <li>Size: 39x48[mm]</li>
+          <li>Operating temperature range: -40 to +85°C</li>
+          <li>Certifications: CE, GCF, FCC, ROHS, REACH</li>    
+        </ul>
+         
+        <p style="font-size:80%">1) SIM800H has several other features that are still available but aren't exposed through the supplied driver and/or hardware pins.</p>
+        <p>&nbsp;</p>
+          
+        <h3>
+          <a id="power-modes" class="anchor" href="#power-modes" aria-hidden="true"><span class="octicon octicon-link"></span></a>SIM800H modes and power consumption
+        </h3>
+        <ul>
+          <li>2A peak burst when transmiting</li>
+          <li>148mA to 344mA @ Active GPRS data mode</li>
+          <li>1.02mA @ Idle with full funcionality</li>
+          <li>0.796mA @ Minimum funcionality</li>
+          <li>~60uA @ Power down</li>
+        </ul>
+        <p>&nbsp;</p>
+          
+        <h3>
+          <a id="power-supply" class="anchor" href="#power-supply" aria-hidden="true"><span class="octicon octicon-link"></span></a>Power supply
+        </h3>
+        <p>Any power supply (<strong>4.3V max!</strong>) able to withstand the 2A peak bursts will work. We recommend using a Li-Polymer or Li-Ion battery.</p>
+        <p>&nbsp;</p>
+        
+        <h3>
+          <a id="pins" class="anchor" href="#pins" aria-hidden="true"><span class="octicon octicon-link"></span></a>Available pins & signals</h3>
+        </h3>
+        <ul>
+          <li>UART signals: TX,RX, DTR, RTS & CTS</li>
+          <li>Power-key pin (to control SIM800H power on/off)</li>
+          <li>Ring indicator (to signal incoming call or SMS)</li>
+          <li>2xVcc (<strong>4.3V max!</strong>)</li>
+          <li>8xGND</li>
+        </ul>
+        <p>&nbsp;</p>
+        
+        <h3>
+          <a id="uart-singal-level" class="anchor" href="#uart-singal-level" aria-hidden="true"><span class="octicon octicon-link"></span></a>UART signal levels
+        </h3>
+        <p>UART signals can be connected to host system using 3.0V or 3.3V voltage levels. The selection is carried through a two-position solde jumper. Default is 3.3V.</p>
+        <p>&nbsp;</p>
+               
+        <h3>
+          <a id="led-indicators" class="anchor" href="#led-indicators" aria-hidden="true"><span class="octicon octicon-link"></span></a>LED indicators
+        </h3>
+        <p>The module includes LEDs for power and network status.</br>LEDs have relevant power consumption and conserving power is important in battery powered devices. For this reason LEDs are powered through a solder jumper that you can open in production devices after initial testing and debuging. In field operation you can easily short the jumper with a screw driver tip, for example, for a quick visual debug of the module status.</p>
+        <strong>Power LED (green)</strong><br>On when module is active (powered on).
+        <strong>Network status LED (blue)</strong> 
+        <ul>
+          <li>fast blink (~300ms period) on GPRS communication active</li> 
+          <li>blink (~800ms period) when module is not registered</li>
+          <li>slow blink (~3s period) when module is registered</li>
+        </ul>
+        <p>&nbsp;</p>
+                  
+        <h3>
+          <a id="netmf-driver" class="anchor" href="#netmf-driver" aria-hidden="true"><span class="octicon octicon-link"></span></a>.NET Micro Framework driver and code examples
+        </h3>
+        <p>We maintain a driver for .NET Micro Framework (v4.3 and v4.4) that is available as a <a href="https://www.nuget.org/packages/Eclo.NetMF.SIM800H/">Nuget package</a>.</p>
+        <p>For documentation on the .NETMF driver check the <a href="https://github.com/Eclo/SIM800h-IoT-module/wiki">Wiki</a>.</p>
+        <p>For code samples and example apps please check the <a href="https://github.com/Eclo/SIM800h-IoT-module/tree/master">GitHub repository</a></p>
+        <p>&nbsp;</p>
+                  
+        <h3>
+          <a id="eagle-library" class="anchor" href="#eagle-library" aria-hidden="true"><span class="octicon octicon-link"></span></a>Eagle library
+        </h3>
+        <p>Donwload the Eagle CAD library with the module footprint and component <a href="https://www.nuget.org/packages/Eclo.NetMF.SIM800H/">here</a>.</p>
+        <p>&nbsp;</p>
+                  
+        <h3>
+          <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact
+        </h3>
+        <p>This module is supplied by Eclo Solutions. You can reach us <a href="mailto:info@eclo.solutions" class="user-mention">here</a>.</p>
+        
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">SIM800H IoT Module maintained by <a href="https://github.com/Eclo">Eclo</a></p>
+        <p class="copyright">SIM800H IoT Module by <a href="https://github.com/Eclo">Eclo Solutions</a></p>
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-
-    
 
   </body>
 </html>
