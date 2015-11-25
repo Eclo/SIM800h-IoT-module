@@ -45,8 +45,8 @@
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Eclo.NetMF.SIM800H, Version=1.1.63.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\..\nugetpackages\Eclo.NetMF.SIM800H.1.1.63\lib\netmf43\Eclo.NetMF.SIM800H.dll</HintPath>
+    <Reference Include="Eclo.NetMF.SIM800H, Version=1.1.64.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\nugetpackages\Eclo.NetMF.SIM800H.1.1.64\lib\netmf43\Eclo.NetMF.SIM800H.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.SPOT.Hardware" />
