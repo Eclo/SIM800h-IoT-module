@@ -15,7 +15,7 @@ Check the documentation [here] (http://eclo.github.io/SIM800h-IoT-module/netmf-d
 ## Sample projects
 
 There are a number of sample projects organized in solutions.
-''(all projects are available for .NETMF v4.3 and v4.4)''
+(all projects are available for .NETMF v4.3 and v4.4)
   
 The following sample projects are available:
 - [Solution with generic samples] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples)
