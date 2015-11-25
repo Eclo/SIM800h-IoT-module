@@ -30,5 +30,4 @@ The following sample projects are available:
 
 ## Eagle library
 
-Donwload the Eagle CAD library with the module footprint and component [here] (https://github.com/Eclo/SIM800h-IoT-module/raw/Eagle_library/eclo_sim800h_module.lbr).
- 
+Download the Eagle CAD library with the module footprint and component [here] (https://github.com/Eclo/SIM800h-IoT-module/raw/Eagle_library/eclo_sim800h_module.lbr).
