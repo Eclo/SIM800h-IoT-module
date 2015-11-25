@@ -36,6 +36,9 @@ namespace SIM800HSamples
 
             Microsoft.SPOT.Debug.Print("... Configuring SIM800H ...");
 
+            // add event handler to be aware of network registration status changes
+            SIM800H.GsmNetworkRegistrationChanged += SIM800H_GsmNetworkRegistrationChanged;
+
             // configure SIM800H device
             SIM800H.Configure(sim800PowerKey, sim800SerialPort);
 
@@ -112,6 +115,11 @@ namespace SIM800HSamples
             Debug.Print("Received @ " + message.Timestamp);
             Debug.Print("«" + message.TextMessage + "»");
             Debug.Print("******************************************************");
+        }
+
+        private static void SIM800H_GsmNetworkRegistrationChanged(NetworkRegistrationState networkState)
+        {
+            Debug.Print(networkState.GetDescription("GSM"));
         }
     }
 }

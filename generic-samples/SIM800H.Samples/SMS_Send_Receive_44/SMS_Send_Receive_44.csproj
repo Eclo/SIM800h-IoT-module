@@ -38,6 +38,9 @@
     </StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\Common\Extensions.cs">
+      <Link>Extensions.cs</Link>
+    </Compile>
     <Compile Include="..\SMS_Send_Receive_43\Program.cs">
       <Link>Program.cs</Link>
     </Compile>
