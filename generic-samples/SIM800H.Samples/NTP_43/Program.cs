@@ -1,14 +1,16 @@
-using System;
-using Microsoft.SPOT;
-using System.Threading;
-using Microsoft.SPOT.Hardware;
-using System.IO.Ports;
 using Eclo.NetMF.SIM800H;
+using Microsoft.SPOT;
+using Microsoft.SPOT.Hardware;
+using System;
+using System.IO.Ports;
+using System.Threading;
 
 namespace SIM800HSamples
 {
     public class Program
     {
+        private const string APNConfigString = "<replace>";
+
         public static void Main()
         {
             InitializeSIM800H();
@@ -49,7 +51,7 @@ namespace SIM800HSamples
             // the configuration depends on what your network operator requires
             // it may be just the access point name or it may require an user and password too
             // AccessPointConfiguration class provides a number of convenient options to create a new APN configuration
-            SIM800H.AccessPointConfiguration = AccessPointConfiguration.Parse("internet.vodafone.pt|vodafone|vodafone");
+            SIM800H.AccessPointConfiguration = AccessPointConfiguration.Parse(APNConfigString);
 
             // async call to power on module 
             // in this example we are setting up a callback on a separate method

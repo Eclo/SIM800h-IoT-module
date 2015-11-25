@@ -76,17 +76,17 @@ namespace SIM800HSamples
 
                 // list all **UNREAD** SMSs available in memory
                 // make this call synchronous to use the list right away
-                var smsList = SIM800H.SmsProvider.ReadMessagesListAsync(MessageState.ReceivedUnread).End();
+                var smsList = SIM800H.SmsProvider.ListTextMessagesAsync(MessageState.ReceivedUnread).End();
 
                 foreach(byte index in smsList)
                 {
                     // output message
-                    var message = SIM800H.SmsProvider.ReadMessage(index, true);
+                    var message = SIM800H.SmsProvider.ReadTextMessage(index, true);
 
                     Debug.Print("******************************************************");
                     Debug.Print("Message from " + message.TelephoneNumber);
                     Debug.Print("Received @ " + message.Timestamp);
-                    Debug.Print("«" + message.TextMessage + "»");
+                    Debug.Print("«" + message.Text + "»");
                     Debug.Print("******************************************************");
                 }
             }).Start();

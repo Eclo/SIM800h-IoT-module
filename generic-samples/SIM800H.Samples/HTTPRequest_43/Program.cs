@@ -1,15 +1,18 @@
-using System;
-using Microsoft.SPOT;
-using System.Threading;
-using Microsoft.SPOT.Hardware;
-using System.IO.Ports;
 using Eclo.NetMF.SIM800H;
+using Microsoft.SPOT;
+using Microsoft.SPOT.Hardware;
+using System;
+using System.IO.Ports;
 using System.Text;
+using System.Threading;
 
 namespace SIM800HSamples
 {
     public class Program
     {
+        private const string APNConfigString = "<replace-with-apn-name>|<replace-with-apn-user>|<replace-with-apn-password>";
+        private const string openWeatherDataApiKey = "<replace-with-your-api-key>";
+
         public static void Main()
         {
             InitializeSIM800H();
@@ -50,7 +53,7 @@ namespace SIM800HSamples
             // the configuration depends on what your network operator requires
             // it may be just the access point name or it may require an user and password too
             // AccessPointConfiguration class provides a number of convenient options to create a new APN configuration
-            SIM800H.AccessPointConfiguration = AccessPointConfiguration.Parse("internet.vodafone.pt|vodafone|vodafone");
+            SIM800H.AccessPointConfiguration = AccessPointConfiguration.Parse(APNConfigString);
 
             // async call to power on module 
             // in this example we are setting up a callback on a separate method
@@ -124,7 +127,7 @@ namespace SIM800HSamples
             byte[] receivedBody = new byte[500];
 
             // create HTTTP web request with URI
-            using (var webRequest = (HttpWebRequest)WebRequest.Create(new Uri("http://api.openweathermap.org/data/2.5/weather?q=Lisbon,pt&appid=<replace-with-your-api-key>")))
+            using (var webRequest = (HttpWebRequest)WebRequest.Create(new Uri("http://api.openweathermap.org/data/2.5/weather?q=Lisbon,pt&appid=" + openWeatherDataApiKey)))
             {
                 // set method for the HTTP request
                 webRequest.Method = "GET";
@@ -157,7 +160,7 @@ namespace SIM800HSamples
             // option 2: using the HTTP client of the driver 
             /////////////////////////////////////////////////
 
-            using (var webRequest = (HttpWebRequest)WebRequest.Create(new Uri("http://api.openweathermap.org/data/2.5/weather?q=Lisbon,pt&appid=<replace-with-your-api-key>")))
+            using (var webRequest = (HttpWebRequest)WebRequest.Create(new Uri("http://api.openweathermap.org/data/2.5/weather?q=Lisbon,pt&appid=" + openWeatherDataApiKey)))
             {
                 webRequest.Method = "GET";
 

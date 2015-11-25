@@ -85,9 +85,9 @@ namespace SIM800HSamples
                 // set a callback to check the outcome 
                 // replace the White House switch board number bellow with a valid mobile number 
                 // the number must ALWAYS include the country code and international prefix
-                SIM800H.SmsProvider.SendMessageAsync("+12025551212", "Hello from SIM800H module", (ar) =>
+                SIM800H.SmsProvider.SendTextMessageAsync("+12025551212", "Hello from SIM800H module", (ar) =>
                     {
-                        if(((SendMessageAsyncResult)ar).Reference == -1)
+                        if(((SendTextMessageAsyncResult)ar).Reference == -1)
                         {
                             // something went wrong...
                             Debug.Print("### FAILED sending SMS ###");
@@ -108,12 +108,12 @@ namespace SIM800HSamples
             // the handler receives the index of the message received
             // now we need to actually read the message
             // as an optional argument we can delete the message from the memory after being read
-            var message = SIM800H.SmsProvider.ReadMessage(messageIndex, true);
+            var message = SIM800H.SmsProvider.ReadTextMessage(messageIndex, true);
 
             Debug.Print("******************************************************");
             Debug.Print("Message from " + message.TelephoneNumber);
             Debug.Print("Received @ " + message.Timestamp);
-            Debug.Print("«" + message.TextMessage + "»");
+            Debug.Print("«" + message.Text + "»");
             Debug.Print("******************************************************");
         }
 
