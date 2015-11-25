@@ -34,16 +34,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\generic-samples\SIM800H.Samples\AzureIoTDeviceClient_43\Program.cs">
+      <Link>Program.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\generic-samples\SIM800H.Samples\Common\Extensions.cs">
+      <Link>Extensions.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Eclo.NetMF.SIM800H, Version=1.1.53.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\nugetpackages\Eclo.NetMF.SIM800H.1.1.54\lib\netmf43\Eclo.NetMF.SIM800H.dll</HintPath>
+    <Reference Include="Eclo.NetMF.SIM800H, Version=1.1.65.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\nugetpackages\Eclo.NetMF.SIM800H.1.1.65\lib\netmf43\Eclo.NetMF.SIM800H.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Azure.Devices.HTTPClient.SIM800H, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\nugetpackages\SIM800H.Azure.Devices.HTTPClient.1.0.0-preview-003\lib\netmf43\Microsoft.Azure.Devices.HTTPClient.SIM800H.dll</HintPath>
+      <HintPath>..\..\..\..\..\nugetpackages\SIM800H.Azure.Devices.HTTPClient.1.0.0-preview-010\lib\netmf43\Microsoft.Azure.Devices.HTTPClient.SIM800H.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.SPOT.Hardware" />
