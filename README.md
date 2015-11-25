@@ -19,7 +19,7 @@ There are a number of sample projects organized in solutions.
   
 The following sample projects are available:
 - [Solution with generic samples] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples)
- - [Basic Initialization] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/Initialization_43)
+ - [Basic initialization] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/Initialization_43)
  - [Text message send/receive] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/NTP_43)
  - [Text message management] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/SMS_List_Messages_43)
  - [NTP client] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/NTP_43)
