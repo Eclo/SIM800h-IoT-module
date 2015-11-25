@@ -16,84 +16,125 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Eclo/SIM800h-IoT-module">View on GitHub</a>
 
           <h1 id="project_title">SIM800H IoT Module</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/Eclo/SIM800h-IoT-module/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/Eclo/SIM800h-IoT-module/tarball/master">Download this project as a tar.gz file</a>
-            </section>
+          <h2 id="project_tagline">Tiny module with .NET Micro Framework driver</h2>
+          
         </header>
     </div>
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h1>
-<a id="sim800h-iot-module" class="anchor" href="#sim800h-iot-module" aria-hidden="true"><span class="octicon octicon-link"></span></a>SIM800H IoT module</h1>
-
-<p>You've found the GitHub repository for developement resources related to Eclo Solutions SIM800H IoT module.</p>
-
-<p>Please navigate to the project <a href="http://eclo.github.io/SIM800h-IoT-module">web page</a> for details and specs. </p>
-
-<h2>
-<a id="net-micro-framework-driver" class="anchor" href="#net-micro-framework-driver" aria-hidden="true"><span class="octicon octicon-link"></span></a>.NET Micro Framework Driver</h2>
-
-<p>We maintain a .NET Micro Framework Driver for this module. For ease of use it's provided as a <a href="https://www.nuget.org/packages/Eclo.NetMF.SIM800H/">Nuget package</a>.</p>
-
-<p>Check the documentation <a href="http://eclo.github.io/SIM800h-IoT-module/netmf-driver-help/">here</a>.</p>
-
-<h2>
-<a id="sample-projects" class="anchor" href="#sample-projects" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sample projects</h2>
-
-<p>There are a number of sample projects organized in solutions.
-(all projects are available for .NETMF v4.3 and v4.4)</p>
-
-<p>The following sample projects are available:</p>
-
-<ul>
-<li>
-<p><a href="https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples">Solution with generic samples</a></p>
-
-<ul>
-<li><a href="https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/Initialization_43">Basic initialization</a></li>
-<li><a href="https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/NTP_43">Text message send/receive</a></li>
-<li><a href="https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/SMS_List_Messages_43">Text message management</a></li>
-<li><a href="https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/NTP_43">NTP client</a></li>
-<li><a href="https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/NTP_43">HTTP client (get weather data)</a></li>
-</ul>
-</li>
-<li><p><a href="https://github.com/Eclo/SIM800h-IoT-module/tree/master/Azure-IoT-Hub-samples/HTTP">Azure IoT Hub HTTP client</a></p></li>
-</ul>
-
-<h2>
-<a id="eagle-library" class="anchor" href="#eagle-library" aria-hidden="true"><span class="octicon octicon-link"></span></a>Eagle library</h2>
-
-<p>Download the Eagle CAD library with the module footprint and component <a href="https://github.com/Eclo/SIM800h-IoT-module/raw/Eagle_library/eclo_sim800h_module.lbr">here</a>.</p>
+        <h3>
+          <a id="sim800h-iot-module" class="anchor" href="#sim800h-iot-module" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+        </h3>
+        <p><img src="images/sim800h_module_eclo_solutions_1.jpg"/></p>
+          
+        <p>Tiny GSM/GPRS module with SIMCOM's SIM800H. Mesuring only 39x48[mm] this module has everything you need to "IoT enable" your next project. We provide a .NET Micro Framework driver that makes using it a breeze.</p>
+        <p>Features (supported by the .NET Micro Framework driver)<sup>1)</sup>:</p>
+        <ul>
+          <li>Quad band 850/900/1800/1900MHz</li>
+          <li>GPRS multi-slot class 12/10; mobile station class B</li>
+          <li>Supply voltage range 3.4 to 4.3V</li>
+          <li>TCP sockets (with TLS support)</li>
+          <li>HTTP(S) client</li>
+          <li>SMS</li>
+          <li>SNTP</li>
+          <li>GPS like location service through SIMCOM API</li>  
+          <li>UART pins supporting 3.0V and 3.3V levels</li>
+          <li>Power and network status LEDs</li>
+          <li>SIM card holder</li>
+          <li>uFL antenna connector</li>
+          <li>Castellation pins for easy prototyping and production use</li>
+          <li>Size: 39x48[mm]</li>
+          <li>Operating temperature range: -40 to +85°C</li>
+          <li>Certifications: CE, GCF, FCC, ROHS, REACH</li>    
+        </ul>
+         
+        <p style="font-size:80%">1) SIM800H has several other features that are still available but aren't exposed through the supplied driver and/or hardware pins.</p>
+        <p>&nbsp;</p>
+          
+        <h3>
+          <a id="power-modes" class="anchor" href="#power-modes" aria-hidden="true"><span class="octicon octicon-link"></span></a>SIM800H modes and power consumption
+        </h3>
+        <ul>
+          <li>2A peak burst when transmiting</li>
+          <li>148mA to 344mA @ Active GPRS data mode</li>
+          <li>1.02mA @ Idle with full funcionality</li>
+          <li>0.796mA @ Minimum funcionality</li>
+          <li>~60uA @ Power down</li>
+        </ul>
+        <p>&nbsp;</p>
+          
+        <h3>
+          <a id="power-supply" class="anchor" href="#power-supply" aria-hidden="true"><span class="octicon octicon-link"></span></a>Power supply
+        </h3>
+        <p>Any power supply (<strong>4.3V max!</strong>) able to withstand the 2A peak bursts will work. We recommend using a Li-Polymer or Li-Ion battery.</p>
+        <p>&nbsp;</p>
+        
+        <h3>
+          <a id="pins" class="anchor" href="#pins" aria-hidden="true"><span class="octicon octicon-link"></span></a>Available pins & signals</h3>
+        </h3>
+        <ul>
+          <li>UART signals: TX,RX, DTR, RTS & CTS</li>
+          <li>Power-key pin (to control SIM800H power on/off)</li>
+          <li>Ring indicator (to signal incoming call or SMS)</li>
+          <li>2xVcc (<strong>4.3V max!</strong>)</li>
+          <li>8xGND</li>
+        </ul>
+        <p>&nbsp;</p>
+        
+        <h3>
+          <a id="uart-singal-level" class="anchor" href="#uart-singal-level" aria-hidden="true"><span class="octicon octicon-link"></span></a>UART signal levels
+        </h3>
+        <p>UART signals can be connected to host system using 3.0V or 3.3V voltage levels. The selection is carried through a two-position solde jumper. Default is 3.3V.</p>
+        <p>&nbsp;</p>
+               
+        <h3>
+          <a id="led-indicators" class="anchor" href="#led-indicators" aria-hidden="true"><span class="octicon octicon-link"></span></a>LED indicators
+        </h3>
+        <p>The module includes LEDs for power and network status.</br>LEDs have relevant power consumption and conserving power is important in battery powered devices. For this reason LEDs are powered through a solder jumper that you can open in production devices after initial testing and debuging. In field operation you can easily short the jumper with a screw driver tip, for example, for a quick visual debug of the module status.</p>
+        <p><strong>Power LED (green)</strong><br>On when module is active (powered on).
+        </p>
+        <p><strong>Network status LED (blue)</strong> 
+        <ul>
+          <li>fast blink (~300ms period) on GPRS communication active</li> 
+          <li>blink (~800ms period) when module is not registered</li>
+          <li>slow blink (~3s period) when module is registered</li>
+        </ul>
+        </p>
+        <p>&nbsp;</p>
+                  
+        <h3>
+          <a id="netmf-driver" class="anchor" href="#netmf-driver" aria-hidden="true"><span class="octicon octicon-link"></span></a>.NET Micro Framework driver and code examples
+        </h3>
+        <p>We maintain a driver for .NET Micro Framework (v4.3 and v4.4) that is available as a <a href="https://www.nuget.org/packages/Eclo.NetMF.SIM800H/">Nuget package</a>.</p>
+        <p>Check the documentation of the .NETMF driver <a href="http://eclo.github.io/SIM800h-IoT-module/netmf-driver-help">here</a>.</p>
+        <p>For code samples and example apps please check the <a href="https://github.com/Eclo/SIM800h-IoT-module/tree/master">GitHub repository</a></p>
+        <p>&nbsp;</p>
+                  
+        <h3>
+          <a id="eagle-library" class="anchor" href="#eagle-library" aria-hidden="true"><span class="octicon octicon-link"></span></a>Eagle library
+        </h3>
+        <p>Donwload the Eagle CAD library with the module footprint and component <a href="https://github.com/Eclo/SIM800h-IoT-module/raw/Eagle_library/eclo_sim800h_module.lbr" target="_blank">here</a>.</p>
+        <p>&nbsp;</p>
+                  
+        <h3>
+          <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact
+        </h3>
+        <p>This module is supplied by Eclo Solutions. You can reach us <a href="mailto:info@eclo.solutions" class="user-mention">here</a>.</p>
+        
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">SIM800H IoT Module maintained by <a href="https://github.com/Eclo">Eclo</a></p>
+        <p class="copyright">SIM800H IoT Module by <a href="https://github.com/Eclo">Eclo Solutions</a></p>
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-70664559-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
 
   </body>
 </html>
