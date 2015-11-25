@@ -109,8 +109,11 @@ namespace SIM800HSamples
                 }).Start();
             }
         }
+
         static void UpdateRTCFromNetwork()
         {
+            Debug.Print("... requesting time from NTP server ...");
+
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////
             // the following code block uses an async call to SNTP client which should be OK for most of the use scenarios
@@ -149,8 +152,6 @@ namespace SIM800HSamples
             //{
             //    try
             //    {
-            //        Debug.Print("... requesting time from NTP server ...");
-
             //        var result = SIM800H.SntpClient.SyncNetworkTimeAsync("time.nist.gov", TimeSpan.Zero).End();
 
             //        // check result
