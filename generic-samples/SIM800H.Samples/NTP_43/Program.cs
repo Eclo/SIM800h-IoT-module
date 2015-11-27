@@ -9,7 +9,7 @@ namespace SIM800HSamples
 {
     public class Program
     {
-        private const string APNConfigString = "<replace>";
+        private const string APNConfigString = "<replace-with-apn-name>|<replace-with-apn-user>|<replace-with-apn-password>";
 
         public static void Main()
         {
