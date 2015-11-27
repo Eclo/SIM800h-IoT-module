@@ -23,10 +23,12 @@ The following sample projects are available:
  - [Text message send/receive] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/NTP_43)
  - [Text message management] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/SMS_List_Messages_43)
  - [NTP client] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/NTP_43)
- - [HTTP client (get weather data)] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/NTP_43)
+ - [HTTP client with GET (weather data)] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/HTTPRequest_43)
+ - [HTTP client with POST (send data to ThingSpeak)] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/HTTPRequest2_43)
 
-- [Azure IoT Hub HTTP client] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/Azure-IoT-Hub-samples/HTTP)
-
+- Azure IoT Hub client
+ - [HTTP client] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/Azure-IoT-Hub-samples/HTTP)
+ - AMQP client (comming soon) 
 
 ## Eagle library
 
