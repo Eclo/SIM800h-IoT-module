@@ -1,0 +1,2410 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Eclo.NetMF.SIM800H</name>
+    </assembly>
+    <members>
+        <member name="M:Eclo.NetMF.Extensions.SerialPortExtensions.Write(System.IO.Ports.SerialPort,System.String)">
+            <summary>
+            Writes a string to the serial port.
+            </summary>
+            <param name="serialPort">Serial port to write string to</param>
+            <param name="text">string to write</param>
+        </member>
+        <member name="M:Eclo.NetMF.StringBuilderExtensions.ToString(System.Text.StringBuilder,System.Int32)">
+            <summary>
+            String builder to string starting at startIndex
+            </summary>
+            <param name="sb">String builder to output to string</param>
+            <param name="startIndex">start index of string builder to convert to string</param>
+            <returns></returns>
+        </member>
+        <member name="M:Eclo.NetMF.DeviceExtensions.FindItemThatLooksIpAddress(System.Collections.ArrayList)">
+            <summary>
+            Find a string item that looks like an IP address (has for substrings separated by a '.').
+            </summary>
+            <returns>The index of the object that looks like an IP address</returns>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.AtCommandResult">
+            <summary>
+            Result of the execution of an AT command.
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.AccessPointConfiguration">
+            <summary>
+            Configuration of GPRS access point (APN).
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.AccessPointConfiguration.#ctor(System.String)">
+            <summary>
+            GPRS bearer Access Point configuration.
+            </summary>
+            <param name="apn">Access Point name</param>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.AccessPointConfiguration.#ctor(System.String,System.String,System.String)">
+            <summary>
+            GPRS bearer Access Point configuration.
+            </summary>
+            <param name="apn">Access Point name</param>
+            <param name="userName">User name</param>
+            <param name="password">Password.</param>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.AccessPointConfiguration.#ctor">
+            <summary>
+            Empty GPRS bearer Access Point configuration.
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.AccessPointConfiguration.Parse(System.String)">
+            <summary>
+            Parse a string with a valid Access Point configuration. Expected format is "apname|user|password".
+            User name and password are optional.
+            </summary>
+            <param name="s">String to be parsed in the format: "apname|user|password".</param>
+            <returns>A new instance of <see cref="T:Eclo.NetMF.SIM800H.AccessPointConfiguration"/> with valid access point configuration</returns>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.AccessPointConfiguration.AccessPointName">
+            <summary>
+            Access Point name. Can't be null
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.AccessPointConfiguration.UserName">
+            <summary>
+            User name. Null if not used.
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.AccessPointConfiguration.Password">
+            <summary>
+            Password. Null if not used.
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.DeviceAsyncResult">
+            <summary>
+            An asynchronous result object
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.DeviceAsyncResult.#ctor(System.AsyncCallback,System.Object)">
+            <summary>
+            Creates an AsyncResult
+            </summary>
+            <param name="asyncCallback">The callback to be invoked upon completion, optional</param>
+            <param name="asyncState">The state object to be stored against this AsyncResult, optional</param>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.DeviceAsyncResult.End">
+            <summary>
+            Finishes the asynchronous processing and throws an exception if one was generated
+            <remarks>Blocks until the asynchronous processing has completed</remarks>
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.DeviceAsyncResult.Complete(System.Exception,System.Boolean)">
+            <summary>
+            Called when the asynchronous processing has been completed
+            </summary>
+            <param name="exception">The exception generated while processing, optional</param>
+            <param name="completedSynchronously"><c>True</c> if the processing was completed synchronously, optional, defaults to <c>false</c></param>
+            <returns>Returns <c>true</c> if this is the first time this method has been called on this AsyncResult</returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.DeviceAsyncResult.Process">
+            <summary>
+            The method used to perform the asynchronous processing
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.DeviceAsyncResult.AsyncState">
+            <summary>
+            The state object stored against this AsyncResult
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.DeviceAsyncResult.CompletedSynchronously">
+            <summary>
+            Returns <c>true</c> if this AsyncResult has been completed synchronously
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.DeviceAsyncResult.IsCompleted">
+            <summary>
+            Returns <c>true</c> if this AsyncResult has been completed
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.DeviceAsyncResult.AsyncWaitHandle">
+            <summary>
+            The WaitHandle for this AsyncResult
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.DeviceAsyncResult.CompletedState">
+            <summary>
+            The possibly states of an AsyncResult
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.HttpCurrentStatus">
+            <summary>
+            Current status of HTTP service
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.HttpKnownHeaderNames">
+            <summary>
+            Contains known HTTP header names.
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpKnownHeaderNames.Authorization">
+            <summary>The <b>Authorization</b> HTTP header.</summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.HttpStatusCode">
+            <summary>
+            Contains the values of status codes defined for HTTP.
+            </summary>
+            <remarks>
+            <p>Status codes indicate categories, as follows:</p>
+            <p>1xx -- Informational.</p>
+            <p>2xx -- Successful.</p>
+            <p>3xx -- Redirection.</p>
+            <p>4xx -- Client Error.</p>
+            <p>5xx -- Server Error.</p>
+            </remarks>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.Continue">
+            Informational -- 1xx.
+            <summary>Equivalent to HTTP status 100.  Indicates that the client can continue with its
+            request.</summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.OK">
+            Successful -- 2xx.
+            <summary>Equivalent to HTTP status 200.  Indicates that the request succeeded and that
+            the requested information is in the response. This is the most common status code to
+            receive.</summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.Created">
+            <summary>Equivalent to HTTP status 201.  Indicates that the request resulted in a new
+            resource created before the response was sent.</summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.Accepted">
+            <summary>Equivalent to HTTP status 202. Indicates that the request has been accepted for
+            further processing.</summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.NoContent">
+            <summary>Equivalent to HTTP status 204.  Indicates that the request has been successfully
+            processed and that the response is intentionally blank.</summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.PartialContent">
+            <summary>Equivalent to HTTP status 206.  Indicates that the response is a
+            partial response as requested by a GET request that includes a byte range.</summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.MovedPermanently">
+            <summary>Equivalent to HTTP status 301. Indicates that the requested information has
+            been moved to the URI specified in the Location header. The default action when this
+            status is received is to follow the Location header associated with the response.
+            <para><itemref>MovedPermanently</itemref> is a synonym for <itemref>Moved</itemref>.</para></summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.Moved">
+            <summary>Equivalent to HTTP status 301. Indicates that the requested information
+            has been moved to the URI specified in the Location header. The default action when this
+            status is received is to follow the Location header associated with the response. When
+            the original request method was POST, the redirected request will use the GET method.
+            <para><itemref>Moved</itemref> is a synonym for <itemref>MovedPermanently</itemref>.</para></summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.Redirect">
+             <summary>Equivalent to HTTP status 302. Indicates that the requested information is
+             located at the URI specified in the Location header. The default action when this status
+             is received is to follow the Location header associated with the response. When the
+             original request method was POST, the redirected request will use the GET method.
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.NotModified">
+            <summary>Equivalent to HTTP status 304. Indicates that the client's cached copy is
+            up-to-date. The contents of the resource are not transferred.</summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.TemporaryRedirect">
+            <summary>Equivalent to HTTP status 307. Indicates that the request information is
+            located at the URI specified in the Location header. The default action when this status
+            is received is to follow the Location header associated with the response. When the
+            original request method was POST, the redirected request will also use the POST method.
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.BadRequest">
+            Client Error -- 4xx.
+            <summary>Equivalent to HTTP status 400. Indicates that the request could not be
+            understood by the server. <itemref>BadRequest</itemref> is sent when no other error is
+            applicable, or if the exact error is unknown or does not have its own error code.</summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.Unauthorized">
+            <summary>Equivalent to HTTP status 401. Indicates that the requested
+            resource requires authentication. The WWW-Authenticate header contains the details of
+            how to perform the authentication.</summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.Forbidden">
+            <summary>Equivalent to HTTP status 403. Indicates that the server refuses to
+            fulfill the request.</summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.NotFound">
+            <summary>Equivalent to HTTP status 404. Indicates that the requested resource
+            does not exist on the server.</summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.MethodNotAllowed">
+            <summary>Equivalent to HTTP status 405. Indicates that the request
+            method (POST or GET) is not allowed on the requested resource.</summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.NotAcceptable">
+            <summary>Equivalent to HTTP status 406. Indicates that the client has
+            indicated with Accept headers that it will not accept any of the available
+            representations of the resource.</summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.RequestTimeout">
+            <summary>Equivalent to HTTP status 408. Indicates that the client did not
+            send a request within the time the server was expecting the request.</summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.PreconditionFailed">
+            <summary>Equivalent to HTTP status 412. Indicates that a condition
+            set for this request failed, and the request cannot be carried out.  Conditions are set
+            with conditional request headers like If-Match, If-None-Match, or If-Unmodified-Since.</summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.RequestEntityTooLarge">
+            <summary>Equivalent to HTTP status 413. Indicates that the request
+            is too large for the server to process.</summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.RequestUriTooLong">
+            <summary>Equivalent to HTTP status 414. Indicates that the URI is too
+            long.</summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.UnsupportedMediaType">
+            <summary>Equivalent to HTTP status 415. Indicates that the request
+            is an unsupported type.</summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.InternalServerError">
+            Server Error -- 5xx.
+            <summary>Equivalent to HTTP status 500. Indicates that a generic
+            error has occurred on the server.</summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.NotImplemented">
+            <summary>Equivalent to HTTP status 501. Indicates that the server does
+            not support the requested function.</summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.ServiceUnavailable">
+            <summary>Equivalent to HTTP status 503. Indicates that the server is
+            temporarily unavailable, usually due to high load or maintenance.</summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpStatusCode.HttpVersionNotSupported">
+            <summary>Equivalent to HTTP status 505. Indicates that the
+            requested HTTP version is not supported by the server.</summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.IWebRequestCreate">
+            <summary>
+            The interface for creating <see cref="!:Eclo.NetMF.SIM800H.HttpClient.WebRequest"/> class
+            objects.
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.IWebRequestCreate.Create(Eclo.NetMF.SIM800H.Uri)">
+            <summary>
+            Creates an instance of a class derived from
+            <itemref>WebRequest</itemref>.
+            </summary>
+            <param name="uri">The URI for initialization of the class that is
+            derived from <itemref>WebRequest</itemref>.</param>
+            <returns>
+            An instance of the class that is derived from
+            <itemref>WebRequest</itemref>.
+            </returns>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.WebHeaderCollection">
+            <summary>
+            Contains protocol headers associated with a request or response.
+            Manages name-value pairs for HTTP headers.
+            Implementation follows .NET System.Net.WebHeaderCollection
+            </summary>
+            <remarks>
+            This class includes additional methods, including HTTP parsing of a
+            collection into a buffer that can be sent.
+            <para>
+            Headers are validated when attempting to add them.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.WebHeaderCollection.Add(System.String,System.String)">
+            <summary>
+            Inserts a header with the specified name and value into the
+            collection.
+            </summary>
+            <param name="name">The name of the header that is being added to the
+            collection.</param>
+            <param name="value">The content of the header that is being added
+            (its header-value).  If a header with the specified name already
+            exists, this value is concatenated onto the existing header.</param>
+            <remarks>
+            If a header with the specified name already exists, the header that
+            is being added is concatenated onto the existing header.
+            <para>
+            Throws an exception if the specified header name is the name of a
+            special header.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.WebHeaderCollection.Remove(System.String)">
+            <summary>
+            Removes the specified header from the collection.
+            </summary>
+            <param name="name">The name of the header to remove.</param>
+            <remarks>
+            Throws an exception if the specified header name is the name of a
+            special header.
+            </remarks>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.WebHeaderCollection.GetValues(System.String)">
+            <summary>
+            Returns the values for the specified header name.
+            </summary>
+            <param name="header">The name of the header.</param>
+            <returns>An array of parsed string objects.</returns>
+            <remarks>
+            Takes a header name and returns a string array representing
+            the individual values for that header.  For example, if the headers
+            contain the following line:
+            <code>
+            Accept: text/plain, text/html
+            </code>
+            then <c>GetValues("Accept")</c> returns an array of
+            two strings: "text/plain" and "text/html".
+            </remarks>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.WebHeaderCollection.#ctor">
+            <summary>
+            Creates an empty collection of WEB headers.
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.WebHeaderCollection.Item(System.String)">
+            <summary>
+            Returns the string value for the header.
+            </summary>
+            <param name="header">The name of the header.</param>
+            <value>A string containing the value. If no value is present,
+            returns <itemref>null</itemref>.</value>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.WebHeaderCollection.Count">
+            <summary>
+            Gets the number of headers in the collection.
+            </summary>
+            <value>An <b>Int32</b> indicating the number of headers in a
+            request.</value>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.WebHeaderCollection.AllKeys">
+            <summary>
+            Gets all header names (keys) in the collection.
+            </summary>
+            <value>An array of type <b>String</b> containing all header names in
+            a Web request.</value>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.WebRequest">
+            <summary>
+            Makes a request to a Uniform Resource Identifier (URI). This is an abstract class.
+            Implementation follows .NET System.Net.WebRequest
+            </summary>
+            <remarks>
+            This is the base class of all Web resource/protocol objects.  This class
+            provides common methods, data and properties for making the top-level
+            request.
+            </remarks>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.WebRequest.#ctor">
+            <summary>
+            Initializes a new instance of the
+            <see cref="!:Eclo.NetMF.SIM800H.Htpp.WebRequest"/> class.
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.WebRequest.Create(Eclo.NetMF.SIM800H.Uri)">
+            <summary>
+            Creates a <itemref>WebRequest</itemref>.
+            </summary>
+            <param name="requestUri">A <see cref="!:System.Uri"/> containing the
+            URI of the requested resource.</param>
+            <return>A <itemref>WebRequest</itemref> descendant for the specified
+            URI scheme.</return>
+            <remarks>
+            This is the main creation routine. The specified Uri is looked up
+            in the prefix match table, and the appropriate handler is invoked to
+            create the object.
+            </remarks>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.WebRequest.UserAgent">
+            <summary>
+            Gets or sets the value of the <b>User-Agent</b> HTTP header.
+            </summary>
+            <value>The value of the <b>User-agent</b> HTTP header.  The default
+            value is <b>null</b>.</value>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.LocationAndTime">
+            <summary>
+            Class with information about location and time.
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.LocationAndTime.DateTime">
+            <summary>
+            Current date time as provided from location application service
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.LocationAndTime.Latitude">
+            <summary>
+            Current latitude as provided from location application service. Value is degrees.
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.LocationAndTime.Longitude">
+            <summary>
+            Current longitude as provided from location application service. Value is degrees.
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.LocationAndTime.ErrorCode">
+            <summary>
+            Error code for the request.
+            404 - not found
+            408 - request timeout
+            601 - network error
+            602 - no memory
+            603 - DNS error
+            604 - Stack busy
+            65535 - Other error
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.PhoneFuncionality">
+            <summary>
+            Phone Funcionality 
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.PhoneFuncionality.Minimum">
+            <summary>
+            Minimum funcionality: minimum current consumption, RF and SIM are off
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.PhoneFuncionality.Full">
+            <summary>
+            Full funcionality (default)
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.PhoneFuncionality.FligthMode">
+            <summary>
+            Flight mode: disable tx and rx RF circuits
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.PinState">
+            <summary>
+            Possible states of the SIM card
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.PinState.Error">
+            <summary>
+            Error retrieving PIN status
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.PinState.Ready">
+            <summary>
+            SIM is unlocked and ready to be used.
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.PinState.PIN">
+            <summary>
+            SIM is locked waiting for the PIN
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.PinState.PUK">
+            <summary>
+            SIM is locked waiting for the PUK
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.PinState.PH_PIN">
+            <summary>
+            SIM is waiting for phone to SIM card (anti-theft) 
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.PinState.PH_PUK">
+            <summary>
+            SIM is waiting for phone to SIM PUK (anti theft) 
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.PinState.PIN2">
+            <summary>
+            SIM is waiting for second PIN
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.PinState.PUK2">
+            <summary>
+            SIM is waiting for second PUK
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.PinState.NotPresent">
+            <summary>
+            SIM is not present
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.SignalStrength">
+            <summary>
+            Possible values of the strength of a signal
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SignalStrength.Error">
+            <summary>
+            Error in the response from the GSM Module
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SignalStrength.VeryWeak">
+            <summary>
+            -115dBm or less
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SignalStrength.Weak">
+            <summary>
+            -111dBm
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SignalStrength.Strong">
+            <summary>
+            -110..-54dBm
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SignalStrength.VeryStrong">
+            <summary>
+            -52dBm or greater
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SignalStrength.Unknown">
+            <summary>
+            Not known or undetectable
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.SimCardStatus">
+            <summary>
+            Possible SIM card status
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SimCardStatus.Unknown">
+            <summary>
+            Unknown SIM card status
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SimCardStatus.Inserted">
+            <summary>
+            SIM Card inserted
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SimCardStatus.Removed">
+            <summary>
+            Removed
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.WarningCondition">
+            <summary>
+            Warning conditions
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.WarningCondition.UnderVoltagePowerDown">
+            <summary>
+             Under Voltage Power Down
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.WarningCondition.UnderVoltageWarning">
+            <summary>
+            Under Voltage warning
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.WarningCondition.OverVoltagePowerDown">
+            <summary>
+             Over Voltage Power Down
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.WarningCondition.OverVoltageWarning">
+            <summary>
+            Over Voltage warning
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.WarningCondition.TemperatureWarning">
+            <summary>
+            Module temperature is not normal
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.ConnectionStatus">
+            <summary>
+            Connection status of GPRS socket.
+            See SIM800H documentation.
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.ConnectGprsResult">
+            <summary>
+            Outcome of request to open GPRS connection
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.ConnectGprsResult.Open">
+            <summary>
+            GPRS connection open
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.ConnectGprsResult.AlreadyOpen">
+            <summary>
+            GPRS connection  already open
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.ConnectGprsResult.Error">
+            <summary>
+            Unspecified error when trying to open GPRS connection
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.ConnectGprsResult.DeviceIsOff">
+            <summary>
+            Device is off
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.ConnectGprsResult.NotRegisteredAtGsmNetwork">
+            <summary>
+            Device is not registered at GSM network
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.ConnectGprsResult.NotRegisteredAtGprsNetwork">
+            <summary>
+            Device is not registered at GPRS network
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.ConnectGprsResult.Failed">
+            <summary>
+            Failed to open bearer context after all attempts
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.ConnectGprsAsyncResult">
+            <summary>
+            An asynchronous result returning the result of a request to open a GPRS connection
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.ConnectGprsAsyncResult.Result">
+            <summary>
+            Result of GPRS connection 
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.ConnectGprsAsyncResult.End">
+            <summary>
+            Finishes the asynchronous processing and throws an exception if one was generated
+            <remarks>Blocks until the asynchronous processing has completed</remarks>
+            </summary>
+            <returns>Returns the result of the request to open bearer context </returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.ConnectGprsAsyncResult.Process">
+            <summary>
+            The method used to perform the asynchronous processing
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.GprsProvider">
+            <summary>
+            Class with methods to perform GPRS related actions.
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.GprsProvider.OpenGprsConnectionAsync(System.AsyncCallback,System.Object)">
+            <summary>
+            Starts an asynchronous operation to open a GPRS connection to be used in sockets.
+            A GPRS connection is required to use GPRS sockets.
+            </summary>
+            <param name="asyncCallback">The callback to be invoked upon completion, optional</param>
+            <param name="asyncState">The state object to be stored against the OpenGprsContextAsyncResult, optional</param>
+            <returns>The ConnectGprsAsyncResult</returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.GprsProvider.DetachGprs">
+            <summary>
+            Detach GPRS
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.GprsProvider.CheckConnectionStatus(System.Int32)">
+            <summary>
+            Queries current status of a specific GPRS connection
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.GprsProvider.OpenBearerAsync(System.AsyncCallback,System.Object)">
+            <summary>
+            Starts an asynchronous operation to open a GPRS bearer for IP applications.
+            A GPRS bearer is required for HTTP client, SNTP and location requests.
+            </summary>
+            <param name="asyncCallback">The callback to be invoked upon completion, optional</param>
+            <param name="asyncState">The state object to be stored against the OpenGprsContextAsyncResult, optional</param>
+            <returns>The OpenBearerAsyncResult</returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.GprsProvider.CloseIpAppBearer">
+            <summary>
+            Closes IP apps bearer in profile 1 of GPRS context 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.GprsProvider.CheckIpAppBearerStatus">
+            <summary>
+            Queries IP apps bearer context in profile 1 to check if it's opened.
+            On successful execution context open status is updated in GprsIpAppsBearerIsOpen property
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.GprsProvider.OnGprsIpAppsBearerStateChanged(System.Boolean)">
+            <summary>
+            Raises the <see cref="E:Eclo.NetMF.SIM800H.GprsProvider.GprsIpAppsBearerStateChanged"/> event.
+            </summary>
+            <param name="isOpen">Current state of the IP apps bearer </param>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.GprsProvider.OnGprsSocketsBearerStateChanged(System.Boolean)">
+            <summary>
+            Raises the <see cref="E:Eclo.NetMF.SIM800H.GprsProvider.GprsSocketsBearerStateChanged"/> event.
+            </summary>
+            <param name="isOpen">Current state of the sockets bearer </param>
+        </member>
+        <member name="E:Eclo.NetMF.SIM800H.GprsProvider.GprsIpAppsBearerStateChanged">
+            <summary>
+            Event raised when the status of the IP bearer for IP apps changes.
+            </summary>
+        </member>
+        <member name="E:Eclo.NetMF.SIM800H.GprsProvider.GprsSocketsBearerStateChanged">
+            <summary>
+            Event raised when the status of the sockets bearer changes.
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.GprsProvider.GprsIpAppsBearerStateChangedHandler">
+            <summary>
+            Represents the delegate used for the <see cref="E:Eclo.NetMF.SIM800H.GprsProvider.GprsIpAppsBearerStateChanged"/> event.
+            </summary>
+            <param name="isOpen">Current state of the IP apps bearer </param>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.GprsProvider.GprsSocketsBearerStateChangedHandler">
+            <summary>
+            Represents the delegate used for the <see cref="E:Eclo.NetMF.SIM800H.GprsProvider.GprsSocketsBearerStateChanged"/> event.
+            </summary>
+            <param name="isOpen">Current state of the sockets bearer </param>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.GprsSocket">
+            <summary>
+            GPRS socket instance.
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.GprsSocket.#ctor(Eclo.NetMF.SIM800H.ProtocolType,System.Boolean)">
+            <summary>
+            Class with GPRS socket methods and properties
+            </summary>
+            <param name="protocolType">Protocol type of the socket</param>
+            <param name="isSslSocket">True if socket is SLL. Default is false (not SSL).</param>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.GprsSocket.Connect(System.String,System.Int32)">
+            <summary>
+            Connects a GPRS socket to the specified URL and port.
+            This operation requires that an open GPRS connection.
+            </summary>
+            <param name="remoteURL">URL where to connect</param>
+            <param name="port">Port number where to connect</param>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.GprsSocket.Close">
+            <summary>
+            Close GPRS socket connection
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.GprsSocket.OnSocketConnected(Eclo.NetMF.SIM800H.GprsSocket)">
+            <summary>
+            Raises the <see cref="M:Eclo.NetMF.SIM800H.GprsSocket.OnSocketConnected(Eclo.NetMF.SIM800H.GprsSocket)"/> event.
+            </summary>
+            <param name="sender">The object that raised the event.</param>  
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.GprsSocket.OnSocketClosed(Eclo.NetMF.SIM800H.GprsSocket)">
+            <summary>
+            Raises the <see cref="M:Eclo.NetMF.SIM800H.GprsSocket.OnSocketClosed(Eclo.NetMF.SIM800H.GprsSocket)"/> event.
+            </summary>
+            <param name="sender">The object that raised the event.</param>  
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.GprsSocket.OnDataReceived(System.Object)">
+            <summary>
+            Raises the <see cref="M:Eclo.NetMF.SIM800H.GprsSocket.OnDataReceived(System.Object)"/> event.
+            </summary>
+            <param name="sender">The object that raised the event.</param>  
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.GprsSocket.Status">
+            <summary>
+            Connection status of a GPRS socket
+            </summary>
+        </member>
+        <member name="E:Eclo.NetMF.SIM800H.GprsSocket.SocketConnected">
+            <summary>
+            Event raised when the module emits a network registration message.
+            </summary>
+        </member>
+        <member name="E:Eclo.NetMF.SIM800H.GprsSocket.SocketClosed">
+            <summary>
+            Event raised when the module emits a network registration message.
+            </summary>
+        </member>
+        <member name="E:Eclo.NetMF.SIM800H.GprsSocket.DataReceived">
+            <summary>
+            Event raised when the module emits a network registration message.
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.GprsSocket.SocketConnectedHandler">
+            <summary>
+            Represents the delegate used for the <see cref="M:Eclo.NetMF.SIM800H.GprsSocket.OnSocketConnected(Eclo.NetMF.SIM800H.GprsSocket)"/> event.
+            </summary>
+            <param name="sender">The object that raised the event.</param>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.GprsSocket.SocketClosedHandler">
+            <summary>
+            Represents the delegate used for the <see cref="M:Eclo.NetMF.SIM800H.GprsSocket.OnSocketClosed(Eclo.NetMF.SIM800H.GprsSocket)"/> event.
+            </summary>
+            <param name="sender">The object that raised the event.</param>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.GprsSocket.DataReceivedHandler">
+            <summary>
+            Represents the delegate used for the <see cref="M:Eclo.NetMF.SIM800H.GprsSocket.OnDataReceived(System.Object)"/> event.
+            </summary>
+            <param name="sender">The object that raised the event.</param>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.OpenBearerResult">
+            <summary>
+            Outcome of request to open bearer context
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.OpenBearerResult.Open">
+            <summary>
+            Bearer context open
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.OpenBearerResult.AlreadyOpen">
+            <summary>
+            Bearer context is already open
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.OpenBearerResult.Error">
+            <summary>
+            Unspecified error when trying to open context
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.OpenBearerResult.DeviceIsOff">
+            <summary>
+            Device is off
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.OpenBearerResult.NotRegisteredAtGsmNetwork">
+            <summary>
+            Device is not registered at GSM network
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.OpenBearerResult.NotRegisteredAtGprsNetwork">
+            <summary>
+            Device is not registered at GPRS network
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.OpenBearerResult.Failed">
+            <summary>
+            Failed to open bearer context after all attempts
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.OpenBearerAsyncResult">
+            <summary>
+            An asynchronous result object returning the result of a request to open a bearer in GPRS context
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.OpenBearerAsyncResult.Result">
+            <summary>
+            Result of open bearer context 
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.OpenBearerAsyncResult.End">
+            <summary>
+            Finishes the asynchronous processing and throws an exception if one was generated
+            <remarks>Blocks until the asynchronous processing has completed</remarks>
+            </summary>
+            <returns>Returns the result of the request to open bearer context </returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.OpenBearerAsyncResult.Process">
+            <summary>
+            The method used to perform the asynchronous processing
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.ProtocolType">
+            <summary>
+            Specifies the protocols that the <see cref="T:Eclo.NetMF.SIM800H.GprsSocket"/> class supports.
+            Implementation follows .NET System.Net.Sockets.ProtocolType
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.ProtocolType.Tcp">
+            <summary>
+            Transmission control protocol 
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.ProtocolType.Udp">
+            <summary>
+            User datagram protocol
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.SocketError">
+            <devdoc>
+               <para>
+                  Defines socket error constants.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.Success">
+            <devdoc>
+               <para>
+                  The operation completed successfully.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.SocketError">
+            <devdoc>
+               <para>
+                  The socket has an error.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.Interrupted">
+            <devdoc>
+               <para>
+                  A blocking socket call was canceled.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.AccessDenied">
+            <devdoc>
+               <para>
+                  Permission denied.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.Fault">
+            <devdoc>
+               <para>
+                  Bad address.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.InvalidArgument">
+            <devdoc>
+               <para>
+                  Invalid argument.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.TooManyOpenSockets">
+            <devdoc>
+               <para>
+                  Too many open
+                  files.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.WouldBlock">
+            <devdoc>
+               <para>
+                  Resource temporarily unavailable.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.InProgress">
+            <devdoc>
+               <para>
+                  Operation now in progress.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.AlreadyInProgress">
+            <devdoc>
+               <para>
+                  Operation already in progress.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.NotSocket">
+            <devdoc>
+               <para>
+                  Socket operation on nonsocket.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.DestinationAddressRequired">
+            <devdoc>
+               <para>
+                  Destination address required.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.MessageSize">
+            <devdoc>
+               <para>
+                  Message too long.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.ProtocolType">
+            <devdoc>
+               <para>
+                  Protocol wrong type for socket.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.ProtocolOption">
+            <devdoc>
+               <para>
+                  Bad protocol option.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.ProtocolNotSupported">
+            <devdoc>
+               <para>
+                  Protocol not supported.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.SocketNotSupported">
+            <devdoc>
+               <para>
+                  Socket type not supported.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.OperationNotSupported">
+            <devdoc>
+               <para>
+                  Operation not supported.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.ProtocolFamilyNotSupported">
+            <devdoc>
+               <para>
+                  Protocol family not supported.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.AddressFamilyNotSupported">
+            <devdoc>
+               <para>
+                  Address family not supported by protocol family.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.AddressAlreadyInUse">
+            <devdoc>
+               Address already in use.
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.AddressNotAvailable">
+            <devdoc>
+               <para>
+                  Cannot assign requested address.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.NetworkDown">
+            <devdoc>
+               <para>
+                  Network is down.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.NetworkUnreachable">
+            <devdoc>
+               <para>
+                  Network is unreachable.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.NetworkReset">
+            <devdoc>
+               <para>
+                  Network dropped connection on reset.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.ConnectionAborted">
+            <devdoc>
+               <para>
+                  Software caused connection to abort.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.ConnectionReset">
+            <devdoc>
+               <para>
+                  Connection reset by peer.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.NoBufferSpaceAvailable">
+            <devdoc>
+               No buffer space available.
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.IsConnected">
+            <devdoc>
+               <para>
+                  Socket is already connected.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.NotConnected">
+            <devdoc>
+               <para>
+                  Socket is not connected.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.Shutdown">
+            <devdoc>
+               <para>
+                  Cannot send after socket shutdown.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.TimedOut">
+            <devdoc>
+               <para>
+                  Connection timed out.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.ConnectionRefused">
+            <devdoc>
+               <para>
+                  Connection refused.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.HostDown">
+            <devdoc>
+               <para>
+                  Host is down.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.HostUnreachable">
+            <devdoc>
+               <para>
+                  No route to host.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.ProcessLimit">
+            <devdoc>
+               <para>
+                  Too many processes.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.SystemNotReady">
+            <devdoc>
+               <para>
+                  Network subsystem is unavailable.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.VersionNotSupported">
+            <devdoc>
+               <para>
+                  Winsock.dll out of range.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.NotInitialized">
+            <devdoc>
+               <para>
+                  Successful startup not yet performed.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.Disconnecting">
+            <devdoc>
+               <para>
+                  Graceful shutdown in progress.
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.HostNotFound">
+            <devdoc>
+               <para>
+                  Host not found (Authoritative Answer: Host not found).
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.TryAgain">
+            <devdoc>
+               <para>
+                  Nonauthoritative host not found (Non-Authoritative: Host not found, or SERVERFAIL).
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.NoRecovery">
+            <devdoc>
+               <para>
+                  This is a nonrecoverable error (Non recoverable errors, FORMERR, REFUSED, NOTIMP).
+               </para>
+            </devdoc>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SocketError.NoData">
+            <devdoc>
+               <para>
+                  Valid name, no data record of requested type.
+               </para>
+            </devdoc>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.SocketException">
+            <summary>
+            Implementation follows .NET System.Net.Sockets.SocketException
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.HttpClient">
+            <summary>
+            Class with methods to perform HTTP client requests.
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.HttpClient.SetHttpParameter(Eclo.NetMF.SIM800H.HttpParamTag,System.String)">
+            <summary>
+            Set HTTP parameter values used in HTTP service
+            </summary>
+            <param name="parameter">Parameter to set value</param>
+            <param name="value">Value of parameter</param>
+            <returns></returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.HttpClient.SetHttpParameter(Eclo.NetMF.SIM800H.HttpParamTag,System.Int32)">
+            <summary>
+            Set HTTP parameter values used in HTTP service
+            </summary>
+            <param name="parameter">Parameter to set value</param>
+            <param name="value">Value of parameter</param>
+            <returns></returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.HttpClient.SetHttpActionMethod(Eclo.NetMF.SIM800H.HttpAction)">
+            <summary>
+            Set Http action method
+            </summary>
+            <param name="method">action method</param>
+            <returns></returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.HttpClient.SaveHttpContext">
+            <summary>
+            Saves HTTP application context. When system is rebooted the parameters will be loaded automatically
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.HttpClient.ReadHttpStatus">
+            <summary>
+            Requests information about the current <see cref="T:Eclo.NetMF.SIM800H.HttpCurrentStatus"/> that will raise an event that contains the HTTP service current status.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.HttpClient.EnableHttpSSL(System.Boolean)">
+            <summary>
+            Enable/disable SSL for HTTP
+            </summary>
+            <param name="enable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.HttpClient.PerformHttpWebRequestAsync(Eclo.NetMF.SIM800H.HttpWebRequest,System.Boolean,System.Boolean,System.AsyncCallback,System.Object)">
+            <summary>
+            Performs an asynchronous HttpWebrequest
+            </summary>
+            <param name="request">The <c>HttpWebRequest</c> request to be performed</param>
+            <param name="readResponseData">Option to read the response data if any, optional with false as default</param>
+            <param name="readHeaders">Option to read the response headers, if any, optional with false as default</param>
+            <param name="asyncCallback">The callback to be invoked upon completion, optional</param>
+            <param name="asyncState">The state object to be stored against the ReadSMSAsyncResult, optional</param>
+            <returns>The IMEIAsyncResult</returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.HttpClient.OnHTTPActionReceived(Eclo.NetMF.SIM800H.HttpActionResult)">
+            <summary>
+            Raises the <see cref="E:Eclo.NetMF.SIM800H.HttpClient.HTTPActionReceived"/> event.
+            </summary>
+            <param name="actionResult">HTTP action result of the request</param>
+        </member>
+        <member name="E:Eclo.NetMF.SIM800H.HttpClient.HTTPActionReceived">
+            <summary>
+            Event raised when the module receives an HTTP action message.
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.HttpClient.HTTPActionReceivedHandler">
+            <summary>
+            Represents the delegate used for the <see cref="E:Eclo.NetMF.SIM800H.HttpClient.HTTPActionReceived"/> event.
+            </summary>
+            <param name="actionResult">HTTP action result of the request</param>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.NetworkRegistrationState">
+            <summary>
+            Possible states of network registration
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.NetworkRegistrationState.NotSearching">
+            <summary>
+            Module couldn't find a network
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.NetworkRegistrationState.Registered">
+            <summary>
+            Module is registered to a network
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.NetworkRegistrationState.Searching">
+            <summary>
+            Module is searching for a network
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.NetworkRegistrationState.RegistrationDenied">
+            <summary>
+            Module tried to register to a network, but it was denied
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.NetworkRegistrationState.Unknown">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.NetworkRegistrationState.Roaming">
+            <summary>
+            Roaming
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.NetworkRegistrationState.Error">
+            <summary>
+            Error
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.PowerStatus">
+            <summary>
+            Possible power status
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.PowerStatus.Unknown">
+            <summary>
+            Unknown power state
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.PowerStatus.On">
+            <summary>
+            Device is on
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.PowerStatus.Off">
+            <summary>
+            Device is off
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.PowerStatus.FlightMode">
+            <summary>
+            Device is in flight mode
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.PowerStatus.Minimum">
+            <summary>
+            Device is workgin with minimum functionality 
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.PowerStatus.PowerOnSequenceIsRunning">
+            <summary>
+            Power on sequence is running
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.ReturnedState">
+            <summary>
+            Possible returned states by methods
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.ReturnedState.OK">
+            <summary>
+            Operation successful
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.ReturnedState.Error">
+            <summary>
+            Error in the operation. See method documentation.
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.ReturnedState.DeviceIsOff">
+            <summary>
+            Device is off
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.ReturnedState.InvalidCommand">
+            <summary>
+            Command syntax is incorrect
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.ReturnedState.DeviceIsBusy">
+            <summary>
+            Device is busy
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.ReturnedState.NoReply">
+            <summary>
+            No reply returned
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.PowerOnAsyncResult">
+            <summary>
+            An asynchronous result object returning the result of a Power on sequence execution
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.PowerOnAsyncResult.Result">
+            <summary>
+            Result of power sequence execution
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.PowerOnAsyncResult.End">
+            <summary>
+            Finishes the asynchronous processing and throws an exception if one was generated
+            <remarks>Blocks until the asynchronous processing has completed</remarks>
+            </summary>
+            <returns>Returns the result of the power on sequence</returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.PowerOnAsyncResult.Process">
+            <summary>
+            The method used to perform the asynchronous processing
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.Message">
+            <summary>
+            Text Message (SMS)
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.Message.TelephoneNumber">
+            <summary>
+            Number
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.Message.TextMessage">
+            <summary>
+            Message content
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.Message.Status">
+            <summary>
+            Status of the message
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.Message.Timestamp">
+            <summary>
+            Date and time when the message was sent or received
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.Message.#ctor">
+            <summary>
+            Instantiates a new SMS with empty number, and content, marks it as unsent and with the current time as the timestamp.
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.Message.#ctor(System.String,System.String,Eclo.NetMF.SIM800H.MessageState,System.DateTime)">
+            <summary>
+            Instantiates a new SMS message with the given parameters.
+            </summary>
+            <param name="number">Number</param>
+            <param name="text">Message content</param>
+            <param name="state"><see cref="T:Eclo.NetMF.SIM800H.MessageState">of message</see></param>
+            <param name="timestamp">Time stamp of message</param>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.Message.Index">
+            <summary>
+            Index of the message in the SIM card's memory
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.SendMessageAsyncResult">
+            <summary>
+            An asynchronous result object returning the result of an attempt to send an SMS
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SendMessageAsyncResult.Reference">
+            <summary>
+            Reference of the sent SMS
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SendMessageAsyncResult.End">
+            <summary>
+            Finishes the asynchronous processing and throws an exception if one was generated
+            <remarks>Blocks until the asynchronous processing has completed</remarks>
+            </summary>
+            <returns>Returns the sent SMS index</returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SendMessageAsyncResult.Process">
+            <summary>
+            The method used to perform the asynchronous processing
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.HttpWebRequestAsyncResult">
+            <summary>
+            An asynchronous result object returning the result of an HTTP Request
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpWebRequestAsyncResult.HttpResponse">
+            <summary>
+            The device HTTP response object after the call is completed.
+            <remarks>RequestSuccessful property is false if request couldn't be completed for any reason</remarks>
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.HttpWebRequestAsyncResult.End">
+            <summary>
+            Finishes the asynchronous processing and throws an exception if one was generated
+            <remarks>Blocks until the asynchronous processing has completed</remarks>
+            </summary>
+            <returns>Returns the SMS </returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.HttpWebRequestAsyncResult.Process">
+            <summary>
+            The method used to perform the asynchronous processing
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.HttpAction">
+            <summary>
+            HTTP action method
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.HttpParamTag">
+            <summary>
+            Parameters for HTTP call
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpParamTag.CID">
+            <summary>
+            (mandatory parameter) Bearer profile identifier
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpParamTag.URL">
+            <summary>
+            (mandatory parameter) HTTP client URL with format "http://'server'/'path':'tcpPort'"
+            server: FQDN or IP address
+            path: path of file or directory
+            tcpPort: default value is 80
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpParamTag.UA">
+            <summary>
+            Refer to IETF-RFC 2616. The user agent string is usually set by the application to identify the system.
+            Usually this parameters include information about the OS and other system capabilities and version information.
+            Default value is SIMCOM_MODULE
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpParamTag.PROPIP">
+            <summary>
+            The IP address of the HTTP proxy server
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpParamTag.PROPORT">
+            <summary>
+            The port of the HTTP proxy server
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpParamTag.REDIR">
+            <summary>
+            This flag controls the redirection mechanics of the SIM800 when it's acting as HTTP client. 
+            If the server sends a redirect code (range 30X) the client will automatically send a new HTTP request when the flag is set to 1.
+            Default value is 0 (no redirection)
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpParamTag.BREAK">
+            <summary>
+            Parameter for HTTP method GET used for resuming broken transfer
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpParamTag.BREAKEND">
+            <summary>
+            Parameter for HTTP method GET used for resuming broken transfer that is used together with BREAK. 
+            If the value of BREAKEND is bigger than BREAK the transfer scope is from BREAK to BREAKEND.
+            If the value of BREAKEND is smaller than BREAK the transfer scope is from BREAK to the end of the file.
+            If both BREAKEND and BREAK are 0, the resumed broken transfer function is disabled.
+            Note that not all servers support BREAKEND and BREAK
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpParamTag.TIMEOUT">
+            <summary>
+            HTTP session timeout, scope: 30-1000 seconds. 
+            Default value is 120 seconds.
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpParamTag.CONTENT">
+            <summary>
+            Sets the Content-Type HTTP header
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpParamTag.USERDATA">
+            <summary>
+            Sets the user data parameter (to set HTTP headers)
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.HttpWebResponse">
+            <summary>
+            Handles retrieval of HTTP Response headers, and handles data reads.
+            Implementation follows .NET System.Net.HttpWebResponse
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.HttpStatus">
+            <summary>
+            HTTP status of HTTP service
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.HttpRequestCreator.Create(Eclo.NetMF.SIM800H.Uri)">
+            <summary>
+            Creates an HttpWebRequest. We register
+            for HTTP and HTTPS URLs, and this method is called when a request
+            needs to be created for one of those.
+            </summary>
+            <param name="Url">Url for request being created.</param>
+            <returns>The newly created HttpWebRequest.</returns>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.HttpWebRequest">
+            <summary>
+            Provides an HTTP-specific implementation of the <see cref="T:Eclo.NetMF.SIM800H.WebRequest"/> class.
+            Implementation follows .NET System.Net.HttpWebRequest
+            </summary>
+            <remarks>This class does the main work of the request: it collects the header information
+            from the user, exposes the Stream for outgoing entity data, and processes the incoming
+            request.</remarks>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.HttpWebRequest._originalUrl">
+            <summary>
+            The URI that we do the request for.
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.HttpWebRequest.GetRequestStream">
+            <summary>
+            Submits a request with HTTP headers to the server, and returns a
+            <b>Stream</b> object to use to write request data.
+            </summary>
+            <returns>A <b>Stream</b> to use to write request data.</returns>
+            <remarks>Used for POST of PUT requests.</remarks>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.HttpWebRequest.RequestUri">
+            <summary>
+            Gets the original Uniform Resource Identifier (URI) of the request.
+            </summary>
+            <remarks>
+            The URI object was created by the constructor and is always
+            non-null.  The URI object will always be the base URI, because
+            automatic re-directs aren't supported.
+            </remarks>
+            <value>A Uri that contains the URI of the Internet resource passed
+            to the WebRequest.<see cref="M:Eclo.NetMF.SIM800H.WebRequest.Create(Eclo.NetMF.SIM800H.Uri)"/> method.
+            </value>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.HttpWebRequest.ContentType">
+            <summary>
+            Gets or sets the type of the entity body (the value of the content
+            type).
+            </summary>
+            <value>The value of the <b>Content-type</b> HTTP header.  The
+            default value is <b>null</b>.</value>
+            <remarks>
+            Setting to <b>null</b> clears the content-type.
+            </remarks>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.HttpWebRequest.Headers">
+            <summary>
+            A collection of HTTP headers stored as name/value pairs.
+            </summary>
+            <value>A <b>WebHeaderCollection</b> that contains the name/value
+            pairs that make up the headers for the HTTP request.</value>
+            <remarks>
+            The following header values are set through properties on the
+            <itemref>HttpWebRequest</itemref> class: Accept, Connection,
+            Content-Length, Content-Type, Expect, Range, Referrer,
+            Transfer-Encoding, and User-Agent.  Trying to set these header
+            values by using
+            <b>WebHeaderCollection.<see cref="M:Eclo.NetMF.SIM800H.WebHeaderCollection.Add(System.String,System.String)"/>()</b>
+            will raise an exception.  Date and Host are set internally.
+            </remarks>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.HttpWebRequest.Method">
+            <summary>
+            Gets or sets the HTTP method of this request.
+            </summary>
+            <value>The request method to use to contact the Internet resource.
+            The default value is GET.</value>
+            <remarks>
+            This method represents the initial origin verb, which is unchanged
+            and unaffected by redirects.
+            </remarks>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.HttpWebRequest.KeepAlive">
+            <summary>
+            No effect in this platform. It's only implemented for compatibility with .NETMF.
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.HttpWebRequest.AllowWriteStreamBuffering">
+            <summary>
+            No effect in this platform. It's only implemented for compatibility with .NETMF.
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.HttpWebRequest.ContentLength">
+            <summary>
+            No effect in this platform. It's only implemented for compatibility with .NETMF.
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.ReadMessageListAsyncResult">
+            <summary>
+            An asynchronous result object returning a list of message indexes
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.ReadMessageListAsyncResult.SMSList">
+            <summary>
+            The list of SMSs indexes
+            <remarks>Returns an empty list if none couldn't be read or match the criteria</remarks>
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.ReadMessageListAsyncResult.End">
+            <summary>
+            Finishes the asynchronous processing and throws an exception if one was generated
+            <remarks>Blocks until the asynchronous processing has completed</remarks>
+            </summary>
+            <returns>Returns the SMS list </returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.ReadMessageListAsyncResult.Process">
+            <summary>
+            The method used to perform the asynchronous processing
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.SIM800H">
+            <summary>
+            Class with methods, properties and events to work with a SIM800H module.
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.PowerOnAsync(System.AsyncCallback,System.Object)">
+            <summary>
+            Starts an asynchronous operation to run the power on sequence
+            </summary>
+            <param name="asyncCallback">The callback to be invoked upon completion, optional</param>
+            <param name="asyncState">The state object to be stored against the ReadMessageAsyncResult, optional</param>
+            <returns>The PowerSatus result of the power on sequence</returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.PowerOff">
+            <summary>
+            Powers off the SIM800H module
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SIM800H.AccessPointConfiguration">
+            <summary>
+            GPRS access point configuration (APN)
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.Configure(Microsoft.SPOT.Hardware.OutputPort,System.IO.Ports.SerialPort)">
+            <summary>
+            Configure hardware interface with the device.
+            </summary>
+            <param name="powerKey">The I/O signal that will be used to control the device's power key</param>
+            <param name="serialPort">The serial port that will be used to comunicate with the device</param>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.Dispose(System.Boolean)">
+            <summary>
+            Disposed of all resources
+            </summary>
+            <param name="disposing"><c>True</c> if managed resources should be released</param>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.Grab">
+            <summary>
+            Waits for the current module command transaction to finish then locks the port
+            <remarks>Blocks until the lock has been asserted, used to ensure that asynchronous transactions do not contaminate synchronous transactions</remarks>
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.Release">
+            <summary>
+            Releases the lock on the serial port 
+            <remarks>Used to ensure that asynchronous transactions do not contaminate synchronous transactions</remarks>
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.AsyncTaskQueueThread">
+            <summary>
+            The thread used to process asynchronous queries
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.AddAsyncTask(Eclo.NetMF.SIM800H.DeviceAsyncResult)">
+            <summary>
+            Adds an AsyncResult to the asynchronous task queue
+            </summary>
+            <param name="asyncResult">the AsyncResult to add</param>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.SendAT">
+            <summary>
+            Sends an AT command to the device
+            </summary>
+            <returns>
+            ReturnedState.OK - Command was sent
+            ReturnedState.ModuleIsOff - Module is off
+            ReturnedState.Error - Serial line is not open
+            ReturnedState.InvalidCommand - Invalid AT command
+            </returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.SendATCommandAndWaitForResponse(System.String,System.Int32)">
+            <summary>
+            Sends a AT command to the device. It automatically appends the carriage return.
+            </summary>
+            <param name="atCommand">String with the AT command. See SIM800H manual for reference.</param>
+            <param name="milisecondsTimeout">Timeout to complete this AT command.</param>
+            <returns>
+            ReturnedState.OK - Command was sent
+            ReturnedState.ModuleIsOff - Module is off
+            ReturnedState.Error - Serial line is not open
+            ReturnedState.InvalidCommand - Invalid AT command
+            </returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.SendATCommandAndDontWaitReply(System.String)">
+            <summary>
+            Sends a AT command to the device. It automatically appends the carriage return.
+            </summary>
+            <param name="atCommand">String with the AT command. See SIM800H manual for reference.</param>
+            <returns>
+            ReturnedState.OK - Command was sent
+            ReturnedState.DeviceIsOff - Device is off
+            ReturnedState.Error - Serial line is not open
+            ReturnedState.InvalidCommand - Invalid AT command
+            </returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.SendATCommand(System.String,System.Int32)">
+            <summary>
+            Sends a AT command to the SIM800H. It automatically appends the carriage return.
+            </summary>
+            <param name="atCommand">String with the AT command. See SIM800H manual for reference.</param>
+            <param name="milisecondsTimeout">Timeout to complete this AT command.</param>
+            <returns>
+            ReturnedState.OK - Command was sent
+            ReturnedState.DeviceIsOff - Device is off
+            ReturnedState.Error - Serial line is not open
+            ReturnedState.InvalidCommand - Invalid AT command
+            </returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.OnGsmNetworkRegistrationChanged(Eclo.NetMF.SIM800H.NetworkRegistrationState)">
+            <summary>
+            Raises the <see cref="E:Eclo.NetMF.SIM800H.SIM800H.GsmNetworkRegistrationChanged"/> event.
+            </summary>
+            <param name="networkState">Current state of the GSM network registration</param>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.OnGprsNetworkRegistrationChanged(Eclo.NetMF.SIM800H.NetworkRegistrationState)">
+            <summary>
+            Raises the <see cref="E:Eclo.NetMF.SIM800H.SIM800H.GprsNetworkRegistrationChanged"/> event.
+            </summary>
+            <param name="networkState">Current state of the GPRS network registration</param>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.OnCallReady">
+            <summary>
+            Raises the <see cref="E:Eclo.NetMF.SIM800H.SIM800H.CallReady"/> event.
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.OnSmsReady">
+            <summary>
+            Raises the <see cref="E:Eclo.NetMF.SIM800H.SIM800H.SmsReady"/> event.
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.OnSmsSentReferenceReceived(System.Int32)">
+            <summary>
+            Raises the <see cref="E:Eclo.NetMF.SIM800H.SIM800H.SmsSentReferenceReceived"/> event.
+            </summary>
+            <param name="reference">reference of the Sms sent</param>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.OnPowerStatusChanged(Eclo.NetMF.SIM800H.PowerStatus)">
+            <summary>
+            Raises the <see cref="E:Eclo.NetMF.SIM800H.SIM800H.PowerStatusChanged"/> event.
+            </summary>
+            <param name="powerStatus"> new power status of the device</param>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.OnSimCardStatusChanged(Eclo.NetMF.SIM800H.SimCardStatus)">
+            <summary>
+            Raises the <see cref="E:Eclo.NetMF.SIM800H.SIM800H.SimCardStatusChanged"/> event.
+            </summary>
+            <param name="simCardStatus"> new status of the SIM card</param>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.OnWarningConditionTriggered(Eclo.NetMF.SIM800H.WarningCondition)">
+            <summary>
+            Raises the <see cref="E:Eclo.NetMF.SIM800H.SIM800H.WarningConditionTriggered"/> event.
+            </summary>
+            <param name="warningCondition">The warning condition that was triggered</param>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.RetrieveSignalStrength">
+            <summary>
+            Get the signalstrenght of the cellular network
+            </summary>
+            <returns>An instance of <see cref="T:Eclo.NetMF.SIM800H.SignalStrength"/> which contains the strength of the network signal</returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.RetrieveOperator">
+            <summary>
+            Retrieves the operator wich the device is registered to
+            </summary>
+            <returns>The operator which the device is registered to</returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.RetrievePinState">
+            <summary>
+            Retrieves the pin state of the SIM
+            </summary>
+            <returns>An instance of <see cref="T:Eclo.NetMF.SIM800H.PinState"/> with the current state of the PIN</returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.Reset">
+            <summary>
+            Resets the device
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.SetPhoneFuncionality(Eclo.NetMF.SIM800H.PhoneFuncionality,System.Boolean)">
+            <summary>
+            Set phone funcionality 
+            </summary>
+            <param name="mode">See phone funcionality options</param>
+            <param name="resetBeforeChange">True to reset device before changes are made effective</param>
+            <returns>returns ATCommandResult</returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.SetSerialInterfaceBaudRate(System.Int32)">
+            <summary>
+            Set baud rate for serial interface
+            </summary>
+            <param name="newBaudRate">New baud rate. Valid values are 1200, 2400, 4800, 9600, 19200, 38400, 57600 and 115200. Set to 0 for auto baud rate. The new baud rate is stored to flash after command is issued. When setting to auto baud rate a reset is required/recommended.</param>
+            <returns>ATCommandResult</returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.SendConfigurationToDevice">
+            <summary>
+            Configure all relevant settings and options of the device
+            </summary>
+            <returns>True if configuration was successfull</returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.GetDateTime">
+            <summary>
+            Retrieves date time from device's clock.
+            For correct date time the clock must be set either programatically or using SNTP service
+            </summary>
+            <returns>Date time from device's clock</returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SIM800H.GetTimeAndLocation(System.Boolean)">
+            <summary>
+            Retrieves time and optionally location of the device, as reported by the time and location service.
+            Needs to have GPRS connection active.
+            </summary>
+            <param name="getLocation">True to return also the location of the device.</param>
+            <returns>The device's time and location</returns>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.SIM800H.GprsProvider">
+            <summary>
+            <see cref="P:Eclo.NetMF.SIM800H.SIM800H.GprsProvider"/> property with all the methods required to use the GPRS features
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.SIM800H.SmsProvider">
+            <summary>
+            <see cref="P:Eclo.NetMF.SIM800H.SIM800H.SmsProvider"/> property with all the methods required to send SMS (text) messages
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.SIM800H.HttpClient">
+            <summary>
+            <see cref="P:Eclo.NetMF.SIM800H.SIM800H.HttpClient"/> property with all the methods required to perform HTTP requests
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.SIM800H.SntpClient">
+            <summary>
+            <see cref="T:Eclo.NetMF.SIM800H.SntpClient"/> property with all the methods required to user the SNTP (Simple Network Time Protocol) client
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.SIM800H.GprsIpAppsBearerIsOpen">
+            <summary>
+            Status of IP apps bearer in profile 1 of GPRS context
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.SIM800H.GprsSocketsBearerIsOpen">
+            <summary>
+            Status of sockets bearer in profile 0 of GPRS context
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.SIM800H.PowerStatus">
+            <summary>
+            Power status of SIM800H device
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.SIM800H.GsmNetworkRegistration">
+            <summary>
+            GSM network registration state of module
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.SIM800H.GprsNetworkRegistration">
+            <summary>
+            GPRS network registration state of module
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.SIM800H.IpAddress">
+            <summary>
+            IP address of module
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.SIM800H.ModelIdentification">
+            <summary>
+            Module model identification 
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.SIM800H.SoftwareRelease">
+            <summary>
+            Module software release 
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.SIM800H.MaxSockets">
+            <summary>
+            Maximum number of sockets supported. SIM800H module supports up to 6.
+            When setting this properties, any existing socket will be closed and becomes unavailale.
+            </summary>
+        </member>
+        <member name="E:Eclo.NetMF.SIM800H.SIM800H.GsmNetworkRegistrationChanged">
+            <summary>
+            Event raised when the status of the GSM network registration changes.
+            </summary>
+        </member>
+        <member name="E:Eclo.NetMF.SIM800H.SIM800H.GprsNetworkRegistrationChanged">
+            <summary>
+            Event raised when the status of the GPRS registration changes.
+            </summary>
+        </member>
+        <member name="E:Eclo.NetMF.SIM800H.SIM800H.CallReady">
+            <summary>
+            Event raised when the device reports that is ready for calls.
+            </summary>
+        </member>
+        <member name="E:Eclo.NetMF.SIM800H.SIM800H.SmsReady">
+            <summary>
+            Event raised when the device reports that the SMS features are ready.
+            </summary>
+        </member>
+        <member name="E:Eclo.NetMF.SIM800H.SIM800H.SmsSentReferenceReceived">
+            <summary>
+            Event raised when the device receives a new SMS message.
+            </summary>
+        </member>
+        <member name="E:Eclo.NetMF.SIM800H.SIM800H.PowerStatusChanged">
+            <summary>
+            Event raised when the power status of the device changes.
+            </summary>
+        </member>
+        <member name="E:Eclo.NetMF.SIM800H.SIM800H.SimCardStatusChanged">
+            <summary>
+            Event raised when the status of the SIM card changes.
+            </summary>
+        </member>
+        <member name="E:Eclo.NetMF.SIM800H.SIM800H.WarningConditionTriggered">
+            <summary>
+            Event raised when there is a warning condition reported by the device.
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.SIM800H.SmsStatusReport">
+            <summary>
+            Enable Sms status report 
+            </summary>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.SIM800H.IMEI">
+            <summary>
+            Retrieves the device's IMEI 
+            </summary>
+            <returns>IMEI of the device</returns>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.SIM800H.SerialInterfaceBaudRate">
+            <summary>
+            Retrieves baud rate for serial interface 
+            </summary>
+            <returns>An integer with the serial port baud rate (-1 when this command couldn't be executed)</returns>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.SIM800H.SIMCardStatus">
+            <summary>
+            Get SIM card status 
+            </summary>
+            <returns>SIMCardStatus</returns>
+        </member>
+        <member name="P:Eclo.NetMF.SIM800H.SIM800H.SupplyVoltage">
+            <summary>
+            Retrieves supply voltage.
+            </summary>
+            <returns>Supply voltage in mV</returns>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.SIM800H.GsmNetworkRegistrationChangedHandler">
+            <summary>
+            Represents the delegate used for the <see cref="E:Eclo.NetMF.SIM800H.SIM800H.GsmNetworkRegistrationChanged"/> event.
+            </summary>
+            <param name="networkState">Current state of the GSM network registration</param>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.SIM800H.GprsNetworkRegistrationChangedHandler">
+            <summary>
+            Represents the delegate used for the <see cref="E:Eclo.NetMF.SIM800H.SIM800H.GprsNetworkRegistrationChanged"/> event.
+            </summary>
+            <param name="networkState">Current state of the GPRS network registration</param>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.SIM800H.CallReadyHandler">
+            <summary>
+            Represents the delegate used for the <see cref="E:Eclo.NetMF.SIM800H.SIM800H.CallReady"/> event.
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.SIM800H.SmsReadyHandler">
+            <summary>
+            Represents the delegate used for the <see cref="E:Eclo.NetMF.SIM800H.SIM800H.SmsReady"/> event.
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.SIM800H.SmsSentReferenceReceivedHandler">
+            <summary>
+            Represents the delegate used for the <see cref="E:Eclo.NetMF.SIM800H.SIM800H.SmsSentReferenceReceived"/> event.
+            </summary>
+            <param name="reference">reference of the Sms sent</param>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.SIM800H.PowerStatusChangedHandler">
+            <summary>
+            Represents the delegate used for the <see cref="E:Eclo.NetMF.SIM800H.SIM800H.PowerStatusChanged"/> event.
+            </summary>
+            <param name="powerStatus"> new power status of the device</param>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.SIM800H.SimCardStatusChangedHandler">
+            <summary>
+            Represents the delegate used for the <see cref="E:Eclo.NetMF.SIM800H.SIM800H.SimCardStatusChanged"/> event.
+            </summary>
+            <param name="simCardStatus"> new SIM card status of the device</param>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.SIM800H.WarningConditionTriggeredHandler">
+            <summary>
+            Represents the delegate used for the <see cref="E:Eclo.NetMF.SIM800H.SIM800H.WarningConditionTriggered"/> event.
+            </summary>
+            <param name="warningCondition">The warning condition that was triggered</param>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.SmsProvider">
+            <summary>
+            SMS client class with methods to send and read SMSs.
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SmsProvider.SendMessageAsync(System.String,System.String,System.AsyncCallback,System.Object)">
+            <summary>
+            Starts an asynchronous operation to send a text message
+            </summary>
+            <param name="destinationNumber">Destination phone number.</param>
+            <param name="message">Message text.</param>
+            <param name="asyncCallback">The callback to be invoked upon completion, optional</param>
+            <param name="asyncState">The state object to be stored against the ReadMessageAsyncResult, optional.</param>
+            <returns>The IMEIAsyncResult</returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SmsProvider.ReadMessage(System.Int32,System.Boolean)">
+            <summary>
+            Requests to read the text message in the specified position.
+            </summary>
+            <param name="memoryPosition">Position in memory where the message is stored</param>
+            <param name="markAsRead">Whether unread messages will be marked as read</param>
+            <returns></returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SmsProvider.ReadMessagesListAsync(Eclo.NetMF.SIM800H.MessageState,System.AsyncCallback,System.Object)">
+            <summary>
+            Starts an asynchronous operation to get a list with message indexes
+            </summary>
+            <param name="state"><see cref="T:Eclo.NetMF.SIM800H.MessageState"/> of the SMS that will be queried</param>
+            <param name="asyncCallback">The callback to be invoked upon completion, optional</param>
+            <param name="asyncState">The state object to be stored against the ReadMessageListAsyncResult, optional</param>
+            <returns>The IMEIAsyncResult</returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SmsProvider.DeleteMessage(System.Int32)">
+            <summary>
+            Delete a text message
+            </summary>
+            <param name="position">Position in memory where the message is stored</param>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SmsProvider.DeleteMessages(Eclo.NetMF.SIM800H.MessageDeleteOption)">
+            <summary>
+            Deletes text messages according to delete option
+            </summary>
+            <param name="deleteOption">option to delete messages that match a criteria or are at specific storage</param>
+            <returns></returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SmsProvider.OnSMSReceived(System.Byte)">
+            <summary>
+            Raises the <see cref="E:Eclo.NetMF.SIM800H.SmsProvider.SMSReceived"/> event.
+            </summary>
+            <param name="messageIndex">Index of the received message</param>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SmsProvider.OnSMSStatusReceived(Eclo.NetMF.SIM800H.MessageStatusReport)">
+            <summary>
+            Raises the <see cref="E:Eclo.NetMF.SIM800H.SmsProvider.SMSStatusReceived"/> event.
+            </summary>
+            <param name="status">Status report for SMS message that has arrived</param>
+        </member>
+        <member name="E:Eclo.NetMF.SIM800H.SmsProvider.SMSReceived">
+            <summary>
+            Event raised when the module receives a new SMS message.
+            </summary>
+        </member>
+        <member name="E:Eclo.NetMF.SIM800H.SmsProvider.SMSStatusReceived">
+            <summary>
+            Event raised when the module receives a new SMS message.
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.SmsProvider.SMSReceivedHandler">
+            <summary>
+            Represents the delegate used for the <see cref="E:Eclo.NetMF.SIM800H.SmsProvider.SMSReceived"/> event.
+            </summary>
+            <param name="messageIndex">Position index of the SMS message that has arrived</param>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.SmsProvider.SMSStatusReceivedHandler">
+            <summary>
+            Represents the delegate used for the <see cref="E:Eclo.NetMF.SIM800H.SmsProvider.SMSStatusReceived"/> event.
+            </summary>
+            <param name="status">Status report for SMS message that has arrived</param>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.MessageDeleteOption">
+            <summary>
+            Available options to delete text messages
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.MessageDeleteOption.Read">
+            <summary>
+            Delete all read messages
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.MessageDeleteOption.Unread">
+            <summary>
+            Delete all unread messages
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.MessageDeleteOption.Sent">
+            <summary>
+            Delete all sent messages
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.MessageDeleteOption.Unsent">
+            <summary>
+            Delete all unsent messages
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.MessageDeleteOption.Inbox">
+            <summary>
+            Delete all received messages
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.MessageDeleteOption.All">
+            <summary>
+            Delete all messages
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.MessageState">
+            <summary>
+            Possible states for a text message
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.MessageState.Error">
+            <summary>
+            Error retrieving message
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.MessageState.ReceivedUnread">
+            <summary>
+            Messages that were received and read
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.MessageState.ReceivedRead">
+            <summary>
+            Messages that were received but not yet read
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.MessageState.StoredUnsent">
+            <summary>
+            Messages that were created but not yet sent
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.MessageState.StoredSent">
+            <summary>
+            Messages that were created and sent
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.MessageState.All">
+            <summary>
+            All messages
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.MessageStatusReport">
+            <summary>
+            Class with message status report
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.SntpClient">
+            <summary>
+            SNTP client class with all methods to perform SNTP requests.
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SntpClient.SyncNetworkTimeAsync(System.String,System.TimeSpan,System.AsyncCallback,System.Object)">
+            <summary>
+            Starts an asynchronous operation to synchronize network time with SNTP server.
+            Requires GPRS bearer profile 1 opened.
+            </summary>
+            <param name="sntpServer">URL or IP address of the NTP server</param>
+            <param name="utcOffset">UTC offset of local time zone.</param>
+            <param name="asyncCallback">The callback to be invoked upon completion, optional</param>
+            <param name="asyncState">The state object to be stored against the OpenGprsContextAsyncResult, optional</param>
+            <returns>The IMEIAsyncResult</returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SntpClient.OnSntpReplyReceived(Eclo.NetMF.SIM800H.SyncResult)">
+            <summary>
+            Raises the <see cref="E:Eclo.NetMF.SIM800H.SntpClient.SntpReplyReceived"/> event.
+            </summary>
+            <param name="syncResult">Result code of SNTP sync request</param>
+        </member>
+        <member name="E:Eclo.NetMF.SIM800H.SntpClient.SntpReplyReceived">
+            <summary>
+            Event raised when the module receives the reply of a SNTP sync request.
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.SntpClient.SntpReplyReceivedHandler">
+            <summary>
+            Represents the delegate used for the <see cref="E:Eclo.NetMF.SIM800H.SntpClient.SntpReplyReceived"/> event.
+            </summary>
+            <param name="syncResult">Result code of SNTP request</param>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.SyncNetworkTimeAsyncResult">
+            <summary>
+            An asynchronous result object returning the result of a request to open a bearer in GPRS context
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SyncNetworkTimeAsyncResult.Result">
+            <summary>
+            Result of SNTP sync operation
+            </summary>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SyncNetworkTimeAsyncResult.End">
+            <summary>
+            Finishes the asynchronous processing and throws an exception if one was generated
+            <remarks>Blocks until the asynchronous processing has completed</remarks>
+            </summary>
+            <returns>Returns the result of the request to open bearer context </returns>
+        </member>
+        <member name="M:Eclo.NetMF.SIM800H.SyncNetworkTimeAsyncResult.Process">
+            <summary>
+            The method used to perform the asynchronous processing
+            </summary>
+        </member>
+        <member name="T:Eclo.NetMF.SIM800H.SyncResult">
+            <summary>
+            Result of SNTP sync request
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SyncResult.NotSet">
+            <summary>
+            value not set
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SyncResult.Error">
+            <summary>
+            Unspecified error
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SyncResult.SyncSuccessful">
+            <summary>
+            Network synchronization successful
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SyncResult.DeviceIsOff">
+            <summary>
+            Device is off
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SyncResult.NotRegisteredAtGsmNetwork">
+            <summary>
+            Device is not registered at GSM network
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SyncResult.NotRegisteredAtGprsNetwork">
+            <summary>
+            Device is not registered at GPRS network
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SyncResult.NetworkError">
+            <summary>
+            Network error
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SyncResult.DnsError">
+            <summary>
+            DNS resolution error
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SyncResult.ConnectionError">
+            <summary>
+            Connection error
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SyncResult.ServerResponseError">
+            <summary>
+            Server response error
+            </summary>
+        </member>
+        <member name="F:Eclo.NetMF.SIM800H.SyncResult.ServerResponseTimeout">
+            <summary>
+            Server Response timeout
+            </summary>
+        </member>
+    </members>
+</doc>
