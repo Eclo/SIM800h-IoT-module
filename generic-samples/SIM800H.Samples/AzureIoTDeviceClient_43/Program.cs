@@ -1,4 +1,4 @@
-using Eclo.NetMF.SIM800H;
+using Eclo.NETMF.SIM800H;
 using Microsoft.Azure.Devices.Client;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Hardware;

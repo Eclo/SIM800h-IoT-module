@@ -3,7 +3,7 @@ using Microsoft.SPOT;
 using System.Threading;
 using Microsoft.SPOT.Hardware;
 using System.IO.Ports;
-using Eclo.NetMF.SIM800H;
+using Eclo.NETMF.SIM800H;
 
 namespace SIM800HSamples
 {

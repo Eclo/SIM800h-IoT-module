@@ -1,6 +1,6 @@
 namespace SIM800HSamples
 {
-    using Eclo.NetMF.SIM800H;
+    using Eclo.NETMF.SIM800H;
 
     static class SamplesExtensions
     {

@@ -1,4 +1,4 @@
-using Eclo.NetMF.SIM800H;
+using Eclo.NETMF.SIM800H;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Hardware;
 using System;
@@ -157,7 +157,7 @@ namespace SIM800HSamples
             //        var result = SIM800H.SntpClient.SyncNetworkTimeAsync("time.nist.gov", TimeSpan.Zero).End();
 
             //        // check result
-            //        if (result == Eclo.NetMF.SIM800H.SyncResult.SyncSuccessful)
+            //        if (result == Eclo.NETMF.SIM800H.SyncResult.SyncSuccessful)
             //        {
             //            // get current date time and update RTC
             //            DateTime rtcValue = SIM800H.GetDateTime();
