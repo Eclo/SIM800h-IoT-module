@@ -7,8 +7,31 @@
     <meta name="description" content="SIM800H IoT Module : ">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link type="text/css" rel="stylesheet" href="stylesheets/lightslider.min.css" />                  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="javascripts/lightslider.min.js"></script>
 
     <title>SIM800H IoT Module</title>
+
+    <script type="text/javascript">
+    	 $(document).ready(function() {
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                slideMargin: 0,
+                speed:500,
+                auto:true,
+                loop:true,
+                pauseOnHover: true,
+                pause: 3000,
+                controls: true,
+                pager: true,
+                enableTouch:true,
+                responsive : [],
+            });
+		});
+    </script>
+
   </head>
 
   <body>
@@ -29,8 +52,14 @@
         <h3>
           <a id="sim800h-iot-module" class="anchor" href="#sim800h-iot-module" aria-hidden="true"><span class="octicon octicon-link"></span></a>
         </h3>
-        <p><img src="images/sim800h_module_diagram_eclo_solutions_1.jpg"/></p>
-          
+        
+        <div>
+            <ul id="image-gallery">
+                <li data-thumb=""><img src="images/sim800h_module_diagram_eclo_solutions_1.jpg"/>
+                <li data-thumb=""><img src="images/sim800h_module_others_eclo_solutions_1.jpg"/>
+            </ul>
+        </div>
+
         <p>Tiny GSM/GPRS module with SIMCOM's SIM800H. Mesuring only 39x48[mm] this module has everything you need to "IoT enable" your next project. We provide a .NET Micro Framework driver that makes using it a breeze.</p>
         <p>Features (supported by the .NET Micro Framework driver)<sup>1)</sup>:</p>
         <ul>
