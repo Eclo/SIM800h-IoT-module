@@ -31,5 +31,29 @@ namespace SIM800HSamples
                     return "";
             }
         }
+
+        internal static string GetWarningDescription(this WarningCondition value)
+        {
+            switch (value)
+            {
+                case WarningCondition.OverVoltagePowerDown:
+                    return "### Over-Voltage Power Down ###";
+
+                case WarningCondition.OverVoltageWarning:
+                    return "### Over-Voltage warning ###";
+
+                case WarningCondition.TemperatureWarning:
+                    return "### High Temperature warning ###";
+
+                case WarningCondition.UnderVoltagePowerDown:
+                    return "### Under-Voltage Power Down ###";
+
+                case WarningCondition.UnderVoltageWarning:
+                    return "### Under-Voltage warning ###";
+
+                default:
+                    return "";
+            }
+        }
     }
 }

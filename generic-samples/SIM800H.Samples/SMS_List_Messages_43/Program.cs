@@ -39,6 +39,9 @@ namespace SIM800HSamples
             // add event handler to be aware of network registration status changes
             SIM800H.GsmNetworkRegistrationChanged += SIM800H_GsmNetworkRegistrationChanged;
 
+            // it's wise to set this event handler to get the warning conditions from the module in case of under-voltage, over temperature, etc.
+            SIM800H.WarningConditionTriggered += SIM800H_WarningConditionTriggered;
+
             // configure SIM800H device
             SIM800H.Configure(sim800PowerKey, sim800SerialPort);
 
@@ -95,6 +98,12 @@ namespace SIM800HSamples
         private static void SIM800H_GsmNetworkRegistrationChanged(NetworkRegistrationState networkState)
         {
             Debug.Print(networkState.GetDescription("GSM"));
+        }
+
+        private static void SIM800H_WarningConditionTriggered(WarningCondition warningCondition)
+        {
+            // get friendly string for this warning condition
+            Debug.Print(SamplesExtensions.GetWarningDescription(warningCondition));
         }
     }
 }

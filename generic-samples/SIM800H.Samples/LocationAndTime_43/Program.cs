@@ -47,6 +47,9 @@ namespace SIM800HSamples
             // add event handler to be aware of GPRS network registration status changes
             SIM800H.GprsNetworkRegistrationChanged += SIM800H_GprsNetworkRegistrationChanged;
 
+            // it's wise to set this event handler to get the warning conditions from the module in case of under-voltage, over temperature, etc.
+            SIM800H.WarningConditionTriggered += SIM800H_WarningConditionTriggered;
+
             // because we need Internet connection the access point configuration (APN) is mandatory
             // the configuration depends on what your network operator requires
             // it may be just the access point name or it may require an user and password too
@@ -112,7 +115,7 @@ namespace SIM800HSamples
                     if (lt.ErrorCode == 0)
                     {
                         // request successfull
-                        Debug.Print("Network time " + lt.DateTime.ToString());
+                        Debug.Print("Network time " + lt.DateTime.ToString() + " GMT");
                         Debug.Print("Location http://www.bing.com/maps/?v=2&form=LMLTSN&cp=" + lt.Latitude.ToString() + "~" + lt.Longitude.ToString() + "&lvl=17&sty=r&encType=1");
                     }
                     else
@@ -123,6 +126,12 @@ namespace SIM800HSamples
 
                 }).Start();
             }
+        }
+
+        private static void SIM800H_WarningConditionTriggered(WarningCondition warningCondition)
+        {
+            // get friendly string for this warning condition
+            Debug.Print(SamplesExtensions.GetWarningDescription(warningCondition));
         }
     }
 }
