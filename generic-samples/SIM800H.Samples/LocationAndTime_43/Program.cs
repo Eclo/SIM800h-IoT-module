@@ -112,13 +112,13 @@ namespace SIM800HSamples
                     if (lt.ErrorCode == 0)
                     {
                         // request successfull
-                        Debug.Print("Current datetime " + lt.DateTime.ToString()
-                                + " @ http://www.bing.com/maps/?v=2&form=LMLTSN&cp=" + lt.Latitude.ToString() + "~" + lt.Longitude.ToString() + "&lvl=17&sty=r&encType=1");
+                        Debug.Print("Network time " + lt.DateTime.ToString());
+                        Debug.Print("Location http://www.bing.com/maps/?v=2&form=LMLTSN&cp=" + lt.Latitude.ToString() + "~" + lt.Longitude.ToString() + "&lvl=17&sty=r&encType=1");
                     }
                     else
                     {
                         // failed to retrieve time and location from network
-                        Debug.Print("### Failed to retrieve time and location from network. Error: " + lt.ErrorCode.ToString() + " ###");
+                        Debug.Print("### Failed to retrieve time and location from network. Error code: " + lt.ErrorCode.ToString() + " ###");
                     }
 
                 }).Start();
