@@ -50,8 +50,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Eclo.NETMF.SIM800H, Version=1.1.68.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Eclo.NETMF.SIM800H.1.1.68\lib\netmf43\Eclo.NETMF.SIM800H.dll</HintPath>
+    <Reference Include="Eclo.NETMF.SIM800H, Version=1.1.71.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Eclo.NETMF.SIM800H.1.1.71\lib\netmf43\Eclo.NETMF.SIM800H.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.SPOT.Graphics" />
@@ -63,9 +63,6 @@
     <Reference Include="System.IO" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -73,6 +70,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Resources\mmsImg.jpg" />
   </ItemGroup>
   <Import Condition="EXISTS('$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets')" Project="$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets" />
