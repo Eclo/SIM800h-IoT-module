@@ -122,6 +122,7 @@
     <HelpKINode Title="GprsSocket.Dispose Method " Url="html/M_Eclo_NETMF_SIM800H_GprsSocket_Dispose.htm" />
     <HelpKINode Title="HttpClient.Dispose Method " Url="html/M_Eclo_NETMF_SIM800H_HttpClient_Dispose.htm" />
     <HelpKINode Title="HttpWebResponse.Dispose Method " Url="html/M_Eclo_NETMF_SIM800H_HttpWebResponse_Dispose.htm" />
+    <HelpKINode Title="MmsClient.Dispose Method " Url="html/M_Eclo_NETMF_SIM800H_MmsClient_Dispose.htm" />
     <HelpKINode Title="SIM800H.Dispose Method " Url="html/M_Eclo_NETMF_SIM800H_SIM800H_Dispose.htm" />
     <HelpKINode Title="SmsProvider.Dispose Method " Url="html/M_Eclo_NETMF_SIM800H_SmsProvider_Dispose.htm" />
     <HelpKINode Title="SntpClient.Dispose Method " Url="html/M_Eclo_NETMF_SIM800H_SntpClient_Dispose.htm" />
@@ -153,12 +154,16 @@
   <HelpKINode Title="Eclo.NETMF.SIM800H.HttpWebRequest class" Url="html/T_Eclo_NETMF_SIM800H_HttpWebRequest.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.HttpWebRequestAsyncResult class" Url="html/T_Eclo_NETMF_SIM800H_HttpWebRequestAsyncResult.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.HttpWebResponse class" Url="html/T_Eclo_NETMF_SIM800H_HttpWebResponse.htm" />
+  <HelpKINode Title="Eclo.NETMF.SIM800H.ImageResource class" Url="html/T_Eclo_NETMF_SIM800H_ImageResource.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.Licensing class" Url="html/T_Eclo_NETMF_SIM800H_Licensing.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.ListTextMessagesAsyncResult class" Url="html/T_Eclo_NETMF_SIM800H_ListTextMessagesAsyncResult.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.LocationAndTime class" Url="html/T_Eclo_NETMF_SIM800H_LocationAndTime.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.MessageDeleteOption enumeration" Url="html/T_Eclo_NETMF_SIM800H_MessageDeleteOption.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.MessageState enumeration" Url="html/T_Eclo_NETMF_SIM800H_MessageState.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.MessageStatusReport class" Url="html/T_Eclo_NETMF_SIM800H_MessageStatusReport.htm" />
+  <HelpKINode Title="Eclo.NETMF.SIM800H.MmsClient class" Url="html/T_Eclo_NETMF_SIM800H_MmsClient.htm" />
+  <HelpKINode Title="Eclo.NETMF.SIM800H.MmsConfiguration class" Url="html/T_Eclo_NETMF_SIM800H_MmsConfiguration.htm" />
+  <HelpKINode Title="Eclo.NETMF.SIM800H.MmsMessage class" Url="html/T_Eclo_NETMF_SIM800H_MmsMessage.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.NetworkRegistrationState enumeration" Url="html/T_Eclo_NETMF_SIM800H_NetworkRegistrationState.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.OpenBearerAsyncResult class" Url="html/T_Eclo_NETMF_SIM800H_OpenBearerAsyncResult.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.OpenBearerResult enumeration" Url="html/T_Eclo_NETMF_SIM800H_OpenBearerResult.htm" />
@@ -168,6 +173,7 @@
   <HelpKINode Title="Eclo.NETMF.SIM800H.PowerStatus enumeration" Url="html/T_Eclo_NETMF_SIM800H_PowerStatus.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.ProtocolType enumeration" Url="html/T_Eclo_NETMF_SIM800H_ProtocolType.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.ReturnedState enumeration" Url="html/T_Eclo_NETMF_SIM800H_ReturnedState.htm" />
+  <HelpKINode Title="Eclo.NETMF.SIM800H.SendMmsMessageAsyncResult class" Url="html/T_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.SendTextMessageAsyncResult class" Url="html/T_Eclo_NETMF_SIM800H_SendTextMessageAsyncResult.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.SignalStrength enumeration" Url="html/T_Eclo_NETMF_SIM800H_SignalStrength.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.SIM800H class" Url="html/T_Eclo_NETMF_SIM800H_SIM800H.htm" />
@@ -201,11 +207,18 @@
     <HelpKINode Title="ListTextMessagesAsyncResult.End Method " Url="html/M_Eclo_NETMF_SIM800H_ListTextMessagesAsyncResult_End.htm" />
     <HelpKINode Title="OpenBearerAsyncResult.End Method " Url="html/M_Eclo_NETMF_SIM800H_OpenBearerAsyncResult_End.htm" />
     <HelpKINode Title="PowerOnAsyncResult.End Method " Url="html/M_Eclo_NETMF_SIM800H_PowerOnAsyncResult_End.htm" />
+    <HelpKINode Title="SendMmsMessageAsyncResult.End Method " Url="html/M_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult_End.htm" />
     <HelpKINode Title="SendTextMessageAsyncResult.End Method " Url="html/M_Eclo_NETMF_SIM800H_SendTextMessageAsyncResult_End.htm" />
     <HelpKINode Title="SyncNetworkTimeAsyncResult.End Method " Url="html/M_Eclo_NETMF_SIM800H_SyncNetworkTimeAsyncResult_End.htm" />
   </HelpKINode>
-  <HelpKINode Title="Equality operator" Url="html/M_Eclo_NETMF_SIM800H_AccessPointConfiguration_op_Equality.htm" />
-  <HelpKINode Title="Equals method" Url="html/M_Eclo_NETMF_SIM800H_AccessPointConfiguration_Equals.htm" />
+  <HelpKINode Title="Equality operator">
+    <HelpKINode Title="AccessPointConfiguration.Equality Operator " Url="html/M_Eclo_NETMF_SIM800H_AccessPointConfiguration_op_Equality.htm" />
+    <HelpKINode Title="MmsConfiguration.Equality Operator " Url="html/M_Eclo_NETMF_SIM800H_MmsConfiguration_op_Equality.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Equals method">
+    <HelpKINode Title="AccessPointConfiguration.Equals Method " Url="html/M_Eclo_NETMF_SIM800H_AccessPointConfiguration_Equals.htm" />
+    <HelpKINode Title="MmsConfiguration.Equals Method " Url="html/M_Eclo_NETMF_SIM800H_MmsConfiguration_Equals.htm" />
+  </HelpKINode>
   <HelpKINode Title="Error enumeration member">
     <HelpKINode Title="ConnectGprsResult Enumeration" Url="html/T_Eclo_NETMF_SIM800H_ConnectGprsResult.htm" />
     <HelpKINode Title="MessageState Enumeration" Url="html/T_Eclo_NETMF_SIM800H_MessageState.htm" />
@@ -218,12 +231,14 @@
   </HelpKINode>
   <HelpKINode Title="ErrorCode property">
     <HelpKINode Title="LocationAndTime.ErrorCode Property " Url="html/P_Eclo_NETMF_SIM800H_LocationAndTime_ErrorCode.htm" />
+    <HelpKINode Title="SendMmsMessageAsyncResult.ErrorCode Property " Url="html/P_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult_ErrorCode.htm" />
     <HelpKINode Title="SocketException.ErrorCode Property " Url="html/P_Eclo_NETMF_SIM800H_SocketException_ErrorCode.htm" />
   </HelpKINode>
   <HelpKINode Title="Failed enumeration member">
     <HelpKINode Title="ConnectGprsResult Enumeration" Url="html/T_Eclo_NETMF_SIM800H_ConnectGprsResult.htm" />
     <HelpKINode Title="OpenBearerResult Enumeration" Url="html/T_Eclo_NETMF_SIM800H_OpenBearerResult.htm" />
   </HelpKINode>
+  <HelpKINode Title="FileName property" Url="html/P_Eclo_NETMF_SIM800H_ImageResource_FileName.htm" />
   <HelpKINode Title="FileStorage class">
     <HelpKINode Title="FileStorage Class" Url="html/T_Eclo_NETMF_SIM800H_FileStorage.htm" />
     <HelpKINode Title="about FileStorage class" Url="html/T_Eclo_NETMF_SIM800H_FileStorage.htm" />
@@ -246,7 +261,10 @@
   <HelpKINode Title="GetAvailableStorage method" Url="html/M_Eclo_NETMF_SIM800H_FileStorage_GetAvailableStorage.htm" />
   <HelpKINode Title="GetDateTime method" Url="html/M_Eclo_NETMF_SIM800H_SIM800H_GetDateTime.htm" />
   <HelpKINode Title="GetFileSize method" Url="html/M_Eclo_NETMF_SIM800H_FileStorage_GetFileSize.htm" />
-  <HelpKINode Title="GetHashCode method" Url="html/M_Eclo_NETMF_SIM800H_AccessPointConfiguration_GetHashCode.htm" />
+  <HelpKINode Title="GetHashCode method">
+    <HelpKINode Title="AccessPointConfiguration.GetHashCode Method " Url="html/M_Eclo_NETMF_SIM800H_AccessPointConfiguration_GetHashCode.htm" />
+    <HelpKINode Title="MmsConfiguration.GetHashCode Method " Url="html/M_Eclo_NETMF_SIM800H_MmsConfiguration_GetHashCode.htm" />
+  </HelpKINode>
   <HelpKINode Title="GetRequestStream method" Url="html/M_Eclo_NETMF_SIM800H_HttpWebRequest_GetRequestStream.htm" />
   <HelpKINode Title="GetResponse method" Url="html/M_Eclo_NETMF_SIM800H_HttpWebRequest_GetResponse.htm" />
   <HelpKINode Title="GetResponseStream method" Url="html/M_Eclo_NETMF_SIM800H_HttpWebResponse_GetResponseStream.htm" />
@@ -390,10 +408,25 @@
   <HelpKINode Title="HttpWebResponse.Headers property" Url="html/P_Eclo_NETMF_SIM800H_HttpWebResponse_Headers.htm" />
   <HelpKINode Title="HttpWebResponse.RequestSuccessful property" Url="html/P_Eclo_NETMF_SIM800H_HttpWebResponse_RequestSuccessful.htm" />
   <HelpKINode Title="HttpWebResponse.StatusCode property" Url="html/P_Eclo_NETMF_SIM800H_HttpWebResponse_StatusCode.htm" />
+  <HelpKINode Title="Image property" Url="html/P_Eclo_NETMF_SIM800H_MmsMessage_Image.htm" />
+  <HelpKINode Title="ImageFile property" Url="html/P_Eclo_NETMF_SIM800H_ImageResource_ImageFile.htm" />
+  <HelpKINode Title="ImageResource class">
+    <HelpKINode Title="ImageResource Class" Url="html/T_Eclo_NETMF_SIM800H_ImageResource.htm" />
+    <HelpKINode Title="about ImageResource class" Url="html/T_Eclo_NETMF_SIM800H_ImageResource.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Eclo_NETMF_SIM800H_ImageResource__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_ImageResource.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_ImageResource.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImageResource.FileName property" Url="html/P_Eclo_NETMF_SIM800H_ImageResource_FileName.htm" />
+  <HelpKINode Title="ImageResource.ImageFile property" Url="html/P_Eclo_NETMF_SIM800H_ImageResource_ImageFile.htm" />
+  <HelpKINode Title="ImageResource.ImageResource constructor" Url="html/M_Eclo_NETMF_SIM800H_ImageResource__ctor.htm" />
   <HelpKINode Title="IMEI property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_IMEI.htm" />
   <HelpKINode Title="Inbox enumeration member" Url="html/T_Eclo_NETMF_SIM800H_MessageDeleteOption.htm" />
   <HelpKINode Title="Index property" Url="html/P_Eclo_NETMF_SIM800H_TextMessage_Index.htm" />
-  <HelpKINode Title="Inequality operator" Url="html/M_Eclo_NETMF_SIM800H_AccessPointConfiguration_op_Inequality.htm" />
+  <HelpKINode Title="Inequality operator">
+    <HelpKINode Title="AccessPointConfiguration.Inequality Operator " Url="html/M_Eclo_NETMF_SIM800H_AccessPointConfiguration_op_Inequality.htm" />
+    <HelpKINode Title="MmsConfiguration.Inequality Operator " Url="html/M_Eclo_NETMF_SIM800H_MmsConfiguration_op_Inequality.htm" />
+  </HelpKINode>
   <HelpKINode Title="Initial enumeration member" Url="html/T_Eclo_NETMF_SIM800H_ConnectionStatus.htm" />
   <HelpKINode Title="Inserted enumeration member" Url="html/T_Eclo_NETMF_SIM800H_SimCardStatus.htm" />
   <HelpKINode Title="InternalServerError enumeration member" Url="html/T_Eclo_NETMF_SIM800H_HttpStatusCode.htm" />
@@ -408,6 +441,7 @@
     <HelpKINode Title="about Licensing class" Url="html/T_Eclo_NETMF_SIM800H_Licensing.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_Licensing.htm" />
   </HelpKINode>
+  <HelpKINode Title="Licensing.ReadLicenseKey method" Url="html/M_Eclo_NETMF_SIM800H_Licensing_ReadLicenseKey.htm" />
   <HelpKINode Title="Licensing.RenewLicenseKey method" Url="html/M_Eclo_NETMF_SIM800H_Licensing_RenewLicenseKey.htm" />
   <HelpKINode Title="Licensing.SaveLicenseKey method" Url="html/M_Eclo_NETMF_SIM800H_Licensing_SaveLicenseKey.htm" />
   <HelpKINode Title="ListTextMessagesAsync method" Url="html/M_Eclo_NETMF_SIM800H_SmsProvider_ListTextMessagesAsync.htm" />
@@ -459,6 +493,45 @@
     <HelpKINode Title="PhoneFuncionality Enumeration" Url="html/T_Eclo_NETMF_SIM800H_PhoneFuncionality.htm" />
     <HelpKINode Title="PowerStatus Enumeration" Url="html/T_Eclo_NETMF_SIM800H_PowerStatus.htm" />
   </HelpKINode>
+  <HelpKINode Title="MMSC property" Url="html/P_Eclo_NETMF_SIM800H_MmsConfiguration_MMSC.htm" />
+  <HelpKINode Title="MmsClient class">
+    <HelpKINode Title="MmsClient Class" Url="html/T_Eclo_NETMF_SIM800H_MmsClient.htm" />
+    <HelpKINode Title="about MmsClient class" Url="html/T_Eclo_NETMF_SIM800H_MmsClient.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_MmsClient.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MmsClient property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_MmsClient.htm" />
+  <HelpKINode Title="MmsClient.Dispose method" Url="html/M_Eclo_NETMF_SIM800H_MmsClient_Dispose.htm" />
+  <HelpKINode Title="MmsClient.SendMmsMessageAsync method" Url="html/M_Eclo_NETMF_SIM800H_MmsClient_SendMmsMessageAsync.htm" />
+  <HelpKINode Title="MmsConfiguration class">
+    <HelpKINode Title="MmsConfiguration Class" Url="html/T_Eclo_NETMF_SIM800H_MmsConfiguration.htm" />
+    <HelpKINode Title="about MmsConfiguration class" Url="html/T_Eclo_NETMF_SIM800H_MmsConfiguration.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_Eclo_NETMF_SIM800H_MmsConfiguration__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_MmsConfiguration.htm" />
+    <HelpKINode Title="operators" Url="html/Operators_T_Eclo_NETMF_SIM800H_MmsConfiguration.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_MmsConfiguration.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MmsConfiguration property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_MmsConfiguration.htm" />
+  <HelpKINode Title="MmsConfiguration.Equality operator" Url="html/M_Eclo_NETMF_SIM800H_MmsConfiguration_op_Equality.htm" />
+  <HelpKINode Title="MmsConfiguration.Equals method" Url="html/M_Eclo_NETMF_SIM800H_MmsConfiguration_Equals.htm" />
+  <HelpKINode Title="MmsConfiguration.GetHashCode method" Url="html/M_Eclo_NETMF_SIM800H_MmsConfiguration_GetHashCode.htm" />
+  <HelpKINode Title="MmsConfiguration.Inequality operator" Url="html/M_Eclo_NETMF_SIM800H_MmsConfiguration_op_Inequality.htm" />
+  <HelpKINode Title="MmsConfiguration.MMSC property" Url="html/P_Eclo_NETMF_SIM800H_MmsConfiguration_MMSC.htm" />
+  <HelpKINode Title="MmsConfiguration.MmsConfiguration constructor" Url="html/Overload_Eclo_NETMF_SIM800H_MmsConfiguration__ctor.htm" />
+  <HelpKINode Title="MmsConfiguration.Parse method" Url="html/M_Eclo_NETMF_SIM800H_MmsConfiguration_Parse.htm" />
+  <HelpKINode Title="MmsConfiguration.Port property" Url="html/P_Eclo_NETMF_SIM800H_MmsConfiguration_Port.htm" />
+  <HelpKINode Title="MmsConfiguration.Proxy property" Url="html/P_Eclo_NETMF_SIM800H_MmsConfiguration_Proxy.htm" />
+  <HelpKINode Title="MmsConfiguration.ToString method" Url="html/M_Eclo_NETMF_SIM800H_MmsConfiguration_ToString.htm" />
+  <HelpKINode Title="MmsMessage class">
+    <HelpKINode Title="MmsMessage Class" Url="html/T_Eclo_NETMF_SIM800H_MmsMessage.htm" />
+    <HelpKINode Title="about MmsMessage class" Url="html/T_Eclo_NETMF_SIM800H_MmsMessage.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Eclo_NETMF_SIM800H_MmsMessage__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_MmsMessage.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_MmsMessage.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MmsMessage.Image property" Url="html/P_Eclo_NETMF_SIM800H_MmsMessage_Image.htm" />
+  <HelpKINode Title="MmsMessage.MmsMessage constructor" Url="html/M_Eclo_NETMF_SIM800H_MmsMessage__ctor.htm" />
+  <HelpKINode Title="MmsMessage.Text property" Url="html/P_Eclo_NETMF_SIM800H_MmsMessage_Text.htm" />
+  <HelpKINode Title="MmsMessage.Title property" Url="html/P_Eclo_NETMF_SIM800H_MmsMessage_Title.htm" />
   <HelpKINode Title="ModelIdentification property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_ModelIdentification.htm" />
   <HelpKINode Title="Moved enumeration member" Url="html/T_Eclo_NETMF_SIM800H_HttpStatusCode.htm" />
   <HelpKINode Title="MovedPermanently enumeration member" Url="html/T_Eclo_NETMF_SIM800H_HttpStatusCode.htm" />
@@ -510,7 +583,10 @@
   <HelpKINode Title="OriginalString property" Url="html/P_Eclo_NETMF_SIM800H_Uri_OriginalString.htm" />
   <HelpKINode Title="OverVoltagePowerDown enumeration member" Url="html/T_Eclo_NETMF_SIM800H_WarningCondition.htm" />
   <HelpKINode Title="OverVoltageWarning enumeration member" Url="html/T_Eclo_NETMF_SIM800H_WarningCondition.htm" />
-  <HelpKINode Title="Parse method" Url="html/M_Eclo_NETMF_SIM800H_AccessPointConfiguration_Parse.htm" />
+  <HelpKINode Title="Parse method">
+    <HelpKINode Title="AccessPointConfiguration.Parse Method " Url="html/M_Eclo_NETMF_SIM800H_AccessPointConfiguration_Parse.htm" />
+    <HelpKINode Title="MmsConfiguration.Parse Method " Url="html/M_Eclo_NETMF_SIM800H_MmsConfiguration_Parse.htm" />
+  </HelpKINode>
   <HelpKINode Title="PartialContent enumeration member" Url="html/T_Eclo_NETMF_SIM800H_HttpStatusCode.htm" />
   <HelpKINode Title="Password property" Url="html/P_Eclo_NETMF_SIM800H_AccessPointConfiguration_Password.htm" />
   <HelpKINode Title="PerformHttpWebRequestAsync method" Url="html/M_Eclo_NETMF_SIM800H_HttpClient_PerformHttpWebRequestAsync.htm" />
@@ -520,7 +596,10 @@
   <HelpKINode Title="PIN enumeration member" Url="html/T_Eclo_NETMF_SIM800H_PinState.htm" />
   <HelpKINode Title="PIN2 enumeration member" Url="html/T_Eclo_NETMF_SIM800H_PinState.htm" />
   <HelpKINode Title="PinState enumeration" Url="html/T_Eclo_NETMF_SIM800H_PinState.htm" />
-  <HelpKINode Title="Port property" Url="html/P_Eclo_NETMF_SIM800H_Uri_Port.htm" />
+  <HelpKINode Title="Port property">
+    <HelpKINode Title="MmsConfiguration.Port Property " Url="html/P_Eclo_NETMF_SIM800H_MmsConfiguration_Port.htm" />
+    <HelpKINode Title="Uri.Port Property " Url="html/P_Eclo_NETMF_SIM800H_Uri_Port.htm" />
+  </HelpKINode>
   <HelpKINode Title="POST enumeration member" Url="html/T_Eclo_NETMF_SIM800H_HttpAction.htm" />
   <HelpKINode Title="PowerOff method" Url="html/M_Eclo_NETMF_SIM800H_SIM800H_PowerOff.htm" />
   <HelpKINode Title="PowerOnAsync method" Url="html/M_Eclo_NETMF_SIM800H_SIM800H_PowerOnAsync.htm" />
@@ -548,15 +627,18 @@
     <HelpKINode Title="ListTextMessagesAsyncResult.Process Method " Url="html/M_Eclo_NETMF_SIM800H_ListTextMessagesAsyncResult_Process.htm" />
     <HelpKINode Title="OpenBearerAsyncResult.Process Method " Url="html/M_Eclo_NETMF_SIM800H_OpenBearerAsyncResult_Process.htm" />
     <HelpKINode Title="PowerOnAsyncResult.Process Method " Url="html/M_Eclo_NETMF_SIM800H_PowerOnAsyncResult_Process.htm" />
+    <HelpKINode Title="SendMmsMessageAsyncResult.Process Method " Url="html/M_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult_Process.htm" />
     <HelpKINode Title="SendTextMessageAsyncResult.Process Method " Url="html/M_Eclo_NETMF_SIM800H_SendTextMessageAsyncResult_Process.htm" />
     <HelpKINode Title="SyncNetworkTimeAsyncResult.Process Method " Url="html/M_Eclo_NETMF_SIM800H_SyncNetworkTimeAsyncResult_Process.htm" />
   </HelpKINode>
   <HelpKINode Title="ProtocolNotSupported enumeration member" Url="html/T_Eclo_NETMF_SIM800H_SocketError.htm" />
   <HelpKINode Title="ProtocolType enumeration" Url="html/T_Eclo_NETMF_SIM800H_ProtocolType.htm" />
+  <HelpKINode Title="Proxy property" Url="html/P_Eclo_NETMF_SIM800H_MmsConfiguration_Proxy.htm" />
   <HelpKINode Title="PUK enumeration member" Url="html/T_Eclo_NETMF_SIM800H_PinState.htm" />
   <HelpKINode Title="PUK2 enumeration member" Url="html/T_Eclo_NETMF_SIM800H_PinState.htm" />
   <HelpKINode Title="Read enumeration member" Url="html/T_Eclo_NETMF_SIM800H_MessageDeleteOption.htm" />
   <HelpKINode Title="ReadFile method" Url="html/M_Eclo_NETMF_SIM800H_FileStorage_ReadFile.htm" />
+  <HelpKINode Title="ReadLicenseKey method" Url="html/M_Eclo_NETMF_SIM800H_Licensing_ReadLicenseKey.htm" />
   <HelpKINode Title="ReadTextMessage method" Url="html/M_Eclo_NETMF_SIM800H_SmsProvider_ReadTextMessage.htm" />
   <HelpKINode Title="Ready enumeration member" Url="html/T_Eclo_NETMF_SIM800H_PinState.htm" />
   <HelpKINode Title="Receive method" Url="html/M_Eclo_NETMF_SIM800H_GprsSocket_Receive.htm" />
@@ -595,6 +677,18 @@
   <HelpKINode Title="Scheme property" Url="html/P_Eclo_NETMF_SIM800H_Uri_Scheme.htm" />
   <HelpKINode Title="Searching enumeration member" Url="html/T_Eclo_NETMF_SIM800H_NetworkRegistrationState.htm" />
   <HelpKINode Title="Send method" Url="html/Overload_Eclo_NETMF_SIM800H_GprsSocket_Send.htm" />
+  <HelpKINode Title="SendMmsMessageAsync method" Url="html/M_Eclo_NETMF_SIM800H_MmsClient_SendMmsMessageAsync.htm" />
+  <HelpKINode Title="SendMmsMessageAsyncResult class">
+    <HelpKINode Title="SendMmsMessageAsyncResult Class" Url="html/T_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult.htm" />
+    <HelpKINode Title="about SendMmsMessageAsyncResult class" Url="html/T_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SendMmsMessageAsyncResult.End method" Url="html/M_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult_End.htm" />
+  <HelpKINode Title="SendMmsMessageAsyncResult.ErrorCode property" Url="html/P_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult_ErrorCode.htm" />
+  <HelpKINode Title="SendMmsMessageAsyncResult.Process method" Url="html/M_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult_Process.htm" />
+  <HelpKINode Title="SendMmsMessageAsyncResult.SendMmsMessageAsyncResult constructor" Url="html/M_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult__ctor.htm" />
   <HelpKINode Title="SendTextMessageAsync method" Url="html/M_Eclo_NETMF_SIM800H_SmsProvider_SendTextMessageAsync.htm" />
   <HelpKINode Title="SendTextMessageAsyncResult class">
     <HelpKINode Title="SendTextMessageAsyncResult Class" Url="html/T_Eclo_NETMF_SIM800H_SendTextMessageAsyncResult.htm" />
@@ -615,7 +709,6 @@
   <HelpKINode Title="ServiceCenterTimeStamp property" Url="html/P_Eclo_NETMF_SIM800H_MessageStatusReport_ServiceCenterTimeStamp.htm" />
   <HelpKINode Title="ServiceUnavailable enumeration member" Url="html/T_Eclo_NETMF_SIM800H_HttpStatusCode.htm" />
   <HelpKINode Title="SetPhoneFuncionality method" Url="html/M_Eclo_NETMF_SIM800H_SIM800H_SetPhoneFuncionality.htm" />
-  <HelpKINode Title="SetSerialInterfaceBaudRate method" Url="html/M_Eclo_NETMF_SIM800H_SIM800H_SetSerialInterfaceBaudRate.htm" />
   <HelpKINode Title="SignalStrength enumeration" Url="html/T_Eclo_NETMF_SIM800H_SignalStrength.htm" />
   <HelpKINode Title="SIM800H class">
     <HelpKINode Title="SIM800H Class" Url="html/T_Eclo_NETMF_SIM800H_SIM800H.htm" />
@@ -646,6 +739,8 @@
   <HelpKINode Title="SIM800H.IMEI property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_IMEI.htm" />
   <HelpKINode Title="SIM800H.IpAddress property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_IpAddress.htm" />
   <HelpKINode Title="SIM800H.MaxSockets property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_MaxSockets.htm" />
+  <HelpKINode Title="SIM800H.MmsClient property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_MmsClient.htm" />
+  <HelpKINode Title="SIM800H.MmsConfiguration property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_MmsConfiguration.htm" />
   <HelpKINode Title="SIM800H.ModelIdentification property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_ModelIdentification.htm" />
   <HelpKINode Title="SIM800H.PowerOff method" Url="html/M_Eclo_NETMF_SIM800H_SIM800H_PowerOff.htm" />
   <HelpKINode Title="SIM800H.PowerOnAsync method" Url="html/M_Eclo_NETMF_SIM800H_SIM800H_PowerOnAsync.htm" />
@@ -658,7 +753,6 @@
   <HelpKINode Title="SIM800H.RetrieveSignalStrength method" Url="html/M_Eclo_NETMF_SIM800H_SIM800H_RetrieveSignalStrength.htm" />
   <HelpKINode Title="SIM800H.SerialInterfaceBaudRate property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_SerialInterfaceBaudRate.htm" />
   <HelpKINode Title="SIM800H.SetPhoneFuncionality method" Url="html/M_Eclo_NETMF_SIM800H_SIM800H_SetPhoneFuncionality.htm" />
-  <HelpKINode Title="SIM800H.SetSerialInterfaceBaudRate method" Url="html/M_Eclo_NETMF_SIM800H_SIM800H_SetSerialInterfaceBaudRate.htm" />
   <HelpKINode Title="SIM800H.SIMCardStatus property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_SIMCardStatus.htm" />
   <HelpKINode Title="SIM800H.SimCardStatusChanged event" Url="html/E_Eclo_NETMF_SIM800H_SIM800H_SimCardStatusChanged.htm" />
   <HelpKINode Title="SIM800H.SimCardStatusChangedHandler delegate" Url="html/T_Eclo_NETMF_SIM800H_SIM800H_SimCardStatusChangedHandler.htm" />
@@ -755,6 +849,7 @@
   <HelpKINode Title="TemperatureWarning enumeration member" Url="html/T_Eclo_NETMF_SIM800H_WarningCondition.htm" />
   <HelpKINode Title="TemporaryRedirect enumeration member" Url="html/T_Eclo_NETMF_SIM800H_HttpStatusCode.htm" />
   <HelpKINode Title="Text field" Url="html/F_Eclo_NETMF_SIM800H_TextMessage_Text.htm" />
+  <HelpKINode Title="Text property" Url="html/P_Eclo_NETMF_SIM800H_MmsMessage_Text.htm" />
   <HelpKINode Title="TextMessage class">
     <HelpKINode Title="TextMessage Class" Url="html/T_Eclo_NETMF_SIM800H_TextMessage.htm" />
     <HelpKINode Title="about TextMessage class" Url="html/T_Eclo_NETMF_SIM800H_TextMessage.htm" />
@@ -770,9 +865,13 @@
   <HelpKINode Title="TextMessage.TextMessage constructor" Url="html/Overload_Eclo_NETMF_SIM800H_TextMessage__ctor.htm" />
   <HelpKINode Title="TextMessage.Timestamp field" Url="html/F_Eclo_NETMF_SIM800H_TextMessage_Timestamp.htm" />
   <HelpKINode Title="Timestamp field" Url="html/F_Eclo_NETMF_SIM800H_TextMessage_Timestamp.htm" />
+  <HelpKINode Title="Title property" Url="html/P_Eclo_NETMF_SIM800H_MmsMessage_Title.htm" />
   <HelpKINode Title="TooManyOpenSockets enumeration member" Url="html/T_Eclo_NETMF_SIM800H_SocketError.htm" />
   <HelpKINode Title="TORA property" Url="html/P_Eclo_NETMF_SIM800H_MessageStatusReport_TORA.htm" />
-  <HelpKINode Title="ToString method" Url="html/M_Eclo_NETMF_SIM800H_AccessPointConfiguration_ToString.htm" />
+  <HelpKINode Title="ToString method">
+    <HelpKINode Title="AccessPointConfiguration.ToString Method " Url="html/M_Eclo_NETMF_SIM800H_AccessPointConfiguration_ToString.htm" />
+    <HelpKINode Title="MmsConfiguration.ToString Method " Url="html/M_Eclo_NETMF_SIM800H_MmsConfiguration_ToString.htm" />
+  </HelpKINode>
   <HelpKINode Title="Udp enumeration member" Url="html/T_Eclo_NETMF_SIM800H_ProtocolType.htm" />
   <HelpKINode Title="Unauthorized enumeration member" Url="html/T_Eclo_NETMF_SIM800H_HttpStatusCode.htm" />
   <HelpKINode Title="UnderVoltagePowerDown enumeration member" Url="html/T_Eclo_NETMF_SIM800H_WarningCondition.htm" />
