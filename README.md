@@ -1,3 +1,6 @@
+[![NuGet version](https://badge.fury.io/nu/Eclo.NetMF.SIM800H.svg)](https://badge.fury.io/nu/Eclo.NetMF.SIM800H)
+
+
 # SIM800H IoT module
 
 You've found the GitHub repository for developement resources related to Eclo Solutions SIM800H IoT module.
