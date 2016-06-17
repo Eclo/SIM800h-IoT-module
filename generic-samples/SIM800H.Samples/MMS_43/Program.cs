@@ -135,7 +135,7 @@ namespace SIM800HSamples
                     SIM800H.MmsClient.SendMmsMessageAsync(mmsDestination, msg, (r) =>
                     {
                         // check if MMS was sent succesfully
-                        if(((SendMmsMessageAsyncResult)r).End())
+                        if (((SendMmsMessageAsyncResult)r).Result)
                         {
                             Debug.Print("MMS sent successfully!");
                         }
