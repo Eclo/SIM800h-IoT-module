@@ -1,9 +1,9 @@
 [![NuGet version](https://badge.fury.io/nu/Eclo.NetMF.SIM800H.svg)](https://badge.fury.io/nu/Eclo.NetMF.SIM800H)
 
+[![Join the chat at https://gitter.im/Eclo/SIM800h-IoT-module](https://badges.gitter.im/Eclo/SIM800h-IoT-module.svg)](https://gitter.im/Eclo/SIM800h-IoT-module?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 
 # SIM800H IoT module
-
-[![Join the chat at https://gitter.im/Eclo/SIM800h-IoT-module](https://badges.gitter.im/Eclo/SIM800h-IoT-module.svg)](https://gitter.im/Eclo/SIM800h-IoT-module?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 You've found the GitHub repository for developement resources related to Eclo Solutions SIM800H IoT module.
 
