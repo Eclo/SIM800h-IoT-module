@@ -2,67 +2,67 @@
 <HelpTOC>
 
   <HelpTOCNode Title="Welcome" Url="html/ba932918-413c-47ef-9639-54f39bc9c82e.htm" />
-  <HelpTOCNode Id="47420b9a-356f-4922-9420-6ee0c9e10bec" Title="Eclo.NETMF.SIM800H" Url="html/N_Eclo_NETMF_SIM800H.htm">
-    <HelpTOCNode Id="1cc516de-8437-4c30-9ab1-b9c293bab85d" Title="AccessPointConfiguration Class" Url="html/T_Eclo_NETMF_SIM800H_AccessPointConfiguration.htm">
-      <HelpTOCNode Id="1dad99c6-cf0b-40a4-b015-bdaf7b64d2e2" Title="AccessPointConfiguration Constructor " Url="html/Overload_Eclo_NETMF_SIM800H_AccessPointConfiguration__ctor.htm">
+  <HelpTOCNode Id="97d09806-b63b-455c-9837-14076f8d6d01" Title="Eclo.NETMF.SIM800H" Url="html/N_Eclo_NETMF_SIM800H.htm">
+    <HelpTOCNode Id="48c8ae49-da07-483d-a2bf-da52be11f278" Title="AccessPointConfiguration Class" Url="html/T_Eclo_NETMF_SIM800H_AccessPointConfiguration.htm">
+      <HelpTOCNode Id="c3e02f5f-e1b9-4039-9796-dd811a2ce5e3" Title="AccessPointConfiguration Constructor " Url="html/Overload_Eclo_NETMF_SIM800H_AccessPointConfiguration__ctor.htm">
         <HelpTOCNode Title="AccessPointConfiguration Constructor " Url="html/M_Eclo_NETMF_SIM800H_AccessPointConfiguration__ctor.htm" />
         <HelpTOCNode Title="AccessPointConfiguration Constructor (String)" Url="html/M_Eclo_NETMF_SIM800H_AccessPointConfiguration__ctor_1.htm" />
         <HelpTOCNode Title="AccessPointConfiguration Constructor (String, String, String)" Url="html/M_Eclo_NETMF_SIM800H_AccessPointConfiguration__ctor_2.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="e2958dc1-ab57-4b15-bebd-000d59800b6b" Title="AccessPointConfiguration Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_AccessPointConfiguration.htm">
+      <HelpTOCNode Id="d377203c-2f36-4091-ab32-efe8b25dfbbc" Title="AccessPointConfiguration Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_AccessPointConfiguration.htm">
         <HelpTOCNode Title="AccessPointName Property " Url="html/P_Eclo_NETMF_SIM800H_AccessPointConfiguration_AccessPointName.htm" />
         <HelpTOCNode Title="Password Property " Url="html/P_Eclo_NETMF_SIM800H_AccessPointConfiguration_Password.htm" />
         <HelpTOCNode Title="UserName Property " Url="html/P_Eclo_NETMF_SIM800H_AccessPointConfiguration_UserName.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="a6f6b6fc-817d-40b5-8f68-06e38a1a28de" Title="AccessPointConfiguration Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_AccessPointConfiguration.htm">
+      <HelpTOCNode Id="a8d80f7a-43d1-4e5c-a434-a6076e5570d9" Title="AccessPointConfiguration Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_AccessPointConfiguration.htm">
         <HelpTOCNode Title="Equals Method " Url="html/M_Eclo_NETMF_SIM800H_AccessPointConfiguration_Equals.htm" />
         <HelpTOCNode Title="GetHashCode Method " Url="html/M_Eclo_NETMF_SIM800H_AccessPointConfiguration_GetHashCode.htm" />
         <HelpTOCNode Title="Parse Method " Url="html/M_Eclo_NETMF_SIM800H_AccessPointConfiguration_Parse.htm" />
         <HelpTOCNode Title="ToString Method " Url="html/M_Eclo_NETMF_SIM800H_AccessPointConfiguration_ToString.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="9c29768f-9779-48f4-b099-a3fd3ae2309e" Title="AccessPointConfiguration Operators" Url="html/Operators_T_Eclo_NETMF_SIM800H_AccessPointConfiguration.htm">
+      <HelpTOCNode Id="ef38b784-d677-4176-8a25-be65e8fa8472" Title="AccessPointConfiguration Operators" Url="html/Operators_T_Eclo_NETMF_SIM800H_AccessPointConfiguration.htm">
         <HelpTOCNode Title="Equality Operator " Url="html/M_Eclo_NETMF_SIM800H_AccessPointConfiguration_op_Equality.htm" />
         <HelpTOCNode Title="Inequality Operator " Url="html/M_Eclo_NETMF_SIM800H_AccessPointConfiguration_op_Inequality.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="77a80d8c-dd43-436f-b10a-7be2565d08ea" Title="AtCommandResult Class" Url="html/T_Eclo_NETMF_SIM800H_AtCommandResult.htm">
-      <HelpTOCNode Id="0d741be4-fe41-4e74-8217-343d8093dbec" Title="AtCommandResult Constructor " Url="html/Overload_Eclo_NETMF_SIM800H_AtCommandResult__ctor.htm">
+    <HelpTOCNode Id="6de9567e-2c3e-4deb-8f86-b9af7b9bb2cd" Title="AtCommandResult Class" Url="html/T_Eclo_NETMF_SIM800H_AtCommandResult.htm">
+      <HelpTOCNode Id="f9efaca2-a9bc-4467-b1a8-dc615ee44e95" Title="AtCommandResult Constructor " Url="html/Overload_Eclo_NETMF_SIM800H_AtCommandResult__ctor.htm">
         <HelpTOCNode Title="AtCommandResult Constructor (ReturnedState)" Url="html/M_Eclo_NETMF_SIM800H_AtCommandResult__ctor.htm" />
         <HelpTOCNode Title="AtCommandResult Constructor (ReturnedState, String)" Url="html/M_Eclo_NETMF_SIM800H_AtCommandResult__ctor_1.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="5562aea1-9783-4a8a-92f0-6366a55ac92f" Title="AtCommandResult Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_AtCommandResult.htm">
+      <HelpTOCNode Id="e1f05e05-5f10-4176-9a8f-380b5c00759f" Title="AtCommandResult Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_AtCommandResult.htm">
         <HelpTOCNode Title="Response Property " Url="html/P_Eclo_NETMF_SIM800H_AtCommandResult_Response.htm" />
         <HelpTOCNode Title="Result Property " Url="html/P_Eclo_NETMF_SIM800H_AtCommandResult_Result.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="AtCommandResult Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_AtCommandResult.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="d34530d1-8bfa-4dd1-859b-5418968e510a" Title="ConnectGprsAsyncResult Class" Url="html/T_Eclo_NETMF_SIM800H_ConnectGprsAsyncResult.htm">
+    <HelpTOCNode Id="43020064-5778-4e86-ae9e-6513105ea1af" Title="ConnectGprsAsyncResult Class" Url="html/T_Eclo_NETMF_SIM800H_ConnectGprsAsyncResult.htm">
       <HelpTOCNode Title="ConnectGprsAsyncResult Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_ConnectGprsAsyncResult.htm" />
-      <HelpTOCNode Id="e8df4820-51a3-40c4-bf40-82a9e5d56e4f" Title="ConnectGprsAsyncResult Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_ConnectGprsAsyncResult.htm">
+      <HelpTOCNode Id="5c909154-3249-43bc-9298-39e77bb32dd4" Title="ConnectGprsAsyncResult Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_ConnectGprsAsyncResult.htm">
         <HelpTOCNode Title="End Method " Url="html/M_Eclo_NETMF_SIM800H_ConnectGprsAsyncResult_End.htm" />
         <HelpTOCNode Title="Process Method " Url="html/M_Eclo_NETMF_SIM800H_ConnectGprsAsyncResult_Process.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="f4732441-bc75-45e6-9397-8a86df675ee7" Title="ConnectGprsAsyncResult Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_ConnectGprsAsyncResult.htm">
+      <HelpTOCNode Id="ba20dc5f-5d52-48bf-ba85-d30106622877" Title="ConnectGprsAsyncResult Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_ConnectGprsAsyncResult.htm">
         <HelpTOCNode Title="Result Field" Url="html/F_Eclo_NETMF_SIM800H_ConnectGprsAsyncResult_Result.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="ConnectGprsResult Enumeration" Url="html/T_Eclo_NETMF_SIM800H_ConnectGprsResult.htm" />
     <HelpTOCNode Title="ConnectionStatus Enumeration" Url="html/T_Eclo_NETMF_SIM800H_ConnectionStatus.htm" />
-    <HelpTOCNode Id="14da526b-943e-42df-bad0-2eca0e6e68eb" Title="DeviceAsyncResult Class" Url="html/T_Eclo_NETMF_SIM800H_DeviceAsyncResult.htm">
+    <HelpTOCNode Id="a2eb70e1-22b9-4a28-a24a-cdcbedf6af10" Title="DeviceAsyncResult Class" Url="html/T_Eclo_NETMF_SIM800H_DeviceAsyncResult.htm">
       <HelpTOCNode Title="DeviceAsyncResult Constructor " Url="html/M_Eclo_NETMF_SIM800H_DeviceAsyncResult__ctor.htm" />
-      <HelpTOCNode Id="d61a699d-7b90-4acf-b522-eb189de95450" Title="DeviceAsyncResult Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_DeviceAsyncResult.htm">
+      <HelpTOCNode Id="c03f4cb0-6111-485d-ba8a-d80d88c14bf2" Title="DeviceAsyncResult Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_DeviceAsyncResult.htm">
         <HelpTOCNode Title="AsyncState Property " Url="html/P_Eclo_NETMF_SIM800H_DeviceAsyncResult_AsyncState.htm" />
         <HelpTOCNode Title="AsyncWaitHandle Property " Url="html/P_Eclo_NETMF_SIM800H_DeviceAsyncResult_AsyncWaitHandle.htm" />
         <HelpTOCNode Title="CompletedSynchronously Property " Url="html/P_Eclo_NETMF_SIM800H_DeviceAsyncResult_CompletedSynchronously.htm" />
         <HelpTOCNode Title="IsCompleted Property " Url="html/P_Eclo_NETMF_SIM800H_DeviceAsyncResult_IsCompleted.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="f5d9bc87-ac69-415a-949d-6dcf81b4755a" Title="DeviceAsyncResult Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_DeviceAsyncResult.htm">
+      <HelpTOCNode Id="219cb9fa-a7a0-4886-98c3-dc1c5dd3455f" Title="DeviceAsyncResult Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_DeviceAsyncResult.htm">
         <HelpTOCNode Title="End Method " Url="html/M_Eclo_NETMF_SIM800H_DeviceAsyncResult_End.htm" />
         <HelpTOCNode Title="Process Method " Url="html/M_Eclo_NETMF_SIM800H_DeviceAsyncResult_Process.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="d8f84e11-295a-43bc-a740-4f89127a4ebb" Title="FileStorage Class" Url="html/T_Eclo_NETMF_SIM800H_FileStorage.htm">
-      <HelpTOCNode Id="6a6fceb5-e04f-4f43-9600-e052c815c2f4" Title="FileStorage Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_FileStorage.htm">
+    <HelpTOCNode Id="91e347e3-dca1-4ba2-81d5-0edb5e60f68e" Title="FileStorage Class" Url="html/T_Eclo_NETMF_SIM800H_FileStorage.htm">
+      <HelpTOCNode Id="e9830705-698e-4a83-ba45-6a28e74fdcd8" Title="FileStorage Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_FileStorage.htm">
         <HelpTOCNode Title="CreateFile Method " Url="html/M_Eclo_NETMF_SIM800H_FileStorage_CreateFile.htm" />
         <HelpTOCNode Title="DeleteFile Method " Url="html/M_Eclo_NETMF_SIM800H_FileStorage_DeleteFile.htm" />
         <HelpTOCNode Title="Dispose Method " Url="html/M_Eclo_NETMF_SIM800H_FileStorage_Dispose.htm" />
@@ -72,8 +72,8 @@
         <HelpTOCNode Title="WriteFile Method " Url="html/M_Eclo_NETMF_SIM800H_FileStorage_WriteFile.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="75bc900a-63db-4554-b5e8-1e73b892b04e" Title="GprsProvider Class" Url="html/T_Eclo_NETMF_SIM800H_GprsProvider.htm">
-      <HelpTOCNode Id="965efb97-04bb-479f-b310-a6ee7f6338c6" Title="GprsProvider Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_GprsProvider.htm">
+    <HelpTOCNode Id="df01767b-d5fc-4816-b8da-51196a295c5d" Title="GprsProvider Class" Url="html/T_Eclo_NETMF_SIM800H_GprsProvider.htm">
+      <HelpTOCNode Id="41e10529-38cd-4e01-9985-910910ceb2df" Title="GprsProvider Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_GprsProvider.htm">
         <HelpTOCNode Title="CheckConnectionStatus Method " Url="html/M_Eclo_NETMF_SIM800H_GprsProvider_CheckConnectionStatus.htm" />
         <HelpTOCNode Title="CheckIpAppBearerStatus Method " Url="html/M_Eclo_NETMF_SIM800H_GprsProvider_CheckIpAppBearerStatus.htm" />
         <HelpTOCNode Title="CloseIpAppBearer Method " Url="html/M_Eclo_NETMF_SIM800H_GprsProvider_CloseIpAppBearer.htm" />
@@ -82,29 +82,29 @@
         <HelpTOCNode Title="OpenBearerAsync Method " Url="html/M_Eclo_NETMF_SIM800H_GprsProvider_OpenBearerAsync.htm" />
         <HelpTOCNode Title="OpenGprsConnectionAsync Method " Url="html/M_Eclo_NETMF_SIM800H_GprsProvider_OpenGprsConnectionAsync.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="110eb88c-1166-4870-9d87-a8bce6d350b2" Title="GprsProvider Events" Url="html/Events_T_Eclo_NETMF_SIM800H_GprsProvider.htm">
+      <HelpTOCNode Id="644c7611-adde-41e2-861e-016349306f06" Title="GprsProvider Events" Url="html/Events_T_Eclo_NETMF_SIM800H_GprsProvider.htm">
         <HelpTOCNode Title="GprsIpAppsBearerStateChanged Event" Url="html/E_Eclo_NETMF_SIM800H_GprsProvider_GprsIpAppsBearerStateChanged.htm" />
         <HelpTOCNode Title="GprsSocketsBearerStateChanged Event" Url="html/E_Eclo_NETMF_SIM800H_GprsProvider_GprsSocketsBearerStateChanged.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="GprsProvider.GprsIpAppsBearerStateChangedHandler Delegate" Url="html/T_Eclo_NETMF_SIM800H_GprsProvider_GprsIpAppsBearerStateChangedHandler.htm" />
     <HelpTOCNode Title="GprsProvider.GprsSocketsBearerStateChangedHandler Delegate" Url="html/T_Eclo_NETMF_SIM800H_GprsProvider_GprsSocketsBearerStateChangedHandler.htm" />
-    <HelpTOCNode Id="b4b8b464-3e32-4f7a-9d83-e621184eabbb" Title="GprsSocket Class" Url="html/T_Eclo_NETMF_SIM800H_GprsSocket.htm">
+    <HelpTOCNode Id="8cf31dad-85c8-4a4a-b23f-84df56556d70" Title="GprsSocket Class" Url="html/T_Eclo_NETMF_SIM800H_GprsSocket.htm">
       <HelpTOCNode Title="GprsSocket Constructor " Url="html/M_Eclo_NETMF_SIM800H_GprsSocket__ctor.htm" />
-      <HelpTOCNode Id="293cd277-d054-40e5-9732-6d226442a870" Title="GprsSocket Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_GprsSocket.htm">
+      <HelpTOCNode Id="63913246-fa1f-4f26-9c2a-b63fe0bdc120" Title="GprsSocket Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_GprsSocket.htm">
         <HelpTOCNode Title="Status Property " Url="html/P_Eclo_NETMF_SIM800H_GprsSocket_Status.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="a11ca0a2-ad65-48f6-af70-d15d3c35d138" Title="GprsSocket Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_GprsSocket.htm">
+      <HelpTOCNode Id="b0370734-bd67-49c2-a0d5-094aa23c59f5" Title="GprsSocket Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_GprsSocket.htm">
         <HelpTOCNode Title="Close Method " Url="html/M_Eclo_NETMF_SIM800H_GprsSocket_Close.htm" />
         <HelpTOCNode Title="Connect Method " Url="html/M_Eclo_NETMF_SIM800H_GprsSocket_Connect.htm" />
         <HelpTOCNode Title="Dispose Method " Url="html/M_Eclo_NETMF_SIM800H_GprsSocket_Dispose.htm" />
         <HelpTOCNode Title="Receive Method " Url="html/M_Eclo_NETMF_SIM800H_GprsSocket_Receive.htm" />
-        <HelpTOCNode Id="a1085128-c12e-416c-b370-67e759c8966f" Title="Send Method " Url="html/Overload_Eclo_NETMF_SIM800H_GprsSocket_Send.htm">
+        <HelpTOCNode Id="99bf3bfa-255b-47d5-9b33-ed743fec8a41" Title="Send Method " Url="html/Overload_Eclo_NETMF_SIM800H_GprsSocket_Send.htm">
           <HelpTOCNode Title="Send Method (Byte[])" Url="html/M_Eclo_NETMF_SIM800H_GprsSocket_Send.htm" />
           <HelpTOCNode Title="Send Method (Byte[], Int32, Int32)" Url="html/M_Eclo_NETMF_SIM800H_GprsSocket_Send_1.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="c944ca71-f593-48f8-8b1c-5bd87dbc38e8" Title="GprsSocket Events" Url="html/Events_T_Eclo_NETMF_SIM800H_GprsSocket.htm">
+      <HelpTOCNode Id="e7e6710d-9f64-493d-b378-01bb7601b244" Title="GprsSocket Events" Url="html/Events_T_Eclo_NETMF_SIM800H_GprsSocket.htm">
         <HelpTOCNode Title="DataReceived Event" Url="html/E_Eclo_NETMF_SIM800H_GprsSocket_DataReceived.htm" />
         <HelpTOCNode Title="SocketClosed Event" Url="html/E_Eclo_NETMF_SIM800H_GprsSocket_SocketClosed.htm" />
         <HelpTOCNode Title="SocketConnected Event" Url="html/E_Eclo_NETMF_SIM800H_GprsSocket_SocketConnected.htm" />
@@ -114,40 +114,40 @@
     <HelpTOCNode Title="GprsSocket.SocketClosedHandler Delegate" Url="html/T_Eclo_NETMF_SIM800H_GprsSocket_SocketClosedHandler.htm" />
     <HelpTOCNode Title="GprsSocket.SocketConnectedHandler Delegate" Url="html/T_Eclo_NETMF_SIM800H_GprsSocket_SocketConnectedHandler.htm" />
     <HelpTOCNode Title="HttpAction Enumeration" Url="html/T_Eclo_NETMF_SIM800H_HttpAction.htm" />
-    <HelpTOCNode Id="fa0413d3-4c39-45e8-976d-c45d21f874b1" Title="HttpActionResult Class" Url="html/T_Eclo_NETMF_SIM800H_HttpActionResult.htm">
+    <HelpTOCNode Id="6fef5f62-a209-463b-b23a-3aac153b2759" Title="HttpActionResult Class" Url="html/T_Eclo_NETMF_SIM800H_HttpActionResult.htm">
       <HelpTOCNode Title="HttpActionResult Constructor " Url="html/M_Eclo_NETMF_SIM800H_HttpActionResult__ctor.htm" />
-      <HelpTOCNode Id="b865ccf7-7e01-4cde-9d6f-6107f70fb643" Title="HttpActionResult Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_HttpActionResult.htm">
+      <HelpTOCNode Id="9181fa70-16ff-497a-afc0-ee0ea01d9c26" Title="HttpActionResult Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_HttpActionResult.htm">
         <HelpTOCNode Title="Action Property " Url="html/P_Eclo_NETMF_SIM800H_HttpActionResult_Action.htm" />
         <HelpTOCNode Title="DataLenght Property " Url="html/P_Eclo_NETMF_SIM800H_HttpActionResult_DataLenght.htm" />
         <HelpTOCNode Title="StatusCode Property " Url="html/P_Eclo_NETMF_SIM800H_HttpActionResult_StatusCode.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="HttpActionResult Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_HttpActionResult.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="b70b50ae-17fb-4144-a4f1-5c082fb7821d" Title="HttpClient Class" Url="html/T_Eclo_NETMF_SIM800H_HttpClient.htm">
-      <HelpTOCNode Id="ac79628a-90df-465f-ab9e-aa5006ce582c" Title="HttpClient Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_HttpClient.htm">
+    <HelpTOCNode Id="90a766e0-4abe-4cac-88ed-bfcd73018e16" Title="HttpClient Class" Url="html/T_Eclo_NETMF_SIM800H_HttpClient.htm">
+      <HelpTOCNode Id="046e013b-9570-451f-bbf6-7f364cabd287" Title="HttpClient Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_HttpClient.htm">
         <HelpTOCNode Title="Dispose Method " Url="html/M_Eclo_NETMF_SIM800H_HttpClient_Dispose.htm" />
         <HelpTOCNode Title="PerformHttpWebRequestAsync Method " Url="html/M_Eclo_NETMF_SIM800H_HttpClient_PerformHttpWebRequestAsync.htm" />
         <HelpTOCNode Title="SaveHttpContext Method " Url="html/M_Eclo_NETMF_SIM800H_HttpClient_SaveHttpContext.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="35a0727e-eeec-448b-9ce1-0f9b7ed99d24" Title="HttpClient Events" Url="html/Events_T_Eclo_NETMF_SIM800H_HttpClient.htm">
+      <HelpTOCNode Id="22ffd276-c15e-408c-a7c2-9f6d0c670894" Title="HttpClient Events" Url="html/Events_T_Eclo_NETMF_SIM800H_HttpClient.htm">
         <HelpTOCNode Title="HttpActionReceived Event" Url="html/E_Eclo_NETMF_SIM800H_HttpClient_HttpActionReceived.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="HttpClient.HttpActionReceivedHandler Delegate" Url="html/T_Eclo_NETMF_SIM800H_HttpClient_HttpActionReceivedHandler.htm" />
-    <HelpTOCNode Id="f19df553-64ff-4043-91d6-341950c4508a" Title="HttpCurrentStatus Class" Url="html/T_Eclo_NETMF_SIM800H_HttpCurrentStatus.htm">
+    <HelpTOCNode Id="6bb8af8a-d651-495d-8dc7-fba009caa71b" Title="HttpCurrentStatus Class" Url="html/T_Eclo_NETMF_SIM800H_HttpCurrentStatus.htm">
       <HelpTOCNode Title="HttpCurrentStatus Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_HttpCurrentStatus.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="a50e9619-eb88-400e-82a7-e771436a556e" Title="HttpKnownHeaderNames Class" Url="html/T_Eclo_NETMF_SIM800H_HttpKnownHeaderNames.htm">
+    <HelpTOCNode Id="45ba71b5-4798-423e-847e-4367986aeec2" Title="HttpKnownHeaderNames Class" Url="html/T_Eclo_NETMF_SIM800H_HttpKnownHeaderNames.htm">
       <HelpTOCNode Title="HttpKnownHeaderNames Constructor " Url="html/M_Eclo_NETMF_SIM800H_HttpKnownHeaderNames__ctor.htm" />
       <HelpTOCNode Title="HttpKnownHeaderNames Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_HttpKnownHeaderNames.htm" />
-      <HelpTOCNode Id="4df1cb5a-19d0-4d5a-b403-9b6dbd6f734c" Title="HttpKnownHeaderNames Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_HttpKnownHeaderNames.htm">
+      <HelpTOCNode Id="21b760bc-12e8-45ea-9407-5ee4f24c3e01" Title="HttpKnownHeaderNames Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_HttpKnownHeaderNames.htm">
         <HelpTOCNode Title="Authorization Field" Url="html/F_Eclo_NETMF_SIM800H_HttpKnownHeaderNames_Authorization.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="HttpStatusCode Enumeration" Url="html/T_Eclo_NETMF_SIM800H_HttpStatusCode.htm" />
-    <HelpTOCNode Id="fe72b627-2118-4726-a4d8-d0145ab77a57" Title="HttpWebRequest Class" Url="html/T_Eclo_NETMF_SIM800H_HttpWebRequest.htm">
+    <HelpTOCNode Id="e573383f-61d0-4c43-9177-f567719b9145" Title="HttpWebRequest Class" Url="html/T_Eclo_NETMF_SIM800H_HttpWebRequest.htm">
       <HelpTOCNode Title="HttpWebRequest Constructor " Url="html/M_Eclo_NETMF_SIM800H_HttpWebRequest__ctor.htm" />
-      <HelpTOCNode Id="af4328a0-9aae-4aa3-a784-0ab14d6b56d7" Title="HttpWebRequest Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_HttpWebRequest.htm">
+      <HelpTOCNode Id="896fdfec-7334-4786-a304-23ee8920db05" Title="HttpWebRequest Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_HttpWebRequest.htm">
         <HelpTOCNode Title="AllowWriteStreamBuffering Property " Url="html/P_Eclo_NETMF_SIM800H_HttpWebRequest_AllowWriteStreamBuffering.htm" />
         <HelpTOCNode Title="ContentLength Property " Url="html/P_Eclo_NETMF_SIM800H_HttpWebRequest_ContentLength.htm" />
         <HelpTOCNode Title="ContentType Property " Url="html/P_Eclo_NETMF_SIM800H_HttpWebRequest_ContentType.htm" />
@@ -157,65 +157,65 @@
         <HelpTOCNode Title="Method Property " Url="html/P_Eclo_NETMF_SIM800H_HttpWebRequest_Method.htm" />
         <HelpTOCNode Title="RequestUri Property " Url="html/P_Eclo_NETMF_SIM800H_HttpWebRequest_RequestUri.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="264ed8c6-73a2-487f-ad73-49bca4b49a6a" Title="HttpWebRequest Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_HttpWebRequest.htm">
+      <HelpTOCNode Id="7af81314-ea1f-4594-9ace-5b6399c86e87" Title="HttpWebRequest Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_HttpWebRequest.htm">
         <HelpTOCNode Title="GetRequestStream Method " Url="html/M_Eclo_NETMF_SIM800H_HttpWebRequest_GetRequestStream.htm" />
         <HelpTOCNode Title="GetResponse Method " Url="html/M_Eclo_NETMF_SIM800H_HttpWebRequest_GetResponse.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="3e25d667-ebca-4ce0-adc9-4c1287406059" Title="HttpWebRequestAsyncResult Class" Url="html/T_Eclo_NETMF_SIM800H_HttpWebRequestAsyncResult.htm">
+    <HelpTOCNode Id="66b1211d-8624-4857-af1e-94b21b178c66" Title="HttpWebRequestAsyncResult Class" Url="html/T_Eclo_NETMF_SIM800H_HttpWebRequestAsyncResult.htm">
       <HelpTOCNode Title="HttpWebRequestAsyncResult Constructor " Url="html/M_Eclo_NETMF_SIM800H_HttpWebRequestAsyncResult__ctor.htm" />
-      <HelpTOCNode Id="665b8496-ca40-4373-bceb-b1bab9d1bc91" Title="HttpWebRequestAsyncResult Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_HttpWebRequestAsyncResult.htm">
+      <HelpTOCNode Id="884fc956-ba13-45ab-94da-b19835738659" Title="HttpWebRequestAsyncResult Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_HttpWebRequestAsyncResult.htm">
         <HelpTOCNode Title="_closeConnectionOnCompletion Property " Url="html/P_Eclo_NETMF_SIM800H_HttpWebRequestAsyncResult__closeConnectionOnCompletion.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="64cd0959-0f56-4ca8-9cd0-7e4d302bd047" Title="HttpWebRequestAsyncResult Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_HttpWebRequestAsyncResult.htm">
+      <HelpTOCNode Id="9bcce300-782b-41e8-be7c-11b18a1aeec1" Title="HttpWebRequestAsyncResult Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_HttpWebRequestAsyncResult.htm">
         <HelpTOCNode Title="End Method " Url="html/M_Eclo_NETMF_SIM800H_HttpWebRequestAsyncResult_End.htm" />
         <HelpTOCNode Title="Process Method " Url="html/M_Eclo_NETMF_SIM800H_HttpWebRequestAsyncResult_Process.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="dc144714-2543-41f2-a61a-eaa0057fcecf" Title="HttpWebRequestAsyncResult Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_HttpWebRequestAsyncResult.htm">
+      <HelpTOCNode Id="1795d90a-f9d7-44fa-904a-d9112b36cb79" Title="HttpWebRequestAsyncResult Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_HttpWebRequestAsyncResult.htm">
         <HelpTOCNode Title="HttpResponse Field" Url="html/F_Eclo_NETMF_SIM800H_HttpWebRequestAsyncResult_HttpResponse.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="a98f8d67-1e49-4b7c-9e9c-f37f4be561b8" Title="HttpWebResponse Class" Url="html/T_Eclo_NETMF_SIM800H_HttpWebResponse.htm">
-      <HelpTOCNode Id="0636dd04-a595-4137-ade0-624bf58d52bb" Title="HttpWebResponse Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_HttpWebResponse.htm">
+    <HelpTOCNode Id="23182d1c-5003-4a7b-93a1-713f83dc6289" Title="HttpWebResponse Class" Url="html/T_Eclo_NETMF_SIM800H_HttpWebResponse.htm">
+      <HelpTOCNode Id="ad3c8ea8-77d5-47d9-a753-dbedab0e6b11" Title="HttpWebResponse Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_HttpWebResponse.htm">
         <HelpTOCNode Title="BodyData Property " Url="html/P_Eclo_NETMF_SIM800H_HttpWebResponse_BodyData.htm" />
         <HelpTOCNode Title="Headers Property " Url="html/P_Eclo_NETMF_SIM800H_HttpWebResponse_Headers.htm" />
         <HelpTOCNode Title="RequestSuccessful Property " Url="html/P_Eclo_NETMF_SIM800H_HttpWebResponse_RequestSuccessful.htm" />
         <HelpTOCNode Title="StatusCode Property " Url="html/P_Eclo_NETMF_SIM800H_HttpWebResponse_StatusCode.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="d868b007-3065-415d-bb80-60b8fd19f248" Title="HttpWebResponse Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_HttpWebResponse.htm">
+      <HelpTOCNode Id="6b3da24d-eb77-4fe7-947f-f97df48bfb32" Title="HttpWebResponse Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_HttpWebResponse.htm">
         <HelpTOCNode Title="Close Method " Url="html/M_Eclo_NETMF_SIM800H_HttpWebResponse_Close.htm" />
         <HelpTOCNode Title="Dispose Method " Url="html/M_Eclo_NETMF_SIM800H_HttpWebResponse_Dispose.htm" />
         <HelpTOCNode Title="GetResponseStream Method " Url="html/M_Eclo_NETMF_SIM800H_HttpWebResponse_GetResponseStream.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="bd106db0-3423-4ab2-9f18-bd3200309922" Title="ImageResource Class" Url="html/T_Eclo_NETMF_SIM800H_ImageResource.htm">
+    <HelpTOCNode Id="a9ca9af0-f899-4ba8-9329-f0348d206ef6" Title="ImageResource Class" Url="html/T_Eclo_NETMF_SIM800H_ImageResource.htm">
       <HelpTOCNode Title="ImageResource Constructor " Url="html/M_Eclo_NETMF_SIM800H_ImageResource__ctor.htm" />
-      <HelpTOCNode Id="18e4645e-2d6a-4725-bcdf-a290784e1931" Title="ImageResource Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_ImageResource.htm">
+      <HelpTOCNode Id="5efb981d-b7b5-460a-9c00-137ac02338c2" Title="ImageResource Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_ImageResource.htm">
         <HelpTOCNode Title="FileName Property " Url="html/P_Eclo_NETMF_SIM800H_ImageResource_FileName.htm" />
         <HelpTOCNode Title="ImageFile Property " Url="html/P_Eclo_NETMF_SIM800H_ImageResource_ImageFile.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="ImageResource Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_ImageResource.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="626f9cca-8aeb-4e42-94d4-77bf19bb3494" Title="Licensing Class" Url="html/T_Eclo_NETMF_SIM800H_Licensing.htm">
-      <HelpTOCNode Id="df920752-d829-4549-99a4-025e58b5a5cf" Title="Licensing Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_Licensing.htm">
+    <HelpTOCNode Id="21874928-c8e6-4b18-a5e0-f569625f395d" Title="Licensing Class" Url="html/T_Eclo_NETMF_SIM800H_Licensing.htm">
+      <HelpTOCNode Id="639258bf-a3d7-4250-b07e-ed860fed83d6" Title="Licensing Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_Licensing.htm">
         <HelpTOCNode Title="ReadLicenseKey Method " Url="html/M_Eclo_NETMF_SIM800H_Licensing_ReadLicenseKey.htm" />
         <HelpTOCNode Title="RenewLicenseKey Method " Url="html/M_Eclo_NETMF_SIM800H_Licensing_RenewLicenseKey.htm" />
         <HelpTOCNode Title="SaveLicenseKey Method " Url="html/M_Eclo_NETMF_SIM800H_Licensing_SaveLicenseKey.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="fb8e6a61-eb61-46b5-91d2-b67e34f65e70" Title="ListTextMessagesAsyncResult Class" Url="html/T_Eclo_NETMF_SIM800H_ListTextMessagesAsyncResult.htm">
+    <HelpTOCNode Id="11f728f8-b3c3-4fa4-9e8e-04b1116b78bc" Title="ListTextMessagesAsyncResult Class" Url="html/T_Eclo_NETMF_SIM800H_ListTextMessagesAsyncResult.htm">
       <HelpTOCNode Title="ListTextMessagesAsyncResult Constructor " Url="html/M_Eclo_NETMF_SIM800H_ListTextMessagesAsyncResult__ctor.htm" />
       <HelpTOCNode Title="ListTextMessagesAsyncResult Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_ListTextMessagesAsyncResult.htm" />
-      <HelpTOCNode Id="ce802da7-23e7-4b19-90a3-542491b438bd" Title="ListTextMessagesAsyncResult Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_ListTextMessagesAsyncResult.htm">
+      <HelpTOCNode Id="dff031e0-f316-4945-a115-fb027a0a0908" Title="ListTextMessagesAsyncResult Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_ListTextMessagesAsyncResult.htm">
         <HelpTOCNode Title="End Method " Url="html/M_Eclo_NETMF_SIM800H_ListTextMessagesAsyncResult_End.htm" />
         <HelpTOCNode Title="Process Method " Url="html/M_Eclo_NETMF_SIM800H_ListTextMessagesAsyncResult_Process.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="dd9d137f-f0ff-4160-8423-01bd4de294a1" Title="ListTextMessagesAsyncResult Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_ListTextMessagesAsyncResult.htm">
+      <HelpTOCNode Id="3bd31d58-3d39-460f-a597-233538b04268" Title="ListTextMessagesAsyncResult Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_ListTextMessagesAsyncResult.htm">
         <HelpTOCNode Title="SMSList Field" Url="html/F_Eclo_NETMF_SIM800H_ListTextMessagesAsyncResult_SMSList.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="a495b01d-0076-4bf3-8e1c-e576aabdbe63" Title="LocationAndTime Class" Url="html/T_Eclo_NETMF_SIM800H_LocationAndTime.htm">
-      <HelpTOCNode Id="ad6f082c-b173-4b02-ba20-841c5165eeb8" Title="LocationAndTime Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_LocationAndTime.htm">
+    <HelpTOCNode Id="6050d5c7-6b7d-4b61-a1f7-c6b92dd8393e" Title="LocationAndTime Class" Url="html/T_Eclo_NETMF_SIM800H_LocationAndTime.htm">
+      <HelpTOCNode Id="e18538fd-a856-4669-8e39-3b69d48895ef" Title="LocationAndTime Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_LocationAndTime.htm">
         <HelpTOCNode Title="DateTime Property " Url="html/P_Eclo_NETMF_SIM800H_LocationAndTime_DateTime.htm" />
         <HelpTOCNode Title="ErrorCode Property " Url="html/P_Eclo_NETMF_SIM800H_LocationAndTime_ErrorCode.htm" />
         <HelpTOCNode Title="Latitude Property " Url="html/P_Eclo_NETMF_SIM800H_LocationAndTime_Latitude.htm" />
@@ -225,9 +225,9 @@
     </HelpTOCNode>
     <HelpTOCNode Title="MessageDeleteOption Enumeration" Url="html/T_Eclo_NETMF_SIM800H_MessageDeleteOption.htm" />
     <HelpTOCNode Title="MessageState Enumeration" Url="html/T_Eclo_NETMF_SIM800H_MessageState.htm" />
-    <HelpTOCNode Id="d514b56d-b8c5-4be4-9315-0f9e4ac659de" Title="MessageStatusReport Class" Url="html/T_Eclo_NETMF_SIM800H_MessageStatusReport.htm">
+    <HelpTOCNode Id="ce8042ae-088f-4a6a-b70c-f172a36167eb" Title="MessageStatusReport Class" Url="html/T_Eclo_NETMF_SIM800H_MessageStatusReport.htm">
       <HelpTOCNode Title="MessageStatusReport Constructor " Url="html/M_Eclo_NETMF_SIM800H_MessageStatusReport__ctor.htm" />
-      <HelpTOCNode Id="933d6215-80fa-4ff7-becf-b4d11c2e8999" Title="MessageStatusReport Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_MessageStatusReport.htm">
+      <HelpTOCNode Id="5613643f-9974-4a6f-87c9-9915eaae50eb" Title="MessageStatusReport Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_MessageStatusReport.htm">
         <HelpTOCNode Title="DelieveredTimeStamp Property " Url="html/P_Eclo_NETMF_SIM800H_MessageStatusReport_DelieveredTimeStamp.htm" />
         <HelpTOCNode Title="FO Property " Url="html/P_Eclo_NETMF_SIM800H_MessageStatusReport_FO.htm" />
         <HelpTOCNode Title="MessageReference Property " Url="html/P_Eclo_NETMF_SIM800H_MessageStatusReport_MessageReference.htm" />
@@ -238,36 +238,36 @@
       </HelpTOCNode>
       <HelpTOCNode Title="MessageStatusReport Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_MessageStatusReport.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="729975cd-0326-424f-8394-b1cd7e03b9c5" Title="MmsClient Class" Url="html/T_Eclo_NETMF_SIM800H_MmsClient.htm">
-      <HelpTOCNode Id="bb8a38a0-ff72-499b-b069-4635d81bf4c6" Title="MmsClient Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_MmsClient.htm">
+    <HelpTOCNode Id="76c1b908-5e15-46f9-9cf4-9fc5529cd7d5" Title="MmsClient Class" Url="html/T_Eclo_NETMF_SIM800H_MmsClient.htm">
+      <HelpTOCNode Id="d7f6f149-dd49-40b5-a18c-e8e6cbff3773" Title="MmsClient Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_MmsClient.htm">
         <HelpTOCNode Title="Dispose Method " Url="html/M_Eclo_NETMF_SIM800H_MmsClient_Dispose.htm" />
         <HelpTOCNode Title="SendMmsMessageAsync Method " Url="html/M_Eclo_NETMF_SIM800H_MmsClient_SendMmsMessageAsync.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="7f728ea8-0101-4977-bf22-2abdbe9b073b" Title="MmsConfiguration Class" Url="html/T_Eclo_NETMF_SIM800H_MmsConfiguration.htm">
-      <HelpTOCNode Id="34b2d08b-ffa8-4e8e-9919-ad4ded4216e4" Title="MmsConfiguration Constructor " Url="html/Overload_Eclo_NETMF_SIM800H_MmsConfiguration__ctor.htm">
+    <HelpTOCNode Id="f1d15b03-da37-418d-9d0f-e310129a4041" Title="MmsConfiguration Class" Url="html/T_Eclo_NETMF_SIM800H_MmsConfiguration.htm">
+      <HelpTOCNode Id="b0491bcf-25fa-4c0a-b333-6e0ddc311413" Title="MmsConfiguration Constructor " Url="html/Overload_Eclo_NETMF_SIM800H_MmsConfiguration__ctor.htm">
         <HelpTOCNode Title="MmsConfiguration Constructor " Url="html/M_Eclo_NETMF_SIM800H_MmsConfiguration__ctor.htm" />
         <HelpTOCNode Title="MmsConfiguration Constructor (String)" Url="html/M_Eclo_NETMF_SIM800H_MmsConfiguration__ctor_1.htm" />
         <HelpTOCNode Title="MmsConfiguration Constructor (String, String, Int32)" Url="html/M_Eclo_NETMF_SIM800H_MmsConfiguration__ctor_2.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="ee078e1b-8c74-41af-bb3e-14f9b8bfad26" Title="MmsConfiguration Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_MmsConfiguration.htm">
+      <HelpTOCNode Id="676dafde-1469-46d1-bfd9-8b1307ce9e82" Title="MmsConfiguration Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_MmsConfiguration.htm">
         <HelpTOCNode Title="MMSC Property " Url="html/P_Eclo_NETMF_SIM800H_MmsConfiguration_MMSC.htm" />
         <HelpTOCNode Title="Port Property " Url="html/P_Eclo_NETMF_SIM800H_MmsConfiguration_Port.htm" />
         <HelpTOCNode Title="Proxy Property " Url="html/P_Eclo_NETMF_SIM800H_MmsConfiguration_Proxy.htm" />
         <HelpTOCNode Title="ProxyPort Property " Url="html/P_Eclo_NETMF_SIM800H_MmsConfiguration_ProxyPort.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="e05b245e-d780-4011-b4d4-45f6c66fcc3e" Title="MmsConfiguration Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_MmsConfiguration.htm">
+      <HelpTOCNode Id="2e642c33-68ed-4e29-9a16-729748572508" Title="MmsConfiguration Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_MmsConfiguration.htm">
         <HelpTOCNode Title="Equals Method " Url="html/M_Eclo_NETMF_SIM800H_MmsConfiguration_Equals.htm" />
         <HelpTOCNode Title="GetHashCode Method " Url="html/M_Eclo_NETMF_SIM800H_MmsConfiguration_GetHashCode.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="55a064a6-d812-4b64-89c8-8f68e8d90f27" Title="MmsConfiguration Operators" Url="html/Operators_T_Eclo_NETMF_SIM800H_MmsConfiguration.htm">
+      <HelpTOCNode Id="68d0bdcf-4905-4da8-9251-d1a9446f5449" Title="MmsConfiguration Operators" Url="html/Operators_T_Eclo_NETMF_SIM800H_MmsConfiguration.htm">
         <HelpTOCNode Title="Equality Operator " Url="html/M_Eclo_NETMF_SIM800H_MmsConfiguration_op_Equality.htm" />
         <HelpTOCNode Title="Inequality Operator " Url="html/M_Eclo_NETMF_SIM800H_MmsConfiguration_op_Inequality.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="a3ea008b-712b-4f0f-a55b-1837da2581fd" Title="MmsMessage Class" Url="html/T_Eclo_NETMF_SIM800H_MmsMessage.htm">
+    <HelpTOCNode Id="d41c424d-1258-4268-9647-67692b95dbed" Title="MmsMessage Class" Url="html/T_Eclo_NETMF_SIM800H_MmsMessage.htm">
       <HelpTOCNode Title="MmsMessage Constructor " Url="html/M_Eclo_NETMF_SIM800H_MmsMessage__ctor.htm" />
-      <HelpTOCNode Id="32940992-cc28-476c-a2ab-c7409434a15a" Title="MmsMessage Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_MmsMessage.htm">
+      <HelpTOCNode Id="22437915-5a46-4df4-a299-857b81259a0b" Title="MmsMessage Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_MmsMessage.htm">
         <HelpTOCNode Title="Image Property " Url="html/P_Eclo_NETMF_SIM800H_MmsMessage_Image.htm" />
         <HelpTOCNode Title="Text Property " Url="html/P_Eclo_NETMF_SIM800H_MmsMessage_Text.htm" />
         <HelpTOCNode Title="Title Property " Url="html/P_Eclo_NETMF_SIM800H_MmsMessage_Title.htm" />
@@ -275,60 +275,60 @@
       <HelpTOCNode Title="MmsMessage Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_MmsMessage.htm" />
     </HelpTOCNode>
     <HelpTOCNode Title="NetworkRegistrationState Enumeration" Url="html/T_Eclo_NETMF_SIM800H_NetworkRegistrationState.htm" />
-    <HelpTOCNode Id="adb53f05-286b-4de3-95f4-ceb6ac8e6b09" Title="OpenBearerAsyncResult Class" Url="html/T_Eclo_NETMF_SIM800H_OpenBearerAsyncResult.htm">
+    <HelpTOCNode Id="762c9426-b6a7-49fc-994d-8fea8fbb56ba" Title="OpenBearerAsyncResult Class" Url="html/T_Eclo_NETMF_SIM800H_OpenBearerAsyncResult.htm">
       <HelpTOCNode Title="OpenBearerAsyncResult Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_OpenBearerAsyncResult.htm" />
-      <HelpTOCNode Id="14a65d83-f640-48ac-b1dc-93f9170b34db" Title="OpenBearerAsyncResult Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_OpenBearerAsyncResult.htm">
+      <HelpTOCNode Id="ea83aae1-e79c-4be7-99b7-73a883bb9877" Title="OpenBearerAsyncResult Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_OpenBearerAsyncResult.htm">
         <HelpTOCNode Title="End Method " Url="html/M_Eclo_NETMF_SIM800H_OpenBearerAsyncResult_End.htm" />
         <HelpTOCNode Title="Process Method " Url="html/M_Eclo_NETMF_SIM800H_OpenBearerAsyncResult_Process.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="af11834a-3f35-48d8-b43d-0314404883e8" Title="OpenBearerAsyncResult Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_OpenBearerAsyncResult.htm">
+      <HelpTOCNode Id="4d9d0670-54ba-4341-b9ab-c26892213d76" Title="OpenBearerAsyncResult Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_OpenBearerAsyncResult.htm">
         <HelpTOCNode Title="Result Field" Url="html/F_Eclo_NETMF_SIM800H_OpenBearerAsyncResult_Result.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="OpenBearerResult Enumeration" Url="html/T_Eclo_NETMF_SIM800H_OpenBearerResult.htm" />
     <HelpTOCNode Title="PhoneFuncionality Enumeration" Url="html/T_Eclo_NETMF_SIM800H_PhoneFuncionality.htm" />
     <HelpTOCNode Title="PinState Enumeration" Url="html/T_Eclo_NETMF_SIM800H_PinState.htm" />
-    <HelpTOCNode Id="2a6d17fe-4c45-48d2-8ffa-2802dbee1884" Title="PowerOnAsyncResult Class" Url="html/T_Eclo_NETMF_SIM800H_PowerOnAsyncResult.htm">
+    <HelpTOCNode Id="58715333-f80a-4e12-8b53-629ebaaf8f62" Title="PowerOnAsyncResult Class" Url="html/T_Eclo_NETMF_SIM800H_PowerOnAsyncResult.htm">
       <HelpTOCNode Title="PowerOnAsyncResult Constructor " Url="html/M_Eclo_NETMF_SIM800H_PowerOnAsyncResult__ctor.htm" />
       <HelpTOCNode Title="PowerOnAsyncResult Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_PowerOnAsyncResult.htm" />
-      <HelpTOCNode Id="4f379762-a5c7-460a-9654-d505704ba9cf" Title="PowerOnAsyncResult Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_PowerOnAsyncResult.htm">
+      <HelpTOCNode Id="e8b344e0-704d-4963-a246-7dada9b855d0" Title="PowerOnAsyncResult Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_PowerOnAsyncResult.htm">
         <HelpTOCNode Title="End Method " Url="html/M_Eclo_NETMF_SIM800H_PowerOnAsyncResult_End.htm" />
         <HelpTOCNode Title="Process Method " Url="html/M_Eclo_NETMF_SIM800H_PowerOnAsyncResult_Process.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="693cc9e2-d02e-4e52-aed6-54e3d122ef5c" Title="PowerOnAsyncResult Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_PowerOnAsyncResult.htm">
+      <HelpTOCNode Id="5f6863c0-e8d4-42a4-af31-a58566412467" Title="PowerOnAsyncResult Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_PowerOnAsyncResult.htm">
         <HelpTOCNode Title="Result Field" Url="html/F_Eclo_NETMF_SIM800H_PowerOnAsyncResult_Result.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="PowerStatus Enumeration" Url="html/T_Eclo_NETMF_SIM800H_PowerStatus.htm" />
     <HelpTOCNode Title="ProtocolType Enumeration" Url="html/T_Eclo_NETMF_SIM800H_ProtocolType.htm" />
     <HelpTOCNode Title="ReturnedState Enumeration" Url="html/T_Eclo_NETMF_SIM800H_ReturnedState.htm" />
-    <HelpTOCNode Id="d45a14ae-dfc7-4358-b028-caca8b751f0a" Title="SendMmsMessageAsyncResult Class" Url="html/T_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult.htm">
+    <HelpTOCNode Id="9bb82387-c0e0-44a2-859c-2a9d3e031e7f" Title="SendMmsMessageAsyncResult Class" Url="html/T_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult.htm">
       <HelpTOCNode Title="SendMmsMessageAsyncResult Constructor " Url="html/M_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult__ctor.htm" />
-      <HelpTOCNode Id="b241d4bc-8c13-4bd1-a5ca-95b2cd6f1ac2" Title="SendMmsMessageAsyncResult Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult.htm">
+      <HelpTOCNode Id="af7a8e8c-63ce-4d50-b887-fd642d98caa6" Title="SendMmsMessageAsyncResult Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult.htm">
         <HelpTOCNode Title="ErrorCode Property " Url="html/P_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult_ErrorCode.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="03ae0706-84c1-4b88-ba43-a8cb0320e379" Title="SendMmsMessageAsyncResult Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult.htm">
+      <HelpTOCNode Id="1328bc76-2a94-4f46-9334-7e463a824785" Title="SendMmsMessageAsyncResult Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult.htm">
         <HelpTOCNode Title="End Method " Url="html/M_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult_End.htm" />
         <HelpTOCNode Title="Process Method " Url="html/M_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult_Process.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="403e92c1-a5c5-40a3-a417-35fded05d9ea" Title="SendMmsMessageAsyncResult Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult.htm">
+      <HelpTOCNode Id="26af1ae7-e810-4699-9028-82b3cdf7f2a9" Title="SendMmsMessageAsyncResult Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult.htm">
         <HelpTOCNode Title="Result Field" Url="html/F_Eclo_NETMF_SIM800H_SendMmsMessageAsyncResult_Result.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="915f350e-a095-4ca1-bc9e-414877dddc5b" Title="SendTextMessageAsyncResult Class" Url="html/T_Eclo_NETMF_SIM800H_SendTextMessageAsyncResult.htm">
+    <HelpTOCNode Id="b054012f-28d8-4b3a-b606-48555cba8ad4" Title="SendTextMessageAsyncResult Class" Url="html/T_Eclo_NETMF_SIM800H_SendTextMessageAsyncResult.htm">
       <HelpTOCNode Title="SendTextMessageAsyncResult Constructor " Url="html/M_Eclo_NETMF_SIM800H_SendTextMessageAsyncResult__ctor.htm" />
       <HelpTOCNode Title="SendTextMessageAsyncResult Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_SendTextMessageAsyncResult.htm" />
-      <HelpTOCNode Id="b4182749-ec0a-4bf9-8917-4ab24be4976e" Title="SendTextMessageAsyncResult Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_SendTextMessageAsyncResult.htm">
+      <HelpTOCNode Id="40ac3831-88d4-453e-afdd-1d700d1a4fe5" Title="SendTextMessageAsyncResult Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_SendTextMessageAsyncResult.htm">
         <HelpTOCNode Title="End Method " Url="html/M_Eclo_NETMF_SIM800H_SendTextMessageAsyncResult_End.htm" />
         <HelpTOCNode Title="Process Method " Url="html/M_Eclo_NETMF_SIM800H_SendTextMessageAsyncResult_Process.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="1e20c45b-e1ba-4113-b2e7-e083a137062d" Title="SendTextMessageAsyncResult Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_SendTextMessageAsyncResult.htm">
+      <HelpTOCNode Id="c1f7014c-ae17-4f4c-aedf-dcec905953c7" Title="SendTextMessageAsyncResult Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_SendTextMessageAsyncResult.htm">
         <HelpTOCNode Title="Reference Field" Url="html/F_Eclo_NETMF_SIM800H_SendTextMessageAsyncResult_Reference.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="SignalStrength Enumeration" Url="html/T_Eclo_NETMF_SIM800H_SignalStrength.htm" />
-    <HelpTOCNode Id="6d20d4cc-c9f6-430c-898f-ec2d0360d18b" Title="SIM800H Class" Url="html/T_Eclo_NETMF_SIM800H_SIM800H.htm">
-      <HelpTOCNode Id="3d36798a-4e51-4a0d-b1b1-72136cd92e6b" Title="SIM800H Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_SIM800H.htm">
+    <HelpTOCNode Id="307fc854-e82a-442e-ac4c-1d92fa15ccbb" Title="SIM800H Class" Url="html/T_Eclo_NETMF_SIM800H_SIM800H.htm">
+      <HelpTOCNode Id="e783ae6c-f268-4469-be72-8ef6addf4b77" Title="SIM800H Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_SIM800H.htm">
         <HelpTOCNode Title="FileStorage Property " Url="html/P_Eclo_NETMF_SIM800H_SIM800H_FileStorage.htm" />
         <HelpTOCNode Title="GprsIpAppsBearerIsOpen Property " Url="html/P_Eclo_NETMF_SIM800H_SIM800H_GprsIpAppsBearerIsOpen.htm" />
         <HelpTOCNode Title="GprsNetworkRegistration Property " Url="html/P_Eclo_NETMF_SIM800H_SIM800H_GprsNetworkRegistration.htm" />
@@ -351,7 +351,7 @@
         <HelpTOCNode Title="SoftwareRelease Property " Url="html/P_Eclo_NETMF_SIM800H_SIM800H_SoftwareRelease.htm" />
         <HelpTOCNode Title="SupplyVoltage Property " Url="html/P_Eclo_NETMF_SIM800H_SIM800H_SupplyVoltage.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="fb155d9a-2d01-4c29-b28f-17808ce77de2" Title="SIM800H Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_SIM800H.htm">
+      <HelpTOCNode Id="59dd411b-c0dd-4573-8ce8-ac9515d2bf42" Title="SIM800H Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_SIM800H.htm">
         <HelpTOCNode Title="Configure Method " Url="html/M_Eclo_NETMF_SIM800H_SIM800H_Configure.htm" />
         <HelpTOCNode Title="Dispose Method " Url="html/M_Eclo_NETMF_SIM800H_SIM800H_Dispose.htm" />
         <HelpTOCNode Title="GetDateTime Method " Url="html/M_Eclo_NETMF_SIM800H_SIM800H_GetDateTime.htm" />
@@ -364,7 +364,7 @@
         <HelpTOCNode Title="RetrieveSignalStrength Method " Url="html/M_Eclo_NETMF_SIM800H_SIM800H_RetrieveSignalStrength.htm" />
         <HelpTOCNode Title="SetPhoneFuncionality Method " Url="html/M_Eclo_NETMF_SIM800H_SIM800H_SetPhoneFuncionality.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="4149fc05-7652-43f7-ad17-dcd3fea5e186" Title="SIM800H Events" Url="html/Events_T_Eclo_NETMF_SIM800H_SIM800H.htm">
+      <HelpTOCNode Id="5957d67a-a7dd-47d7-ac0b-f6acc0ea71f2" Title="SIM800H Events" Url="html/Events_T_Eclo_NETMF_SIM800H_SIM800H.htm">
         <HelpTOCNode Title="CallReady Event" Url="html/E_Eclo_NETMF_SIM800H_SIM800H_CallReady.htm" />
         <HelpTOCNode Title="GprsNetworkRegistrationChanged Event" Url="html/E_Eclo_NETMF_SIM800H_SIM800H_GprsNetworkRegistrationChanged.htm" />
         <HelpTOCNode Title="GsmNetworkRegistrationChanged Event" Url="html/E_Eclo_NETMF_SIM800H_SIM800H_GsmNetworkRegistrationChanged.htm" />
@@ -374,7 +374,7 @@
         <HelpTOCNode Title="SmsSentReferenceReceived Event" Url="html/E_Eclo_NETMF_SIM800H_SIM800H_SmsSentReferenceReceived.htm" />
         <HelpTOCNode Title="WarningConditionTriggered Event" Url="html/E_Eclo_NETMF_SIM800H_SIM800H_WarningConditionTriggered.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="c533f595-9f6c-4a6b-bd49-5ed74225609f" Title="SIM800H Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_SIM800H.htm">
+      <HelpTOCNode Id="41da181f-33b0-40df-b45d-a9d81aec7aa7" Title="SIM800H Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_SIM800H.htm">
         <HelpTOCNode Title="AccessPointConfiguration Field" Url="html/F_Eclo_NETMF_SIM800H_SIM800H_AccessPointConfiguration.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
@@ -387,8 +387,8 @@
     <HelpTOCNode Title="SIM800H.SmsSentReferenceReceivedHandler Delegate" Url="html/T_Eclo_NETMF_SIM800H_SIM800H_SmsSentReferenceReceivedHandler.htm" />
     <HelpTOCNode Title="SIM800H.WarningConditionTriggeredHandler Delegate" Url="html/T_Eclo_NETMF_SIM800H_SIM800H_WarningConditionTriggeredHandler.htm" />
     <HelpTOCNode Title="SimCardStatus Enumeration" Url="html/T_Eclo_NETMF_SIM800H_SimCardStatus.htm" />
-    <HelpTOCNode Id="ebbe0bee-abf7-4e46-9c13-21edad53cef3" Title="SmsProvider Class" Url="html/T_Eclo_NETMF_SIM800H_SmsProvider.htm">
-      <HelpTOCNode Id="09d6bbb4-1f28-4292-9125-8184681b6d11" Title="SmsProvider Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_SmsProvider.htm">
+    <HelpTOCNode Id="9f42d344-6812-457b-84ff-a985061e3338" Title="SmsProvider Class" Url="html/T_Eclo_NETMF_SIM800H_SmsProvider.htm">
+      <HelpTOCNode Id="5a62fe3e-e36f-427e-9efa-7613e4a6a238" Title="SmsProvider Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_SmsProvider.htm">
         <HelpTOCNode Title="DeleteTextMessage Method " Url="html/M_Eclo_NETMF_SIM800H_SmsProvider_DeleteTextMessage.htm" />
         <HelpTOCNode Title="DeleteTextMessages Method " Url="html/M_Eclo_NETMF_SIM800H_SmsProvider_DeleteTextMessages.htm" />
         <HelpTOCNode Title="Dispose Method " Url="html/M_Eclo_NETMF_SIM800H_SmsProvider_Dispose.htm" />
@@ -396,61 +396,61 @@
         <HelpTOCNode Title="ReadTextMessage Method " Url="html/M_Eclo_NETMF_SIM800H_SmsProvider_ReadTextMessage.htm" />
         <HelpTOCNode Title="SendTextMessageAsync Method " Url="html/M_Eclo_NETMF_SIM800H_SmsProvider_SendTextMessageAsync.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="d822b453-4be5-4fe2-b293-6a027580690a" Title="SmsProvider Events" Url="html/Events_T_Eclo_NETMF_SIM800H_SmsProvider.htm">
+      <HelpTOCNode Id="7b2f1c8e-320e-4ddf-9682-85c9a1d6f7b3" Title="SmsProvider Events" Url="html/Events_T_Eclo_NETMF_SIM800H_SmsProvider.htm">
         <HelpTOCNode Title="SmsReceived Event" Url="html/E_Eclo_NETMF_SIM800H_SmsProvider_SmsReceived.htm" />
         <HelpTOCNode Title="SmsStatusReceived Event" Url="html/E_Eclo_NETMF_SIM800H_SmsProvider_SmsStatusReceived.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="SmsProvider.SmsReceivedHandler Delegate" Url="html/T_Eclo_NETMF_SIM800H_SmsProvider_SmsReceivedHandler.htm" />
     <HelpTOCNode Title="SmsProvider.SmsStatusReceivedHandler Delegate" Url="html/T_Eclo_NETMF_SIM800H_SmsProvider_SmsStatusReceivedHandler.htm" />
-    <HelpTOCNode Id="c19f7130-f23d-42e3-8a1f-b90be2a7a20c" Title="SntpClient Class" Url="html/T_Eclo_NETMF_SIM800H_SntpClient.htm">
-      <HelpTOCNode Id="fa67bbe0-3001-4b86-994b-fae66005b9b1" Title="SntpClient Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_SntpClient.htm">
+    <HelpTOCNode Id="9cecf3e0-04b0-4825-a3c4-cf8fc2686367" Title="SntpClient Class" Url="html/T_Eclo_NETMF_SIM800H_SntpClient.htm">
+      <HelpTOCNode Id="fac2c3fc-b2eb-4dbe-9ab9-8d83b956c660" Title="SntpClient Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_SntpClient.htm">
         <HelpTOCNode Title="Dispose Method " Url="html/M_Eclo_NETMF_SIM800H_SntpClient_Dispose.htm" />
         <HelpTOCNode Title="SyncNetworkTimeAsync Method " Url="html/M_Eclo_NETMF_SIM800H_SntpClient_SyncNetworkTimeAsync.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="21f12076-6362-40cb-a0e3-08cba82b06cb" Title="SntpClient Events" Url="html/Events_T_Eclo_NETMF_SIM800H_SntpClient.htm">
+      <HelpTOCNode Id="b0da9c17-ab23-450a-9ec1-a209e5f87d41" Title="SntpClient Events" Url="html/Events_T_Eclo_NETMF_SIM800H_SntpClient.htm">
         <HelpTOCNode Title="SntpReplyReceived Event" Url="html/E_Eclo_NETMF_SIM800H_SntpClient_SntpReplyReceived.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="SntpClient.SntpReplyReceivedHandler Delegate" Url="html/T_Eclo_NETMF_SIM800H_SntpClient_SntpReplyReceivedHandler.htm" />
     <HelpTOCNode Title="SocketError Enumeration" Url="html/T_Eclo_NETMF_SIM800H_SocketError.htm" />
-    <HelpTOCNode Id="855b56d0-86bc-4a56-b3aa-92ca4dbe0bcf" Title="SocketException Class" Url="html/T_Eclo_NETMF_SIM800H_SocketException.htm">
+    <HelpTOCNode Id="61edd29c-38f0-4e0b-99ef-e7a706ee5aff" Title="SocketException Class" Url="html/T_Eclo_NETMF_SIM800H_SocketException.htm">
       <HelpTOCNode Title="SocketException Constructor " Url="html/M_Eclo_NETMF_SIM800H_SocketException__ctor.htm" />
-      <HelpTOCNode Id="b3b44f85-237c-49ee-92b0-208213e0bbf3" Title="SocketException Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_SocketException.htm">
+      <HelpTOCNode Id="921a62db-aeac-4058-a46c-edc133ebfd83" Title="SocketException Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_SocketException.htm">
         <HelpTOCNode Title="ErrorCode Property " Url="html/P_Eclo_NETMF_SIM800H_SocketException_ErrorCode.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="SocketException Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_SocketException.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="18961206-e11a-4334-a729-84ba3ff67b9b" Title="SyncNetworkTimeAsyncResult Class" Url="html/T_Eclo_NETMF_SIM800H_SyncNetworkTimeAsyncResult.htm">
+    <HelpTOCNode Id="dac575fd-f0c8-4b99-b029-384f5d4cd0fd" Title="SyncNetworkTimeAsyncResult Class" Url="html/T_Eclo_NETMF_SIM800H_SyncNetworkTimeAsyncResult.htm">
       <HelpTOCNode Title="SyncNetworkTimeAsyncResult Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_SyncNetworkTimeAsyncResult.htm" />
-      <HelpTOCNode Id="63bd5320-bd01-47e8-9f33-5d6a5559c814" Title="SyncNetworkTimeAsyncResult Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_SyncNetworkTimeAsyncResult.htm">
+      <HelpTOCNode Id="c2bc8aaa-c60d-4b35-a6e1-ea9fcf1d30d0" Title="SyncNetworkTimeAsyncResult Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_SyncNetworkTimeAsyncResult.htm">
         <HelpTOCNode Title="End Method " Url="html/M_Eclo_NETMF_SIM800H_SyncNetworkTimeAsyncResult_End.htm" />
         <HelpTOCNode Title="Process Method " Url="html/M_Eclo_NETMF_SIM800H_SyncNetworkTimeAsyncResult_Process.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="fd932061-82b2-4a0e-9f34-a4fa2f1291b0" Title="SyncNetworkTimeAsyncResult Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_SyncNetworkTimeAsyncResult.htm">
+      <HelpTOCNode Id="c1c9acdd-2bd0-44bc-8306-8007baa11dfd" Title="SyncNetworkTimeAsyncResult Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_SyncNetworkTimeAsyncResult.htm">
         <HelpTOCNode Title="Result Field" Url="html/F_Eclo_NETMF_SIM800H_SyncNetworkTimeAsyncResult_Result.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
     <HelpTOCNode Title="SyncResult Enumeration" Url="html/T_Eclo_NETMF_SIM800H_SyncResult.htm" />
-    <HelpTOCNode Id="14a510c7-87db-4e3f-8de8-3d2ef6f19af9" Title="TextMessage Class" Url="html/T_Eclo_NETMF_SIM800H_TextMessage.htm">
-      <HelpTOCNode Id="a816b11c-1e77-4794-aead-bb2b14598ff8" Title="TextMessage Constructor " Url="html/Overload_Eclo_NETMF_SIM800H_TextMessage__ctor.htm">
+    <HelpTOCNode Id="dbdd537a-57de-4938-b353-eaa97f7ba2e6" Title="TextMessage Class" Url="html/T_Eclo_NETMF_SIM800H_TextMessage.htm">
+      <HelpTOCNode Id="d141bb89-9523-4a40-a1a8-4c7ab9c50607" Title="TextMessage Constructor " Url="html/Overload_Eclo_NETMF_SIM800H_TextMessage__ctor.htm">
         <HelpTOCNode Title="TextMessage Constructor " Url="html/M_Eclo_NETMF_SIM800H_TextMessage__ctor.htm" />
         <HelpTOCNode Title="TextMessage Constructor (String, String, MessageState, DateTime)" Url="html/M_Eclo_NETMF_SIM800H_TextMessage__ctor_1.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="c303e9b6-c327-40c3-b75a-245180897e4e" Title="TextMessage Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_TextMessage.htm">
+      <HelpTOCNode Id="91624c59-f144-4670-80bb-f5b70a19fedb" Title="TextMessage Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_TextMessage.htm">
         <HelpTOCNode Title="Index Property " Url="html/P_Eclo_NETMF_SIM800H_TextMessage_Index.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="TextMessage Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_TextMessage.htm" />
-      <HelpTOCNode Id="c29bfc24-7b16-40ec-85e7-e2fbb8e7612a" Title="TextMessage Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_TextMessage.htm">
+      <HelpTOCNode Id="115964c9-daf9-49c6-8da1-10b4649d28de" Title="TextMessage Fields" Url="html/Fields_T_Eclo_NETMF_SIM800H_TextMessage.htm">
         <HelpTOCNode Title="Status Field" Url="html/F_Eclo_NETMF_SIM800H_TextMessage_Status.htm" />
         <HelpTOCNode Title="TelephoneNumber Field" Url="html/F_Eclo_NETMF_SIM800H_TextMessage_TelephoneNumber.htm" />
         <HelpTOCNode Title="Text Field" Url="html/F_Eclo_NETMF_SIM800H_TextMessage_Text.htm" />
         <HelpTOCNode Title="Timestamp Field" Url="html/F_Eclo_NETMF_SIM800H_TextMessage_Timestamp.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="409ba466-0b55-4e34-ae4b-425d9c5cbc75" Title="Uri Class" Url="html/T_Eclo_NETMF_SIM800H_Uri.htm">
+    <HelpTOCNode Id="0d58d99f-56e8-4552-a939-f5add2097591" Title="Uri Class" Url="html/T_Eclo_NETMF_SIM800H_Uri.htm">
       <HelpTOCNode Title="Uri Constructor " Url="html/M_Eclo_NETMF_SIM800H_Uri__ctor.htm" />
-      <HelpTOCNode Id="2d4d47a1-2075-449c-9a5a-5a2d7e2e2e84" Title="Uri Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_Uri.htm">
+      <HelpTOCNode Id="628426fe-d135-471f-b925-102e70d20c37" Title="Uri Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_Uri.htm">
         <HelpTOCNode Title="AbsolutePath Property " Url="html/P_Eclo_NETMF_SIM800H_Uri_AbsolutePath.htm" />
         <HelpTOCNode Title="AbsoluteUri Property " Url="html/P_Eclo_NETMF_SIM800H_Uri_AbsoluteUri.htm" />
         <HelpTOCNode Title="Host Property " Url="html/P_Eclo_NETMF_SIM800H_Uri_Host.htm" />
@@ -461,33 +461,36 @@
       <HelpTOCNode Title="Uri Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_Uri.htm" />
     </HelpTOCNode>
     <HelpTOCNode Title="WarningCondition Enumeration" Url="html/T_Eclo_NETMF_SIM800H_WarningCondition.htm" />
-    <HelpTOCNode Id="0c5140ef-1495-4613-84e3-e8d57ac9f02c" Title="WebHeaderCollection Class" Url="html/T_Eclo_NETMF_SIM800H_WebHeaderCollection.htm">
+    <HelpTOCNode Id="99c320d9-20cd-4553-8aa4-1934990d2da9" Title="WebHeaderCollection Class" Url="html/T_Eclo_NETMF_SIM800H_WebHeaderCollection.htm">
       <HelpTOCNode Title="WebHeaderCollection Constructor " Url="html/M_Eclo_NETMF_SIM800H_WebHeaderCollection__ctor.htm" />
-      <HelpTOCNode Id="0b16b205-2548-453a-8856-cc2b4ad1ed88" Title="WebHeaderCollection Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_WebHeaderCollection.htm">
+      <HelpTOCNode Id="827012fe-de20-4d8c-8d6c-7ebd329f3fa1" Title="WebHeaderCollection Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_WebHeaderCollection.htm">
         <HelpTOCNode Title="AllKeys Property " Url="html/P_Eclo_NETMF_SIM800H_WebHeaderCollection_AllKeys.htm" />
         <HelpTOCNode Title="Count Property " Url="html/P_Eclo_NETMF_SIM800H_WebHeaderCollection_Count.htm" />
         <HelpTOCNode Title="Item Property " Url="html/P_Eclo_NETMF_SIM800H_WebHeaderCollection_Item.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="4a4dc219-7c5e-4a6c-9680-893d8d5cfe69" Title="WebHeaderCollection Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_WebHeaderCollection.htm">
+      <HelpTOCNode Id="66548a18-979f-492d-938e-2de1048c6a23" Title="WebHeaderCollection Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_WebHeaderCollection.htm">
         <HelpTOCNode Title="Add Method " Url="html/M_Eclo_NETMF_SIM800H_WebHeaderCollection_Add.htm" />
         <HelpTOCNode Title="GetValues Method " Url="html/M_Eclo_NETMF_SIM800H_WebHeaderCollection_GetValues.htm" />
         <HelpTOCNode Title="Remove Method " Url="html/M_Eclo_NETMF_SIM800H_WebHeaderCollection_Remove.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="2572c2a1-a3e4-4486-8f8e-af170fdae83b" Title="WebRequest Class" Url="html/T_Eclo_NETMF_SIM800H_WebRequest.htm">
-      <HelpTOCNode Id="02099ce3-5a26-4f92-a6e8-e313174bf0e4" Title="WebRequest Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_WebRequest.htm">
+    <HelpTOCNode Id="161fa10b-3884-4ea3-9354-46206f115f60" Title="WebRequest Class" Url="html/T_Eclo_NETMF_SIM800H_WebRequest.htm">
+      <HelpTOCNode Id="658aa919-8402-45b6-bcbe-9d3900a49fc6" Title="WebRequest Properties" Url="html/Properties_T_Eclo_NETMF_SIM800H_WebRequest.htm">
         <HelpTOCNode Title="UserAgent Property " Url="html/P_Eclo_NETMF_SIM800H_WebRequest_UserAgent.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="5252fbdb-da98-43a7-9fb7-5bebf8795815" Title="WebRequest Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_WebRequest.htm">
+      <HelpTOCNode Id="0fb4df78-68b1-445d-a1a8-76f9f2d7888f" Title="WebRequest Methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_WebRequest.htm">
         <HelpTOCNode Title="Create Method " Url="html/M_Eclo_NETMF_SIM800H_WebRequest_Create.htm" />
         <HelpTOCNode Title="Dispose Method " Url="html/M_Eclo_NETMF_SIM800H_WebRequest_Dispose.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="21a378a7-e731-45ac-bbcf-1c6468f4a43e" Title="System.Diagnostics" Url="html/N_System_Diagnostics.htm">
+  <HelpTOCNode Id="8d602f9b-21fe-4abf-92f6-e1fe9cd7ac81" Title="System.Diagnostics" Url="html/N_System_Diagnostics.htm">
     <HelpTOCNode Title="DebuggerBrowsableState Enumeration" Url="html/T_System_Diagnostics_DebuggerBrowsableState.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="3513645a-d421-4a5e-9be8-690e4f5ec292" Title="Version History" Url="html/96738ff4-a2e6-40af-8d06-aae04167e417.htm">
+  <HelpTOCNode Id="bd4d0add-267b-43af-85bb-76c5bfdec1b3" Title="Version History" Url="html/96738ff4-a2e6-40af-8d06-aae04167e417.htm">
+    <HelpTOCNode Title="Version 1.1.88.0" Url="html/99CBD2D2-D4EF-4FF8-8EE0-A1D7D45075E8.htm" />
+    <HelpTOCNode Title="Version 1.1.85.0" Url="html/F86C2FC02F9E4DD0899D81FF8F0223EC.htm" />
+    <HelpTOCNode Title="Version 1.1.80.0" Url="html/DE81BE1A-049E-4C7B-9D89-C1F6BD627EBD.htm" />
     <HelpTOCNode Title="Version 1.1.71.0" Url="html/7A68D830-7F8B-440E-AAD9-7BDB6F00CD0F.htm" />
     <HelpTOCNode Title="Version 1.0.0.0" Url="html/86c034f3-5580-4d6c-ae16-2c0614d14574.htm" />
   </HelpTOCNode>
