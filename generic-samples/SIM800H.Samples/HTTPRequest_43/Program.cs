@@ -174,7 +174,7 @@ namespace SIM800HSamples
                 webRequest.Method = "GET";
 
                 // perform the HTTP request asynchronously and set a callback handler to print the response
-                SIM800H.HttpClient.PerformHttpWebRequestAsync(webRequest, true, false, (ar) =>
+                SIM800H.HttpClient.PerformHttpWebRequestAsync(webRequest, true, false, true, 5000, (ar) =>
                 {
                     // get the response
                     var response = ((HttpWebRequestAsyncResult)ar).HttpResponse;

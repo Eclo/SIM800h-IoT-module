@@ -11,7 +11,6 @@ namespace SIM800HSamples
     public class Program
     {
         private const string APNConfigString = "<replace-with-apn-name>|<replace-with-apn-user>|<replace-with-apn-password>";
-        private const string thingsSpeakApiKey = "<replace-with-your-api-key>";
 
         public static void Main()
         {
@@ -112,7 +111,7 @@ namespace SIM800HSamples
                 {
                     Thread.Sleep(1000);
 
-                    UploadDataToChannel();
+                    DownloadFile();
                 }).Start();
             }
         }
@@ -123,118 +122,87 @@ namespace SIM800HSamples
             Debug.Print(SamplesExtensions.GetWarningDescription(warningCondition));
         }
 
-        static void UploadDataToChannel()
+        static void DownloadFile()
         {
-            // download weather data for Lisbon (Portugal) from Open Weather Data
-            Debug.Print("... uploading data to channel ...");
+            // downloading file over HTTP
+            Debug.Print("... downloading file ...");
+
+            ///////////////////////////////////////////////////////////////////
+            // choose test file by uncommenting the appropriate lines bellow //
+            // the file name matches the file size                           //
+            // the maximum download size depends on the available system RAM //
+            // and also the available internal memory of the SIM800H module  //
+            ///////////////////////////////////////////////////////////////////
+
+            //Uri donwloadUri = new Uri("https://eclo.azurewebsites.net/Eclo/SIM800h-IoT-module/master/test-files/10k.txt");
+            //byte[] receivedBody = new byte[10240];
+            //Uri donwloadUri = new Uri("https://eclo.azurewebsites.net/Eclo/SIM800h-IoT-module/master/test-files/64k.txt");
+            //byte[] receivedBody = new byte[65536];
+            Uri donwloadUri = new Uri("https://eclo.azurewebsites.net/Eclo/SIM800h-IoT-module/master/test-files/128k.txt");
+            byte[] receivedBody = new byte[131072];
 
 
             /////////////////////////////////////////////////////
             // option 1: using .NETMF API like and data on URL //
             /////////////////////////////////////////////////////
 
-            byte[] receivedBody = new byte[500];
-
-            // data to upload to channel
-            double newData1 = 15.16;
-            double newData2 = 11.12;
-
             // create HTTTP web request with URI
-            using (var webRequest = (HttpWebRequest)WebRequest.Create(new Uri("http://api.thingspeak.com/update?key=" + thingsSpeakApiKey + "&headers=false&field1=" + newData1.ToString("N2") + "&field2 = " + newData2.ToString("N2"))))
+            using (var webRequest = (HttpWebRequest)WebRequest.Create(donwloadUri))
             {
                 // set HTTP method for the request
-                webRequest.Method = "POST";
+                webRequest.Method = "GET";
+
+                DateTime startTimeStamp = DateTime.Now;
 
                 // perform the request and get the response
-                using (var res = webRequest.GetResponse() as HttpWebResponse)
+                using (var response = webRequest.GetResponse() as HttpWebResponse)
                 {
-                    // read body data from response stream
-                    using (var stream = res.GetResponseStream())
+                    // check if HTTP response was OK
+                    if (response.StatusCode == HttpStatusCode.OK)
                     {
-                        stream.Read(receivedBody, 0, receivedBody.Length);
+                        // read body data from response stream
+                        using (var stream = response.GetResponseStream())
+                        {
+                            stream.Read(receivedBody, 0, receivedBody.Length);
+                        }
+
+                        // use a string builder to make body data printable
+                        StringBuilder sb = new StringBuilder();
+                        foreach (byte b in receivedBody)
+                        {
+                            sb.Append((char)b);
+                        }
+
+                        Debug.Print("******************************************************");
+                        Debug.Print(sb.ToString());
+                        Debug.Print("******************************************************");
+
+                        Debug.Print("Download " + receivedBody.Length + " bytes in " + (DateTime.Now - startTimeStamp).Seconds + " seconds");
                     }
-                }               
+                    else
+                    {
+                        Debug.Print("### HTTP request returned status code: " + response.StatusCode.ToString() + " ###");
+                    }
+                }
             }
 
-            // use a string builder to make body data printable
-            StringBuilder sb = new StringBuilder();
-            foreach (byte b in receivedBody)
-            {
-                sb.Append((char)b);
-            }
-
-            Debug.Print("******************************************************");
-            Debug.Print(sb.ToString());
-            Debug.Print("******************************************************");
-
-
-            // need to wait 15 seconds to send new data to the same channel (ThingSpeak usage policy)
-            Thread.Sleep(15000);
-
+            Thread.Sleep(5000);
 
             ///////////////////////////////////////////////////////////////////
             // option 2: using the HTTP client of the driver and data on URL //
             ///////////////////////////////////////////////////////////////////
 
-            newData1 = 18.19;
-            newData2 = 17.18;
-
-            using (var webRequest = (HttpWebRequest)WebRequest.Create(new Uri("http://api.thingspeak.com/update?key=" + thingsSpeakApiKey + "&headers=false&field1=" + newData1.ToString("N2") + "&field2 = " + newData2.ToString("N2"))))
+            using (var webRequest = (HttpWebRequest)WebRequest.Create(donwloadUri))
             {
                 // set HTTP method for the request
-                webRequest.Method = "POST";
+                webRequest.Method = "GET";
+
+                DateTime startTimeStamp = DateTime.Now;
 
                 // perform the HTTP request asynchronously and set a callback handler to print the response
-                SIM800H.HttpClient.PerformHttpWebRequestAsync(webRequest, true, false, true, 5000, (ar) =>
-                {
-                    // get the response
-                    var response = ((HttpWebRequestAsyncResult)ar).HttpResponse;
-
-                    // check if the HTTP request was successful
-                    if(response.RequestSuccessful)
-                    {
-                        Debug.Print("******************************************************");
-
-                        // grab body data as a string directly from the response
-                        Debug.Print(response.BodyData);
-
-                        Debug.Print("******************************************************");
-                    }
-                });
-            }
-
-
-            // need to wait 15 seconds to send new data to the same channel (ThingSpeak usage policy)
-            Thread.Sleep(15000);
-
-
-            //////////////////////////////////////////////////////////////////////////////////////////////
-            // option 3: using the HTTP client of the driver, data in body and authentication in header //
-            //////////////////////////////////////////////////////////////////////////////////////////////
-
-            newData1 = 28.29;
-            newData1 = 18.19;
-
-            using (var webRequest = (HttpWebRequest)WebRequest.Create(new Uri("http://api.thingspeak.com/update?&headers=false")))
-            {
-                // set HTTP method for the request
-                webRequest.Method = "POST";
-
-                // send authentication in a header 
-                // check ThingsSpeak API documentation
-                webRequest.Headers.Add("THINGSPEAKAPIKEY", thingsSpeakApiKey);
-
-                // request data that will be send on the request body
-                // there are two options to add request data
-                // 1) in a stream using webRequest.GetRequestStream() for .NETMF API like usage
-                // 2) as a string by setting the webRequest.Data field
-                // for this example we'll be using option 2) which is the most straightforward
-
-                webRequest.Data = "field1=" + newData1.ToString("N2");
-                webRequest.Data += "\r\n" + "field2=" + newData2.ToString("N2");
-
-                // perform the HTTP request asynchronously and set a callback handler to print the response
-                SIM800H.HttpClient.PerformHttpWebRequestAsync(webRequest, true, false, true, 5000, (ar) =>
+                // adjust the read timeout parameter to a value that is suitable to the download size you are expecting
+                // the download performance depends on various factors such as: network signal strength, connection (1G/2G...) and MCU clock
+                SIM800H.HttpClient.PerformHttpWebRequestAsync(webRequest, true, false, true, 15000, (ar) =>
                 {
                     // get the response
                     var response = ((HttpWebRequestAsyncResult)ar).HttpResponse;
@@ -242,16 +210,25 @@ namespace SIM800HSamples
                     // check if the HTTP request was successful
                     if (response.RequestSuccessful)
                     {
-                        Debug.Print("******************************************************");
+                        // check if HTTP response was OK
+                        if (response.StatusCode == HttpStatusCode.OK)
+                        {
+                            Debug.Print("******************************************************");
 
-                        // grab body data as a string directly from the response
-                        Debug.Print(response.BodyData);
+                            // grab body data as a string directly from the response
+                            Debug.Print(response.BodyData);
 
-                        Debug.Print("******************************************************");
+                            Debug.Print("******************************************************");
+
+                            Debug.Print("Download " + response.BodyData.Length + " bytes in " + (DateTime.Now - startTimeStamp).Seconds + " seconds");
+                        }
+                        else
+                        {
+                            Debug.Print("### HTTP request returned status code: " + response.StatusCode.ToString() + " ###");
+                        }
                     }
                 });
             }
-
         }
     }
 }
