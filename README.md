@@ -30,6 +30,7 @@ The following sample projects are available:
  - [NTP client] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/NTP_43)
  - [HTTP client with GET (weather data)] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/HTTPRequest_43)
  - [HTTP client with POST (send data to ThingSpeak)] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/HTTPRequest2_43)
+ - [HTTP client downloading a file] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/HTTPRequest3_43)
  - [Get Time and Location] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/LocationAndTime_43)
  - [Power Mode example] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/PowerMode_43)
  - [MMS message send] (https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/MMS_43)
