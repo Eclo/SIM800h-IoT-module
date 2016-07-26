@@ -119,22 +119,22 @@ namespace SIM800HSamples
                 // launch a new thread to...
                 new Thread(() =>
                 {
-                    // for this example we are reading the image from the application Resources
-                    // in a real world application this could be stored in memory, SD card or any other storage media that can be read as a stream
-                    // the image file name is optional
-                    ImageResource img = new ImageResource(new MemoryStream(Resources.GetBytes(Resources.BinaryResources.mmsImg)), mmsImageFileName);
-                    
-                    // convert text message to memory stream
-                    var txt = new MemoryStream(System.Text.Encoding.UTF8.GetBytes(mmsText));
-                    
                     // set MMS configuration
                     SIM800H.MmsConfiguration = new MmsConfiguration(mmsUrl, mmsProxy, mmsPort);
-                    
+
                     // build and send MMS message
-                    MmsMessage msg = new MmsMessage(mmsTitle, txt, img);
-                    SIM800H.MmsClient.SendMmsMessageAsync(mmsDestination, msg, (r) =>
+
+                    // for this example we are reading the image from the application Resources
+                    // in a real world application this could be stored in memory, SD card or any other storage media that can be read as a stream (image is optional)
+                    // text for message is a string (is optional)
+                    // title is a string (is optional)
+                    MmsMessage msg = new MmsMessage(mmsText, Resources.GetBytes(Resources.BinaryResources.mmsImg), mmsTitle);
+
+                    // make sure the GPRS bearer is opened before sending an MMS
+                    // when sending an MMS there is an optional parameter to specify if the GPRS connection is to be closed after sending the message, this maybe relevant is your app needs to be power wise
+                    SIM800H.MmsClient.SendMmsMessageAsync(mmsDestination, msg, true, (r) =>
                     {
-                        // check if MMS was sent succesfully
+                        // check if MMS was sent successfully
                         if (((SendMmsMessageAsyncResult)r).Result)
                         {
                             Debug.Print("MMS sent successfully!");

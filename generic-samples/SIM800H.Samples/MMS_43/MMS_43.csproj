@@ -50,8 +50,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Eclo.NETMF.SIM800H, Version=1.1.89.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Eclo.NETMF.SIM800H.1.1.89\lib\netmf43\Eclo.NETMF.SIM800H.dll</HintPath>
+    <Reference Include="Eclo.NETMF.SIM800H, Version=1.1.90.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Eclo.NETMF.SIM800H.1.1.90\lib\netmf43\Eclo.NETMF.SIM800H.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.SPOT.Graphics" />
@@ -70,7 +70,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Resources\mmsImg.jpg" />
   </ItemGroup>
   <Import Condition="EXISTS('$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets')" Project="$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets" />

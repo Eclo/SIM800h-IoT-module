@@ -52,8 +52,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Eclo.NETMF.SIM800H, Version=1.1.89.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Eclo.NETMF.SIM800H.1.1.89\lib\netmf44\Eclo.NETMF.SIM800H.dll</HintPath>
+    <Reference Include="Eclo.NETMF.SIM800H, Version=1.1.90.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Eclo.NETMF.SIM800H.1.1.90\lib\netmf44\Eclo.NETMF.SIM800H.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.SPOT.Graphics" />
