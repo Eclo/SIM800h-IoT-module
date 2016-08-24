@@ -41,8 +41,8 @@
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Eclo.NETMF.SIM800H, Version=1.1.90.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Eclo.NETMF.SIM800H.1.1.90\lib\netmf43\Eclo.NETMF.SIM800H.dll</HintPath>
+    <Reference Include="Eclo.NETMF.SIM800H, Version=1.1.93.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Eclo.NETMF.SIM800H.1.1.93\lib\netmf43\Eclo.NETMF.SIM800H.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Azure.Devices.HTTPClient.SIM800H, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">

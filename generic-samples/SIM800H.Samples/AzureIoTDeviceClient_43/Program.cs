@@ -160,7 +160,7 @@ namespace SIM800HSamples
                 // async call to GPRS provider to open the GPRS bearer
                 // we can set a callback here to get the result of that request and act accordingly
                 // or we can manage this in the GprsIpAppsBearerStateChanged event handler that we've already setup during the configuration
-                SIM800H.GprsProvider.OpenBearerAsync();
+                SIM800H.GprsProvider.OpenBearerAsync(BearerProfile.IpAppsBearer);
             }
         }
 

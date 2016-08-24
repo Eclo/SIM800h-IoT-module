@@ -11,7 +11,7 @@ namespace SIM800HSamples
 {
     public class Program
     {
-        private const string apnConfigString = "<replace-with-apn-name>|<replace-with-apn-user>|<replace-with-apn-password>";
+        private const string MmsApnConfigString = "<replace-with-apn-name>|<replace-with-apn-user>|<replace-with-apn-password>";
         private const string mmsUrl = "<replace-with-mms-url>";
         private const string mmsProxy = "<replace-with-mms-proxy-IP>";
         private const int mmsPort = 80;// default
@@ -61,11 +61,11 @@ namespace SIM800HSamples
             // it's wise to set this event handler to get the warning conditions from the module in case of under-voltage, over temperature, etc.
             SIM800H.WarningConditionTriggered += SIM800H_WarningConditionTriggered;
 
-            // because we need Internet connection the access point configuration (APN) is mandatory
+            // because we need Internet connection the access point configuration (APN) for MMS is mandatory
             // the configuration depends on what your network operator requires
             // it may be just the access point name or it may require an user and password too
             // AccessPointConfiguration class provides a number of convenient options to create a new APN configuration
-            SIM800H.AccessPointConfiguration = AccessPointConfiguration.Parse(apnConfigString);
+            SIM800H.MmsAccessPointConfiguration = AccessPointConfiguration.Parse(MmsApnConfigString);
 
             // async call to power on module 
             // in this example we are setting up a callback on a separate method
@@ -102,17 +102,17 @@ namespace SIM800HSamples
 
                 // add event handler to know when we have an active Internet connection 
                 // remove it first so we don't have duplicate calls in case a new successful registration occurs 
-                SIM800H.GprsProvider.GprsIpAppsBearerStateChanged -= GprsProvider_GprsIpAppsBearerStateChanged;
-                SIM800H.GprsProvider.GprsIpAppsBearerStateChanged += GprsProvider_GprsIpAppsBearerStateChanged;
+                SIM800H.GprsProvider.MmsBearerStateChanged -= GprsProvider_MmsBearerStateChanged;
+                SIM800H.GprsProvider.MmsBearerStateChanged += GprsProvider_MmsBearerStateChanged; ;
 
                 // async call to GPRS provider to open the GPRS bearer
                 // we can set a callback here to get the result of that request and act accordingly
                 // or we can manage this in the GprsIpAppsBearerStateChanged event handler that we've already setup during the configuration
-                SIM800H.GprsProvider.OpenBearerAsync();
+                SIM800H.GprsProvider.OpenBearerAsync(BearerProfile.MmsBearer);
             }
         }
 
-        private static void GprsProvider_GprsIpAppsBearerStateChanged(bool isOpen)
+        private static void GprsProvider_MmsBearerStateChanged(bool isOpen)
         {
             if (isOpen)
             {
