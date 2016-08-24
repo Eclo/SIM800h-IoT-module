@@ -49,16 +49,17 @@
   <HelpKINode Title="AtCommandResult.Result property" Url="html/P_Eclo_NETMF_SIM800H_AtCommandResult_Result.htm" />
   <HelpKINode Title="Authorization field" Url="html/F_Eclo_NETMF_SIM800H_HttpKnownHeaderNames_Authorization.htm" />
   <HelpKINode Title="BadRequest enumeration member" Url="html/T_Eclo_NETMF_SIM800H_HttpStatusCode.htm" />
+  <HelpKINode Title="BearerProfile enumeration" Url="html/T_Eclo_NETMF_SIM800H_BearerProfile.htm" />
   <HelpKINode Title="BodyData property" Url="html/P_Eclo_NETMF_SIM800H_HttpWebResponse_BodyData.htm" />
   <HelpKINode Title="CallReady event" Url="html/E_Eclo_NETMF_SIM800H_SIM800H_CallReady.htm" />
+  <HelpKINode Title="CheckBearerStatus method" Url="html/M_Eclo_NETMF_SIM800H_GprsProvider_CheckBearerStatus.htm" />
   <HelpKINode Title="CheckConnectionStatus method" Url="html/M_Eclo_NETMF_SIM800H_GprsProvider_CheckConnectionStatus.htm" />
-  <HelpKINode Title="CheckIpAppBearerStatus method" Url="html/M_Eclo_NETMF_SIM800H_GprsProvider_CheckIpAppBearerStatus.htm" />
   <HelpKINode Title="Close method">
     <HelpKINode Title="GprsSocket.Close Method " Url="html/M_Eclo_NETMF_SIM800H_GprsSocket_Close.htm" />
     <HelpKINode Title="HttpWebResponse.Close Method " Url="html/M_Eclo_NETMF_SIM800H_HttpWebResponse_Close.htm" />
   </HelpKINode>
+  <HelpKINode Title="CloseBearer method" Url="html/M_Eclo_NETMF_SIM800H_GprsProvider_CloseBearer.htm" />
   <HelpKINode Title="Closed enumeration member" Url="html/T_Eclo_NETMF_SIM800H_ConnectionStatus.htm" />
-  <HelpKINode Title="CloseIpAppBearer method" Url="html/M_Eclo_NETMF_SIM800H_GprsProvider_CloseIpAppBearer.htm" />
   <HelpKINode Title="Closing enumeration member" Url="html/T_Eclo_NETMF_SIM800H_ConnectionStatus.htm" />
   <HelpKINode Title="Collapsed enumeration member" Url="html/T_System_Diagnostics_DebuggerBrowsableState.htm" />
   <HelpKINode Title="CompletedSynchronously property" Url="html/P_Eclo_NETMF_SIM800H_DeviceAsyncResult_CompletedSynchronously.htm" />
@@ -134,6 +135,7 @@
   <HelpKINode Title="Eclo.NETMF.SIM800H namespace" Url="html/N_Eclo_NETMF_SIM800H.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.AccessPointConfiguration class" Url="html/T_Eclo_NETMF_SIM800H_AccessPointConfiguration.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.AtCommandResult class" Url="html/T_Eclo_NETMF_SIM800H_AtCommandResult.htm" />
+  <HelpKINode Title="Eclo.NETMF.SIM800H.BearerProfile enumeration" Url="html/T_Eclo_NETMF_SIM800H_BearerProfile.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.ConnectGprsAsyncResult class" Url="html/T_Eclo_NETMF_SIM800H_ConnectGprsAsyncResult.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.ConnectGprsResult enumeration" Url="html/T_Eclo_NETMF_SIM800H_ConnectGprsResult.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.ConnectionStatus enumeration" Url="html/T_Eclo_NETMF_SIM800H_ConnectionStatus.htm" />
@@ -142,6 +144,7 @@
   <HelpKINode Title="Eclo.NETMF.SIM800H.GprsProvider class" Url="html/T_Eclo_NETMF_SIM800H_GprsProvider.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.GprsProvider.GprsIpAppsBearerStateChangedHandler delegate" Url="html/T_Eclo_NETMF_SIM800H_GprsProvider_GprsIpAppsBearerStateChangedHandler.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.GprsProvider.GprsSocketsBearerStateChangedHandler delegate" Url="html/T_Eclo_NETMF_SIM800H_GprsProvider_GprsSocketsBearerStateChangedHandler.htm" />
+  <HelpKINode Title="Eclo.NETMF.SIM800H.GprsProvider.MmsBearerStateChangedHandler delegate" Url="html/T_Eclo_NETMF_SIM800H_GprsProvider_MmsBearerStateChangedHandler.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.GprsSocket class" Url="html/T_Eclo_NETMF_SIM800H_GprsSocket.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.GprsSocket.DataReceivedHandler delegate" Url="html/T_Eclo_NETMF_SIM800H_GprsSocket_DataReceivedHandler.htm" />
   <HelpKINode Title="Eclo.NETMF.SIM800H.GprsSocket.SocketClosedHandler delegate" Url="html/T_Eclo_NETMF_SIM800H_GprsSocket_SocketClosedHandler.htm" />
@@ -272,6 +275,7 @@
   <HelpKINode Title="GetValues method" Url="html/M_Eclo_NETMF_SIM800H_WebHeaderCollection_GetValues.htm" />
   <HelpKINode Title="GprsIpAppsBearerIsOpen property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_GprsIpAppsBearerIsOpen.htm" />
   <HelpKINode Title="GprsIpAppsBearerStateChanged event" Url="html/E_Eclo_NETMF_SIM800H_GprsProvider_GprsIpAppsBearerStateChanged.htm" />
+  <HelpKINode Title="GprsMmsBearerIsOpen property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_GprsMmsBearerIsOpen.htm" />
   <HelpKINode Title="GprsNetworkRegistration property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_GprsNetworkRegistration.htm" />
   <HelpKINode Title="GprsNetworkRegistrationChanged event" Url="html/E_Eclo_NETMF_SIM800H_SIM800H_GprsNetworkRegistrationChanged.htm" />
   <HelpKINode Title="GprsProvider class">
@@ -281,16 +285,18 @@
     <HelpKINode Title="methods" Url="html/Methods_T_Eclo_NETMF_SIM800H_GprsProvider.htm" />
   </HelpKINode>
   <HelpKINode Title="GprsProvider property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_GprsProvider.htm" />
+  <HelpKINode Title="GprsProvider.CheckBearerStatus method" Url="html/M_Eclo_NETMF_SIM800H_GprsProvider_CheckBearerStatus.htm" />
   <HelpKINode Title="GprsProvider.CheckConnectionStatus method" Url="html/M_Eclo_NETMF_SIM800H_GprsProvider_CheckConnectionStatus.htm" />
-  <HelpKINode Title="GprsProvider.CheckIpAppBearerStatus method" Url="html/M_Eclo_NETMF_SIM800H_GprsProvider_CheckIpAppBearerStatus.htm" />
-  <HelpKINode Title="GprsProvider.CloseIpAppBearer method" Url="html/M_Eclo_NETMF_SIM800H_GprsProvider_CloseIpAppBearer.htm" />
+  <HelpKINode Title="GprsProvider.CloseBearer method" Url="html/M_Eclo_NETMF_SIM800H_GprsProvider_CloseBearer.htm" />
   <HelpKINode Title="GprsProvider.DetachGprs method" Url="html/M_Eclo_NETMF_SIM800H_GprsProvider_DetachGprs.htm" />
   <HelpKINode Title="GprsProvider.Dispose method" Url="html/M_Eclo_NETMF_SIM800H_GprsProvider_Dispose.htm" />
   <HelpKINode Title="GprsProvider.GprsIpAppsBearerStateChanged event" Url="html/E_Eclo_NETMF_SIM800H_GprsProvider_GprsIpAppsBearerStateChanged.htm" />
   <HelpKINode Title="GprsProvider.GprsIpAppsBearerStateChangedHandler delegate" Url="html/T_Eclo_NETMF_SIM800H_GprsProvider_GprsIpAppsBearerStateChangedHandler.htm" />
   <HelpKINode Title="GprsProvider.GprsSocketsBearerStateChanged event" Url="html/E_Eclo_NETMF_SIM800H_GprsProvider_GprsSocketsBearerStateChanged.htm" />
   <HelpKINode Title="GprsProvider.GprsSocketsBearerStateChangedHandler delegate" Url="html/T_Eclo_NETMF_SIM800H_GprsProvider_GprsSocketsBearerStateChangedHandler.htm" />
-  <HelpKINode Title="GprsProvider.OpenBearerAsync method" Url="html/M_Eclo_NETMF_SIM800H_GprsProvider_OpenBearerAsync.htm" />
+  <HelpKINode Title="GprsProvider.MmsBearerStateChanged event" Url="html/E_Eclo_NETMF_SIM800H_GprsProvider_MmsBearerStateChanged.htm" />
+  <HelpKINode Title="GprsProvider.MmsBearerStateChangedHandler delegate" Url="html/T_Eclo_NETMF_SIM800H_GprsProvider_MmsBearerStateChangedHandler.htm" />
+  <HelpKINode Title="GprsProvider.OpenBearerAsync method" Url="html/Overload_Eclo_NETMF_SIM800H_GprsProvider_OpenBearerAsync.htm" />
   <HelpKINode Title="GprsProvider.OpenGprsConnectionAsync method" Url="html/M_Eclo_NETMF_SIM800H_GprsProvider_OpenGprsConnectionAsync.htm" />
   <HelpKINode Title="GprsSocket class">
     <HelpKINode Title="GprsSocket Class" Url="html/T_Eclo_NETMF_SIM800H_GprsSocket.htm" />
@@ -422,6 +428,7 @@
   <HelpKINode Title="InternalServerError enumeration member" Url="html/T_Eclo_NETMF_SIM800H_HttpStatusCode.htm" />
   <HelpKINode Title="InvalidCommand enumeration member" Url="html/T_Eclo_NETMF_SIM800H_ReturnedState.htm" />
   <HelpKINode Title="IpAddress property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_IpAddress.htm" />
+  <HelpKINode Title="IpAppsBearer enumeration member" Url="html/T_Eclo_NETMF_SIM800H_BearerProfile.htm" />
   <HelpKINode Title="IsCompleted property" Url="html/P_Eclo_NETMF_SIM800H_DeviceAsyncResult_IsCompleted.htm" />
   <HelpKINode Title="Item property" Url="html/P_Eclo_NETMF_SIM800H_WebHeaderCollection_Item.htm" />
   <HelpKINode Title="KeepAlive property" Url="html/P_Eclo_NETMF_SIM800H_HttpWebRequest_KeepAlive.htm" />
@@ -483,6 +490,9 @@
     <HelpKINode Title="PhoneFuncionality Enumeration" Url="html/T_Eclo_NETMF_SIM800H_PhoneFuncionality.htm" />
     <HelpKINode Title="PowerStatus Enumeration" Url="html/T_Eclo_NETMF_SIM800H_PowerStatus.htm" />
   </HelpKINode>
+  <HelpKINode Title="MmsAccessPointConfiguration field" Url="html/F_Eclo_NETMF_SIM800H_SIM800H_MmsAccessPointConfiguration.htm" />
+  <HelpKINode Title="MmsBearer enumeration member" Url="html/T_Eclo_NETMF_SIM800H_BearerProfile.htm" />
+  <HelpKINode Title="MmsBearerStateChanged event" Url="html/E_Eclo_NETMF_SIM800H_GprsProvider_MmsBearerStateChanged.htm" />
   <HelpKINode Title="MMSC property" Url="html/P_Eclo_NETMF_SIM800H_MmsConfiguration_MMSC.htm" />
   <HelpKINode Title="MmsClient class">
     <HelpKINode Title="MmsClient Class" Url="html/T_Eclo_NETMF_SIM800H_MmsClient.htm" />
@@ -528,6 +538,7 @@
   <HelpKINode Title="NetworkRegistrationState enumeration" Url="html/T_Eclo_NETMF_SIM800H_NetworkRegistrationState.htm" />
   <HelpKINode Title="Never enumeration member" Url="html/T_System_Diagnostics_DebuggerBrowsableState.htm" />
   <HelpKINode Title="NoContent enumeration member" Url="html/T_Eclo_NETMF_SIM800H_HttpStatusCode.htm" />
+  <HelpKINode Title="None enumeration member" Url="html/T_Eclo_NETMF_SIM800H_BearerProfile.htm" />
   <HelpKINode Title="NoReply enumeration member" Url="html/T_Eclo_NETMF_SIM800H_ReturnedState.htm" />
   <HelpKINode Title="NotAcceptable enumeration member" Url="html/T_Eclo_NETMF_SIM800H_HttpStatusCode.htm" />
   <HelpKINode Title="NotFound enumeration member" Url="html/T_Eclo_NETMF_SIM800H_HttpStatusCode.htm" />
@@ -557,7 +568,7 @@
     <HelpKINode Title="ConnectGprsResult Enumeration" Url="html/T_Eclo_NETMF_SIM800H_ConnectGprsResult.htm" />
     <HelpKINode Title="OpenBearerResult Enumeration" Url="html/T_Eclo_NETMF_SIM800H_OpenBearerResult.htm" />
   </HelpKINode>
-  <HelpKINode Title="OpenBearerAsync method" Url="html/M_Eclo_NETMF_SIM800H_GprsProvider_OpenBearerAsync.htm" />
+  <HelpKINode Title="OpenBearerAsync method" Url="html/Overload_Eclo_NETMF_SIM800H_GprsProvider_OpenBearerAsync.htm" />
   <HelpKINode Title="OpenBearerAsyncResult class">
     <HelpKINode Title="OpenBearerAsyncResult Class" Url="html/T_Eclo_NETMF_SIM800H_OpenBearerAsyncResult.htm" />
     <HelpKINode Title="about OpenBearerAsyncResult class" Url="html/T_Eclo_NETMF_SIM800H_OpenBearerAsyncResult.htm" />
@@ -719,6 +730,7 @@
   <HelpKINode Title="SIM800H.GetDateTime method" Url="html/M_Eclo_NETMF_SIM800H_SIM800H_GetDateTime.htm" />
   <HelpKINode Title="SIM800H.GetTimeAndLocation method" Url="html/M_Eclo_NETMF_SIM800H_SIM800H_GetTimeAndLocation.htm" />
   <HelpKINode Title="SIM800H.GprsIpAppsBearerIsOpen property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_GprsIpAppsBearerIsOpen.htm" />
+  <HelpKINode Title="SIM800H.GprsMmsBearerIsOpen property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_GprsMmsBearerIsOpen.htm" />
   <HelpKINode Title="SIM800H.GprsNetworkRegistration property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_GprsNetworkRegistration.htm" />
   <HelpKINode Title="SIM800H.GprsNetworkRegistrationChanged event" Url="html/E_Eclo_NETMF_SIM800H_SIM800H_GprsNetworkRegistrationChanged.htm" />
   <HelpKINode Title="SIM800H.GprsNetworkRegistrationChangedHandler delegate" Url="html/T_Eclo_NETMF_SIM800H_SIM800H_GprsNetworkRegistrationChangedHandler.htm" />
@@ -731,6 +743,7 @@
   <HelpKINode Title="SIM800H.IMEI property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_IMEI.htm" />
   <HelpKINode Title="SIM800H.IpAddress property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_IpAddress.htm" />
   <HelpKINode Title="SIM800H.MaxSockets property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_MaxSockets.htm" />
+  <HelpKINode Title="SIM800H.MmsAccessPointConfiguration field" Url="html/F_Eclo_NETMF_SIM800H_SIM800H_MmsAccessPointConfiguration.htm" />
   <HelpKINode Title="SIM800H.MmsClient property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_MmsClient.htm" />
   <HelpKINode Title="SIM800H.MmsConfiguration property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_MmsConfiguration.htm" />
   <HelpKINode Title="SIM800H.ModelIdentification property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_ModelIdentification.htm" />
@@ -810,6 +823,7 @@
   </HelpKINode>
   <HelpKINode Title="SocketException.ErrorCode property" Url="html/P_Eclo_NETMF_SIM800H_SocketException_ErrorCode.htm" />
   <HelpKINode Title="SocketException.SocketException constructor" Url="html/M_Eclo_NETMF_SIM800H_SocketException__ctor.htm" />
+  <HelpKINode Title="SocketsBearer enumeration member" Url="html/T_Eclo_NETMF_SIM800H_BearerProfile.htm" />
   <HelpKINode Title="SoftwareRelease property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_SoftwareRelease.htm" />
   <HelpKINode Title="ST property" Url="html/P_Eclo_NETMF_SIM800H_MessageStatusReport_ST.htm" />
   <HelpKINode Title="Status field" Url="html/F_Eclo_NETMF_SIM800H_TextMessage_Status.htm" />
@@ -900,7 +914,9 @@
     <HelpKINode Title="1.1.85.0" Url="html/F86C2FC02F9E4DD0899D81FF8F0223EC.htm" />
     <HelpKINode Title="1.1.89.0" Url="html/99CBD2D2-D4EF-4FF8-8EE0-A1D7D45075E8.htm" />
     <HelpKINode Title="1.1.90.0" Url="html/BCC08839-2E44-4261-8757-A9FD5AE9B790.htm" />
-    <HelpKINode Title="1.1.91.0" Url="html/C1B2448A-7547-490B-B02B-0E5DC1592CEB.htm" />
+    <HelpKINode Title="1.1.91.0" Url="html/C1B2448A-7547-490B-B02B-0E5DC1592CEB0.htm" />
+    <HelpKINode Title="1.1.92.0" Url="html/F9562F14-AC70-439B-AADF-40BF7B2B8B0F.htm" />
+    <HelpKINode Title="1.1.93.0" Url="html/038C0C0E-AEAF-429F-9B2D-C37C8A452BAD.htm" />
     <HelpKINode Title="history" Url="html/96738ff4-a2e6-40af-8d06-aae04167e417.htm" />
   </HelpKINode>
   <HelpKINode Title="VeryStrong enumeration member" Url="html/T_Eclo_NETMF_SIM800H_SignalStrength.htm" />
