@@ -110,8 +110,12 @@ namespace SIM800HSamples
         {
             // the handler receives the index of the message received
             // now we need to actually read the message
-            // as an optional argument we can delete the message from the memory after being read
-            var message = SIM800H.SmsProvider.ReadTextMessage(messageIndex, true);
+            // as an optional argument we can set the message to be marked as read (or not) 
+            var message = SIM800H.SmsProvider.ReadTextMessage(messageIndex);
+
+            // Something worth noting is that the module has a limited capacity to handle storage.
+            // This means that you should delete the messages that you don't need in storage anymore.
+            // Having the SMS storage full prevents the module from receiving more messages without any further warning or error.
 
             Debug.Print("******************************************************");
             Debug.Print("Message from " + message.TelephoneNumber);
