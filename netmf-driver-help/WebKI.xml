@@ -657,7 +657,6 @@
   <HelpKINode Title="RequestTimeout enumeration member" Url="html/T_Eclo_NETMF_SIM800H_HttpStatusCode.htm" />
   <HelpKINode Title="RequestUri property" Url="html/P_Eclo_NETMF_SIM800H_HttpWebRequest_RequestUri.htm" />
   <HelpKINode Title="RequestUriTooLong enumeration member" Url="html/T_Eclo_NETMF_SIM800H_HttpStatusCode.htm" />
-  <HelpKINode Title="Reset method" Url="html/M_Eclo_NETMF_SIM800H_SIM800H_Reset.htm" />
   <HelpKINode Title="Response property" Url="html/P_Eclo_NETMF_SIM800H_AtCommandResult_Response.htm" />
   <HelpKINode Title="Result field">
     <HelpKINode Title="ConnectGprsAsyncResult.Result Field" Url="html/F_Eclo_NETMF_SIM800H_ConnectGprsAsyncResult_Result.htm" />
@@ -752,7 +751,6 @@
   <HelpKINode Title="SIM800H.PowerStatus property" Url="html/P_Eclo_NETMF_SIM800H_SIM800H_PowerStatus.htm" />
   <HelpKINode Title="SIM800H.PowerStatusChanged event" Url="html/E_Eclo_NETMF_SIM800H_SIM800H_PowerStatusChanged.htm" />
   <HelpKINode Title="SIM800H.PowerStatusChangedHandler delegate" Url="html/T_Eclo_NETMF_SIM800H_SIM800H_PowerStatusChangedHandler.htm" />
-  <HelpKINode Title="SIM800H.Reset method" Url="html/M_Eclo_NETMF_SIM800H_SIM800H_Reset.htm" />
   <HelpKINode Title="SIM800H.RetrieveOperator method" Url="html/M_Eclo_NETMF_SIM800H_SIM800H_RetrieveOperator.htm" />
   <HelpKINode Title="SIM800H.RetrievePinState method" Url="html/M_Eclo_NETMF_SIM800H_SIM800H_RetrievePinState.htm" />
   <HelpKINode Title="SIM800H.RetrieveSignalStrength method" Url="html/M_Eclo_NETMF_SIM800H_SIM800H_RetrieveSignalStrength.htm" />
@@ -917,6 +915,7 @@
     <HelpKINode Title="1.1.91.0" Url="html/C1B2448A-7547-490B-B02B-0E5DC1592CEB0.htm" />
     <HelpKINode Title="1.1.92.0" Url="html/F9562F14-AC70-439B-AADF-40BF7B2B8B0F.htm" />
     <HelpKINode Title="1.1.93.0" Url="html/038C0C0E-AEAF-429F-9B2D-C37C8A452BAD.htm" />
+    <HelpKINode Title="1.1.94.0" Url="html/F3CB9708-E0E6-42E2-9AF6-8A85BE7679BC.htm" />
     <HelpKINode Title="history" Url="html/96738ff4-a2e6-40af-8d06-aae04167e417.htm" />
   </HelpKINode>
   <HelpKINode Title="VeryStrong enumeration member" Url="html/T_Eclo_NETMF_SIM800H_SignalStrength.htm" />
