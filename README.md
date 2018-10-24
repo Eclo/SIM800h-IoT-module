@@ -28,7 +28,7 @@ There are a number of sample projects organized in solutions.
 ### Generic sample projects
 
 | Sample | .NET nanoFramework | .NETMF |
-|:-|---|---|
+|:-|:-:|:-:|
 | Basic initialization |  | [:heavy_check_mark:](https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/Initialization_43) |
 | Text message (SMS) send/receive |  | [:heavy_check_mark:](https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/SMS_Send_Receive_43) |
 | Text message (SMS) management |  | [:heavy_check_mark:](https://github.com/Eclo/SIM800h-IoT-module/tree/master/generic-samples/SIM800H.Samples/SMS_List_Messages_43) |
@@ -43,7 +43,7 @@ There are a number of sample projects organized in solutions.
 ### Azure IoT Hub client
 
 | Sample | .NET nanoFramework | .NETMF |
-|:-|---|---|
+|:-|:-:|:-:|
 | HTTP client |  | [:heavy_check_mark:](https://github.com/Eclo/SIM800h-IoT-module/tree/master/Azure-IoT-Hub-samples/HTTP) |
 | AMQP client (coming soon) |  |  |
 
