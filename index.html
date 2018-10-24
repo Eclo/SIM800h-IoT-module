@@ -41,7 +41,7 @@
         <header class="inner">
 
           <h1 id="project_title">SIM800H IoT Module</h1>
-          <h2 id="project_tagline">Tiny module with .NET Micro Framework driver</h2>
+          <h2 id="project_tagline">Tiny GSM/GPRS module</h2>
           
         </header>
     </div>
@@ -60,8 +60,9 @@
             </ul>
         </div>
 
-        <p>Tiny GSM/GPRS module with SIMCOM's SIM800H. Mesuring only 39x48[mm] this module has everything you need to "IoT enable" your next project. We provide a .NET Micro Framework driver that makes using it a breeze.</p>
-        <p>Features (supported by the .NET Micro Framework driver)<sup>1)</sup>:</p>
+        <p>Tiny GSM/GPRS module with SIMCOM's SIM800H. Measuring only 39x48[mm] this module has everything you need to "IoT enable" your next project. We provide .NET nanoFramework and Micro Framework drivers that makes using it a breeze.</p>
+        <p>This is basically a carrier board for the SIMCOM's SIM800H, you can use it with your own software driver. It's not mandatory to use ours.</p>
+        <p>Features (supported by the .NET nanoFramework and Micro Framework drivers)<sup>1)</sup>:</p>
         <ul>
           <li>Quad band 850/900/1800/1900MHz</li>
           <li>GPRS multi-slot class 12/10; mobile station class B</li>
@@ -134,12 +135,21 @@
         </ul>
         </p>
         <p>&nbsp;</p>
-                  
+
+        <h3>
+          <a id="netmf-driver" class="anchor" href="#netmf-driver" aria-hidden="true"><span class="octicon octicon-link"></span></a>.NET nanoFramework driver, support libraries and code examples
+        </h3>
+        <p>We actively maintain a driver for .NET nanoFramework that is available as a <a href="https://www.nuget.org/packages/Eclo.nanoFramework.SIM800H/">Nuget package</a>.</p>
+        <p>We actively maintain a .NET nanoFramework build of AMQP Lite for the SIM800H module available as a <a href="https://www.nuget.org/packages/Eclo.nanoFramework.AMQPNetMicro.SIM800H/">Nuget package</a>.</p>
+        <p>Check the documentation of the .NET nanoFramework driver <a href="http://eclo.github.io/SIM800h-IoT-module/nf-docs/api/Eclo.nF.SIM800H.html">here</a>.</p>
+        <p>For code samples and example apps please check the <a href="https://github.com/Eclo/SIM800h-IoT-module/tree/master">GitHub repository</a></p>
+        <p>&nbsp;</p>
+
         <h3>
           <a id="netmf-driver" class="anchor" href="#netmf-driver" aria-hidden="true"><span class="octicon octicon-link"></span></a>.NET Micro Framework driver, support libraries and code examples
         </h3>
-        <p>We maintain a driver for .NET Micro Framework (v4.3 and v4.4) that is available as a <a href="https://www.nuget.org/packages/Eclo.NetMF.SIM800H/">Nuget package</a>.</p>
-        <p>We maintain a .NET Micro Framework (v4.3 and v4.4) build of AMQP Lite for the SIM800H module available as a <a href="https://www.nuget.org/packages/Eclo.NETMF.AMQPNetMicro.SIM800H/">Nuget package</a>.</p>
+        <p>We provide a driver for .NET Micro Framework (v4.3 and v4.4) that is available as a <a href="https://www.nuget.org/packages/Eclo.NetMF.SIM800H/">Nuget package</a>.</p>
+        <p>We provide a .NET Micro Framework (v4.3 and v4.4) build of AMQP Lite for the SIM800H module available as a <a href="https://www.nuget.org/packages/Eclo.NETMF.AMQPNetMicro.SIM800H/">Nuget package</a>.</p>
         <p>Check the documentation of the .NETMF driver <a href="http://eclo.github.io/SIM800h-IoT-module/netmf-driver-help">here</a>.</p>
         <p>For code samples and example apps please check the <a href="https://github.com/Eclo/SIM800h-IoT-module/tree/master">GitHub repository</a></p>
         <p>&nbsp;</p>
@@ -147,7 +157,7 @@
         <h3>
           <a id="eagle-library" class="anchor" href="#eagle-library" aria-hidden="true"><span class="octicon octicon-link"></span></a>Eagle library
         </h3>
-        <p>Donwload the Eagle CAD library with the module footprint and component <a href="https://github.com/Eclo/SIM800h-IoT-module/raw/Eagle_library/eclo_sim800h_module.lbr" target="_blank">here</a>.</p>
+        <p>Download the Eagle CAD library with the module footprint and component <a href="https://github.com/Eclo/SIM800h-IoT-module/raw/Eagle_library/eclo_sim800h_module.lbr" target="_blank">here</a>.</p>
         <p>&nbsp;</p>
                   
         <h3>
