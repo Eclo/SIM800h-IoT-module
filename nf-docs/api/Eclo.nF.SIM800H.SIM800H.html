@@ -1,0 +1,1521 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SIM800H
+   | Eclo SIM800H IoT driver documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SIM800H
+   | Eclo SIM800H IoT driver documentation ">
+    <meta name="generator" content="docfx 2.40.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Eclo.nF.SIM800H.SIM800H">
+  
+  
+  <h1 id="Eclo_nF_SIM800H_SIM800H" data-uid="Eclo.nF.SIM800H.SIM800H" class="text-break">Class SIM800H
+  </h1>
+  <div class="markdown level0 summary"><p>Class with methods, properties and events to work with a SIM800H module.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SIM800H</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Eclo.nF.SIM800H.html">Eclo.nF.SIM800H</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Eclo_nF_SIM800H_SIM800H_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SIM800H : IDisposable</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Eclo_nF_SIM800H_SIM800H_AccessPointConfiguration" data-uid="Eclo.nF.SIM800H.SIM800H.AccessPointConfiguration">AccessPointConfiguration</h4>
+  <div class="markdown level1 summary"><p>GPRS access point configuration (APN)</p>
+<div class="NOTE"><h5>note</h5><p>This APN configuration is used in HTTP calls, SNTP and other IP applications. For MMS set <a class="xref" href="Eclo.nF.SIM800H.SIM800H.html#Eclo_nF_SIM800H_SIM800H_MmsAccessPointConfiguration">MmsAccessPointConfiguration</a>.</p></div>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AccessPointConfiguration AccessPointConfiguration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.AccessPointConfiguration.html">AccessPointConfiguration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Eclo_nF_SIM800H_SIM800H_MmsAccessPointConfiguration" data-uid="Eclo.nF.SIM800H.SIM800H.MmsAccessPointConfiguration">MmsAccessPointConfiguration</h4>
+  <div class="markdown level1 summary"><p>Access point configuration (APN) for MMS</p>
+<div class="NOTE"><h5>note</h5><p>This APN configuration is used exclusively for MMS send. For other IP applications set <a class="xref" href="Eclo.nF.SIM800H.SIM800H.html#Eclo_nF_SIM800H_SIM800H_AccessPointConfiguration">AccessPointConfiguration</a>.</p></div>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AccessPointConfiguration MmsAccessPointConfiguration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.AccessPointConfiguration.html">AccessPointConfiguration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_FileStorage_" data-uid="Eclo.nF.SIM800H.SIM800H.FileStorage*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_FileStorage" data-uid="Eclo.nF.SIM800H.SIM800H.FileStorage">FileStorage</h4>
+  <div class="markdown level1 summary"><p><a class="xref" href="Eclo.nF.SIM800H.SIM800H.html#Eclo_nF_SIM800H_SIM800H_FileStorage">FileStorage</a> property with all the methods required to access the internal file storage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FileStorage FileStorage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_GprsIpAppsBearerIsOpen_" data-uid="Eclo.nF.SIM800H.SIM800H.GprsIpAppsBearerIsOpen*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_GprsIpAppsBearerIsOpen" data-uid="Eclo.nF.SIM800H.SIM800H.GprsIpAppsBearerIsOpen">GprsIpAppsBearerIsOpen</h4>
+  <div class="markdown level1 summary"><p>Status of IP apps bearer in profile 1 of GPRS context</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GprsIpAppsBearerIsOpen { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_GprsMmsBearerIsOpen_" data-uid="Eclo.nF.SIM800H.SIM800H.GprsMmsBearerIsOpen*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_GprsMmsBearerIsOpen" data-uid="Eclo.nF.SIM800H.SIM800H.GprsMmsBearerIsOpen">GprsMmsBearerIsOpen</h4>
+  <div class="markdown level1 summary"><p>Status of MMS bearer in profile 2 of GPRS context</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GprsMmsBearerIsOpen { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_GprsNetworkRegistration_" data-uid="Eclo.nF.SIM800H.SIM800H.GprsNetworkRegistration*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_GprsNetworkRegistration" data-uid="Eclo.nF.SIM800H.SIM800H.GprsNetworkRegistration">GprsNetworkRegistration</h4>
+  <div class="markdown level1 summary"><p>GPRS network registration state of module</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NetworkRegistrationState GprsNetworkRegistration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.NetworkRegistrationState.html">NetworkRegistrationState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_GprsProvider_" data-uid="Eclo.nF.SIM800H.SIM800H.GprsProvider*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_GprsProvider" data-uid="Eclo.nF.SIM800H.SIM800H.GprsProvider">GprsProvider</h4>
+  <div class="markdown level1 summary"><p><a class="xref" href="Eclo.nF.SIM800H.SIM800H.html#Eclo_nF_SIM800H_SIM800H_GprsProvider">GprsProvider</a> property with all the methods required to use the GPRS features</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GprsProvider GprsProvider { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.GprsProvider.html">GprsProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_GprsSocketsBearerIsOpen_" data-uid="Eclo.nF.SIM800H.SIM800H.GprsSocketsBearerIsOpen*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_GprsSocketsBearerIsOpen" data-uid="Eclo.nF.SIM800H.SIM800H.GprsSocketsBearerIsOpen">GprsSocketsBearerIsOpen</h4>
+  <div class="markdown level1 summary"><p>Status of sockets bearer in profile 0 of GPRS context</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GprsSocketsBearerIsOpen { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_GsmNetworkRegistration_" data-uid="Eclo.nF.SIM800H.SIM800H.GsmNetworkRegistration*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_GsmNetworkRegistration" data-uid="Eclo.nF.SIM800H.SIM800H.GsmNetworkRegistration">GsmNetworkRegistration</h4>
+  <div class="markdown level1 summary"><p>GSM network registration state of module</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NetworkRegistrationState GsmNetworkRegistration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.NetworkRegistrationState.html">NetworkRegistrationState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_HttpClient_" data-uid="Eclo.nF.SIM800H.SIM800H.HttpClient*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_HttpClient" data-uid="Eclo.nF.SIM800H.SIM800H.HttpClient">HttpClient</h4>
+  <div class="markdown level1 summary"><p><a class="xref" href="Eclo.nF.SIM800H.SIM800H.html#Eclo_nF_SIM800H_SIM800H_HttpClient">HttpClient</a> property with all the methods required to perform HTTP requests</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HttpClient HttpClient { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.HttpClient.html">HttpClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_IMEI_" data-uid="Eclo.nF.SIM800H.SIM800H.IMEI*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_IMEI" data-uid="Eclo.nF.SIM800H.SIM800H.IMEI">IMEI</h4>
+  <div class="markdown level1 summary"><p>Retrieves the device's IMEI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string IMEI { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>IMEI of the device</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_IpAddress_" data-uid="Eclo.nF.SIM800H.SIM800H.IpAddress*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_IpAddress" data-uid="Eclo.nF.SIM800H.SIM800H.IpAddress">IpAddress</h4>
+  <div class="markdown level1 summary"><p>IP address of module</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string IpAddress { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_MaxSockets_" data-uid="Eclo.nF.SIM800H.SIM800H.MaxSockets*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_MaxSockets" data-uid="Eclo.nF.SIM800H.SIM800H.MaxSockets">MaxSockets</h4>
+  <div class="markdown level1 summary"><p>Maximum number of sockets supported. SIM800H module supports up to 6.
+When setting this properties, any existing socket will be closed and becomes unavailable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MaxSockets { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_MmsClient_" data-uid="Eclo.nF.SIM800H.SIM800H.MmsClient*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_MmsClient" data-uid="Eclo.nF.SIM800H.SIM800H.MmsClient">MmsClient</h4>
+  <div class="markdown level1 summary"><p><a class="xref" href="Eclo.nF.SIM800H.SIM800H.html#Eclo_nF_SIM800H_SIM800H_MmsClient">MmsClient</a> property with all the methods required to use the MMS (Multimedia Messaging Service) client</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MmsClient MmsClient { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.MmsClient.html">MmsClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_MmsConfiguration_" data-uid="Eclo.nF.SIM800H.SIM800H.MmsConfiguration*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_MmsConfiguration" data-uid="Eclo.nF.SIM800H.SIM800H.MmsConfiguration">MmsConfiguration</h4>
+  <div class="markdown level1 summary"><p>MMS center configuration</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MmsConfiguration MmsConfiguration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.MmsConfiguration.html">MmsConfiguration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_ModelIdentification_" data-uid="Eclo.nF.SIM800H.SIM800H.ModelIdentification*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_ModelIdentification" data-uid="Eclo.nF.SIM800H.SIM800H.ModelIdentification">ModelIdentification</h4>
+  <div class="markdown level1 summary"><p>Module model identification</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ModelIdentification { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_PowerStatus_" data-uid="Eclo.nF.SIM800H.SIM800H.PowerStatus*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_PowerStatus" data-uid="Eclo.nF.SIM800H.SIM800H.PowerStatus">PowerStatus</h4>
+  <div class="markdown level1 summary"><p>Power status of SIM800H device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PowerStatus PowerStatus { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.PowerStatus.html">PowerStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_SerialInterfaceBaudRate_" data-uid="Eclo.nF.SIM800H.SIM800H.SerialInterfaceBaudRate*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_SerialInterfaceBaudRate" data-uid="Eclo.nF.SIM800H.SIM800H.SerialInterfaceBaudRate">SerialInterfaceBaudRate</h4>
+  <div class="markdown level1 summary"><p>Retrieves baud rate for serial interface</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SerialInterfaceBaudRate { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>An integer with the serial port baud rate (-1 when this command couldn't be executed)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_SIMCardStatus_" data-uid="Eclo.nF.SIM800H.SIM800H.SIMCardStatus*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_SIMCardStatus" data-uid="Eclo.nF.SIM800H.SIM800H.SIMCardStatus">SIMCardStatus</h4>
+  <div class="markdown level1 summary"><p>Get SIM card status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimCardStatus SIMCardStatus { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.SimCardStatus.html">SimCardStatus</a></td>
+        <td><p>SIMCardStatus</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_SmsProvider_" data-uid="Eclo.nF.SIM800H.SIM800H.SmsProvider*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_SmsProvider" data-uid="Eclo.nF.SIM800H.SIM800H.SmsProvider">SmsProvider</h4>
+  <div class="markdown level1 summary"><p><a class="xref" href="Eclo.nF.SIM800H.SIM800H.html#Eclo_nF_SIM800H_SIM800H_SmsProvider">SmsProvider</a> property with all the methods required to send SMS (text) messages</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SmsProvider SmsProvider { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.SmsProvider.html">SmsProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_SmsStatusReport_" data-uid="Eclo.nF.SIM800H.SIM800H.SmsStatusReport*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_SmsStatusReport" data-uid="Eclo.nF.SIM800H.SIM800H.SmsStatusReport">SmsStatusReport</h4>
+  <div class="markdown level1 summary"><p>Enable Sms status report</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SmsStatusReport { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_SntpClient_" data-uid="Eclo.nF.SIM800H.SIM800H.SntpClient*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_SntpClient" data-uid="Eclo.nF.SIM800H.SIM800H.SntpClient">SntpClient</h4>
+  <div class="markdown level1 summary"><p><a class="xref" href="Eclo.nF.SIM800H.SIM800H.html#Eclo_nF_SIM800H_SIM800H_SntpClient">SntpClient</a> property with all the methods required to user the SNTP (Simple Network Time Protocol) client</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SntpClient SntpClient { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.SntpClient.html">SntpClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_SoftwareRelease_" data-uid="Eclo.nF.SIM800H.SIM800H.SoftwareRelease*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_SoftwareRelease" data-uid="Eclo.nF.SIM800H.SIM800H.SoftwareRelease">SoftwareRelease</h4>
+  <div class="markdown level1 summary"><p>Module software release</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SoftwareRelease { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_SupplyVoltage_" data-uid="Eclo.nF.SIM800H.SIM800H.SupplyVoltage*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_SupplyVoltage" data-uid="Eclo.nF.SIM800H.SIM800H.SupplyVoltage">SupplyVoltage</h4>
+  <div class="markdown level1 summary"><p>Retrieves supply voltage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ushort SupplyVoltage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><p>Supply voltage in mV</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_Configure_" data-uid="Eclo.nF.SIM800H.SIM800H.Configure*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_Configure_Windows_Devices_Gpio_GpioPin_SerialDevice__" data-uid="Eclo.nF.SIM800H.SIM800H.Configure(Windows.Devices.Gpio.GpioPin,SerialDevice@)">Configure(Devices.Gpio.GpioPin, ref SerialDevice)</h4>
+  <div class="markdown level1 summary"><p>Configure hardware interface with the device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Configure(Devices.Gpio.GpioPin powerKey, ref SerialDevice serialPort)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Windows.Devices.Gpio.GpioPin</span></td>
+        <td><span class="parametername">powerKey</span></td>
+        <td><p>The I/O signal that will be used to control the device's power key</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">SerialDevice</span></td>
+        <td><span class="parametername">serialPort</span></td>
+        <td><p>The serial port that will be used to comunicate with the device</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_Dispose_" data-uid="Eclo.nF.SIM800H.SIM800H.Dispose*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_Dispose" data-uid="Eclo.nF.SIM800H.SIM800H.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_Finalize_" data-uid="Eclo.nF.SIM800H.SIM800H.Finalize*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_Finalize" data-uid="Eclo.nF.SIM800H.SIM800H.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_GetDateTime_" data-uid="Eclo.nF.SIM800H.SIM800H.GetDateTime*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_GetDateTime" data-uid="Eclo.nF.SIM800H.SIM800H.GetDateTime">GetDateTime()</h4>
+  <div class="markdown level1 summary"><p>Retrieves date time from device's clock.
+For correct date time the clock must be set either programatically or using SNTP service</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DateTime GetDateTime()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><p>Date time from device's clock</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_GetTimeAndLocation_" data-uid="Eclo.nF.SIM800H.SIM800H.GetTimeAndLocation*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_GetTimeAndLocation_System_Boolean_" data-uid="Eclo.nF.SIM800H.SIM800H.GetTimeAndLocation(System.Boolean)">GetTimeAndLocation(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Retrieves time and optionally location of the device, as reported by the time and location service.
+Needs to have GPRS connection active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocationAndTime GetTimeAndLocation(bool getLocation = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">getLocation</span></td>
+        <td><p>True to return also the location of the device.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.LocationAndTime.html">LocationAndTime</a></td>
+        <td><p>The device's time and location</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_OnCallReady_" data-uid="Eclo.nF.SIM800H.SIM800H.OnCallReady*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_OnCallReady" data-uid="Eclo.nF.SIM800H.SIM800H.OnCallReady">OnCallReady()</h4>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="Eclo.nF.SIM800H.SIM800H.html#Eclo_nF_SIM800H_SIM800H_CallReady">CallReady</a> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void OnCallReady()</code></pre>
+  </div>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_OnGprsNetworkRegistrationChanged_" data-uid="Eclo.nF.SIM800H.SIM800H.OnGprsNetworkRegistrationChanged*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_OnGprsNetworkRegistrationChanged_Eclo_nF_SIM800H_NetworkRegistrationState_" data-uid="Eclo.nF.SIM800H.SIM800H.OnGprsNetworkRegistrationChanged(Eclo.nF.SIM800H.NetworkRegistrationState)">OnGprsNetworkRegistrationChanged(NetworkRegistrationState)</h4>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="Eclo.nF.SIM800H.SIM800H.html#Eclo_nF_SIM800H_SIM800H_GprsNetworkRegistrationChanged">GprsNetworkRegistrationChanged</a> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnGprsNetworkRegistrationChanged(NetworkRegistrationState networkState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.NetworkRegistrationState.html">NetworkRegistrationState</a></td>
+        <td><span class="parametername">networkState</span></td>
+        <td><p>Current state of the GPRS network registration</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_OnGsmNetworkRegistrationChanged_" data-uid="Eclo.nF.SIM800H.SIM800H.OnGsmNetworkRegistrationChanged*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_OnGsmNetworkRegistrationChanged_Eclo_nF_SIM800H_NetworkRegistrationState_" data-uid="Eclo.nF.SIM800H.SIM800H.OnGsmNetworkRegistrationChanged(Eclo.nF.SIM800H.NetworkRegistrationState)">OnGsmNetworkRegistrationChanged(NetworkRegistrationState)</h4>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="Eclo.nF.SIM800H.SIM800H.html#Eclo_nF_SIM800H_SIM800H_GsmNetworkRegistrationChanged">GsmNetworkRegistrationChanged</a> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnGsmNetworkRegistrationChanged(NetworkRegistrationState networkState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.NetworkRegistrationState.html">NetworkRegistrationState</a></td>
+        <td><span class="parametername">networkState</span></td>
+        <td><p>Current state of the GSM network registration</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_OnPowerStatusChanged_" data-uid="Eclo.nF.SIM800H.SIM800H.OnPowerStatusChanged*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_OnPowerStatusChanged_Eclo_nF_SIM800H_PowerStatus_" data-uid="Eclo.nF.SIM800H.SIM800H.OnPowerStatusChanged(Eclo.nF.SIM800H.PowerStatus)">OnPowerStatusChanged(PowerStatus)</h4>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="Eclo.nF.SIM800H.SIM800H.html#Eclo_nF_SIM800H_SIM800H_PowerStatusChanged">PowerStatusChanged</a> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnPowerStatusChanged(PowerStatus powerStatus)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.PowerStatus.html">PowerStatus</a></td>
+        <td><span class="parametername">powerStatus</span></td>
+        <td><p>new power status of the device</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_OnSimCardStatusChanged_" data-uid="Eclo.nF.SIM800H.SIM800H.OnSimCardStatusChanged*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_OnSimCardStatusChanged_Eclo_nF_SIM800H_SimCardStatus_" data-uid="Eclo.nF.SIM800H.SIM800H.OnSimCardStatusChanged(Eclo.nF.SIM800H.SimCardStatus)">OnSimCardStatusChanged(SimCardStatus)</h4>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="Eclo.nF.SIM800H.SIM800H.html#Eclo_nF_SIM800H_SIM800H_SimCardStatusChanged">SimCardStatusChanged</a> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnSimCardStatusChanged(SimCardStatus simCardStatus)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.SimCardStatus.html">SimCardStatus</a></td>
+        <td><span class="parametername">simCardStatus</span></td>
+        <td><p>new status of the SIM card</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_OnSmsReady_" data-uid="Eclo.nF.SIM800H.SIM800H.OnSmsReady*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_OnSmsReady" data-uid="Eclo.nF.SIM800H.SIM800H.OnSmsReady">OnSmsReady()</h4>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="Eclo.nF.SIM800H.SIM800H.html#Eclo_nF_SIM800H_SIM800H_SmsReady">SmsReady</a> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnSmsReady()</code></pre>
+  </div>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_OnSmsSentReferenceReceived_" data-uid="Eclo.nF.SIM800H.SIM800H.OnSmsSentReferenceReceived*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_OnSmsSentReferenceReceived_System_Int32_" data-uid="Eclo.nF.SIM800H.SIM800H.OnSmsSentReferenceReceived(System.Int32)">OnSmsSentReferenceReceived(Int32)</h4>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="Eclo.nF.SIM800H.SIM800H.html#Eclo_nF_SIM800H_SIM800H_SmsSentReferenceReceived">SmsSentReferenceReceived</a> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnSmsSentReferenceReceived(int reference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">reference</span></td>
+        <td><p>reference of the Sms sent</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_OnWarningConditionTriggered_" data-uid="Eclo.nF.SIM800H.SIM800H.OnWarningConditionTriggered*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_OnWarningConditionTriggered_Eclo_nF_SIM800H_WarningCondition_" data-uid="Eclo.nF.SIM800H.SIM800H.OnWarningConditionTriggered(Eclo.nF.SIM800H.WarningCondition)">OnWarningConditionTriggered(WarningCondition)</h4>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="Eclo.nF.SIM800H.SIM800H.html#Eclo_nF_SIM800H_SIM800H_WarningConditionTriggered">WarningConditionTriggered</a> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnWarningConditionTriggered(WarningCondition warningCondition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.WarningCondition.html">WarningCondition</a></td>
+        <td><span class="parametername">warningCondition</span></td>
+        <td><p>The warning condition that was triggered</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_PowerOff_" data-uid="Eclo.nF.SIM800H.SIM800H.PowerOff*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_PowerOff" data-uid="Eclo.nF.SIM800H.SIM800H.PowerOff">PowerOff()</h4>
+  <div class="markdown level1 summary"><p>Powers off the SIM800H module</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PowerOff()</code></pre>
+  </div>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_PowerOnAsync_" data-uid="Eclo.nF.SIM800H.SIM800H.PowerOnAsync*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_PowerOnAsync_System_AsyncCallback_System_Object_" data-uid="Eclo.nF.SIM800H.SIM800H.PowerOnAsync(System.AsyncCallback,System.Object)">PowerOnAsync(AsyncCallback, Object)</h4>
+  <div class="markdown level1 summary"><p>Starts an asynchronous operation to run the power on sequence</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PowerOnAsyncResult PowerOnAsync(AsyncCallback asyncCallback = null, object asyncState = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.AsyncCallback</span></td>
+        <td><span class="parametername">asyncCallback</span></td>
+        <td><p>The callback to be invoked upon completion, optional</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">asyncState</span></td>
+        <td><p>The state object to be stored against the ReadMessageAsyncResult, optional</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.PowerOnAsyncResult.html">PowerOnAsyncResult</a></td>
+        <td><p>The PowerSatus result of the power on sequence</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_RetrieveOperator_" data-uid="Eclo.nF.SIM800H.SIM800H.RetrieveOperator*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_RetrieveOperator" data-uid="Eclo.nF.SIM800H.SIM800H.RetrieveOperator">RetrieveOperator()</h4>
+  <div class="markdown level1 summary"><p>Retrieves the operator wich the device is registered to</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RetrieveOperator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The operator which the device is registered to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_RetrievePinState_" data-uid="Eclo.nF.SIM800H.SIM800H.RetrievePinState*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_RetrievePinState" data-uid="Eclo.nF.SIM800H.SIM800H.RetrievePinState">RetrievePinState()</h4>
+  <div class="markdown level1 summary"><p>Retrieves the pin state of the SIM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PinState RetrievePinState()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.PinState.html">PinState</a></td>
+        <td><p>An instance of <a class="xref" href="Eclo.nF.SIM800H.PinState.html">PinState</a> with the current state of the PIN</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_RetrieveSignalStrength_" data-uid="Eclo.nF.SIM800H.SIM800H.RetrieveSignalStrength*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_RetrieveSignalStrength" data-uid="Eclo.nF.SIM800H.SIM800H.RetrieveSignalStrength">RetrieveSignalStrength()</h4>
+  <div class="markdown level1 summary"><p>Get the signal strength (RSSI) of the cellular network</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SignalStrength RetrieveSignalStrength()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.SignalStrength.html">SignalStrength</a></td>
+        <td><p>An instance of <a class="xref" href="Eclo.nF.SIM800H.SignalStrength.html">SignalStrength</a> which contains a representation of the strength of the network signal</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Eclo_nF_SIM800H_SIM800H_SetPhoneFuncionality_" data-uid="Eclo.nF.SIM800H.SIM800H.SetPhoneFuncionality*"></a>
+  <h4 id="Eclo_nF_SIM800H_SIM800H_SetPhoneFuncionality_Eclo_nF_SIM800H_PhoneFuncionality_System_Boolean_" data-uid="Eclo.nF.SIM800H.SIM800H.SetPhoneFuncionality(Eclo.nF.SIM800H.PhoneFuncionality,System.Boolean)">SetPhoneFuncionality(PhoneFuncionality, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Set phone funcionality</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtCommandResult SetPhoneFuncionality(PhoneFuncionality mode, bool resetBeforeChange = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.PhoneFuncionality.html">PhoneFuncionality</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>See phone funcionality options</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">resetBeforeChange</span></td>
+        <td><p>True to reset device before changes are made effective</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.AtCommandResult.html">AtCommandResult</a></td>
+        <td><p>returns ATCommandResult</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  <h4 id="Eclo_nF_SIM800H_SIM800H_CallReady" data-uid="Eclo.nF.SIM800H.SIM800H.CallReady">CallReady</h4>
+  <div class="markdown level1 summary"><p>Event raised when the device reports that is ready for calls.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event SIM800H.CallReadyHandler CallReady</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.SIM800H.CallReadyHandler.html">SIM800H.CallReadyHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Eclo_nF_SIM800H_SIM800H_GprsNetworkRegistrationChanged" data-uid="Eclo.nF.SIM800H.SIM800H.GprsNetworkRegistrationChanged">GprsNetworkRegistrationChanged</h4>
+  <div class="markdown level1 summary"><p>Event raised when the status of the GPRS registration changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event SIM800H.GprsNetworkRegistrationChangedHandler GprsNetworkRegistrationChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.SIM800H.GprsNetworkRegistrationChangedHandler.html">SIM800H.GprsNetworkRegistrationChangedHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Eclo_nF_SIM800H_SIM800H_GsmNetworkRegistrationChanged" data-uid="Eclo.nF.SIM800H.SIM800H.GsmNetworkRegistrationChanged">GsmNetworkRegistrationChanged</h4>
+  <div class="markdown level1 summary"><p>Event raised when the status of the GSM network registration changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event SIM800H.GsmNetworkRegistrationChangedHandler GsmNetworkRegistrationChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.SIM800H.GsmNetworkRegistrationChangedHandler.html">SIM800H.GsmNetworkRegistrationChangedHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Eclo_nF_SIM800H_SIM800H_PowerStatusChanged" data-uid="Eclo.nF.SIM800H.SIM800H.PowerStatusChanged">PowerStatusChanged</h4>
+  <div class="markdown level1 summary"><p>Event raised when the power status of the device changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event SIM800H.PowerStatusChangedHandler PowerStatusChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.SIM800H.PowerStatusChangedHandler.html">SIM800H.PowerStatusChangedHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Eclo_nF_SIM800H_SIM800H_SimCardStatusChanged" data-uid="Eclo.nF.SIM800H.SIM800H.SimCardStatusChanged">SimCardStatusChanged</h4>
+  <div class="markdown level1 summary"><p>Event raised when the status of the SIM card changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event SIM800H.SimCardStatusChangedHandler SimCardStatusChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.SIM800H.SimCardStatusChangedHandler.html">SIM800H.SimCardStatusChangedHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Eclo_nF_SIM800H_SIM800H_SmsReady" data-uid="Eclo.nF.SIM800H.SIM800H.SmsReady">SmsReady</h4>
+  <div class="markdown level1 summary"><p>Event raised when the device reports that the SMS features are ready.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event SIM800H.SmsReadyHandler SmsReady</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.SIM800H.SmsReadyHandler.html">SIM800H.SmsReadyHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Eclo_nF_SIM800H_SIM800H_SmsSentReferenceReceived" data-uid="Eclo.nF.SIM800H.SIM800H.SmsSentReferenceReceived">SmsSentReferenceReceived</h4>
+  <div class="markdown level1 summary"><p>Event raised when the device receives a new SMS message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event SIM800H.SmsSentReferenceReceivedHandler SmsSentReferenceReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.SIM800H.SmsSentReferenceReceivedHandler.html">SIM800H.SmsSentReferenceReceivedHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Eclo_nF_SIM800H_SIM800H_WarningConditionTriggered" data-uid="Eclo.nF.SIM800H.SIM800H.WarningConditionTriggered">WarningConditionTriggered</h4>
+  <div class="markdown level1 summary"><p>Event raised when there is a warning condition reported by the device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event SIM800H.WarningConditionTriggeredHandler WarningConditionTriggered</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Eclo.nF.SIM800H.SIM800H.WarningConditionTriggeredHandler.html">SIM800H.WarningConditionTriggeredHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2018 Eclo Solutions<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

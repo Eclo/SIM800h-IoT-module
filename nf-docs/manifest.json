@@ -1,0 +1,953 @@
+{
+  "homepages": [],
+  "source_base_path": "E:/dev/Eclo/Eclo.nF.SIM800H/SIM800H",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.AccessPointConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.AccessPointConfiguration.html",
+          "hash": "5bTOJbrKlOiAbhPinLEjyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.AtCommandResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.AtCommandResult.html",
+          "hash": "qCNVy5BxVX826VbzqTnWkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.BearerProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.BearerProfile.html",
+          "hash": "HC22AXH4YULuZPoVpzGM7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.ConnectGprsAsyncResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.ConnectGprsAsyncResult.html",
+          "hash": "JQxEbIqXdaSB7dlrL2qVAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.ConnectGprsResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.ConnectGprsResult.html",
+          "hash": "5+V8TwcXaqA4hfaEYduiJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.ConnectionStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.ConnectionStatus.html",
+          "hash": "6AFmhLmTTF0RoYzWVBcqlA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.DeviceAsyncResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.DeviceAsyncResult.html",
+          "hash": "rargcWwaHGc4gFYEF3i2Dw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.FileStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.FileStorage.html",
+          "hash": "YE4BgXMO8R/etHiFnx56xg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.GprsProvider.GprsIpAppsBearerStateChangedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.GprsProvider.GprsIpAppsBearerStateChangedHandler.html",
+          "hash": "EKAi+xcHIpfXff78bmg1Jw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.GprsProvider.GprsSocketsBearerStateChangedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.GprsProvider.GprsSocketsBearerStateChangedHandler.html",
+          "hash": "Y6BHHdSOAtbZqfKlH/MeFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.GprsProvider.MmsBearerStateChangedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.GprsProvider.MmsBearerStateChangedHandler.html",
+          "hash": "VqPFa1ls01PxfhAlN/Yf4A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.GprsProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.GprsProvider.html",
+          "hash": "gcGBoz48SZW2FiuBvX+A7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.GprsSocket.DataReceivedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.GprsSocket.DataReceivedHandler.html",
+          "hash": "MteDq/rkSGpTXdl08BSgDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.GprsSocket.SocketClosedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.GprsSocket.SocketClosedHandler.html",
+          "hash": "y+0qxrQE52lgcDOJEm89nQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.GprsSocket.SocketConnectedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.GprsSocket.SocketConnectedHandler.html",
+          "hash": "ERBlwaoKPUmgpMUOg7ZAkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.GprsSocket.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.GprsSocket.html",
+          "hash": "2xNXjpCQSmcoDZZas6s+ig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.HttpAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.HttpAction.html",
+          "hash": "DlokTQ03GmnbfRhymsfPNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.HttpActionResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.HttpActionResult.html",
+          "hash": "f1eHXG8efu+LcuopeRhzPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.HttpClient.HttpActionReceivedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.HttpClient.HttpActionReceivedHandler.html",
+          "hash": "825C9TNMu3XgFdYWanUTKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.HttpClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.HttpClient.html",
+          "hash": "hmjrc/EqswCiOYmYYREV1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.HttpCurrentStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.HttpCurrentStatus.html",
+          "hash": "itai5vLNA2cCN2py7MRMUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.HttpKnownHeaderNames.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.HttpKnownHeaderNames.html",
+          "hash": "fHmiK4zVR7jNavhYJ/B/kw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.HttpStatusCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.HttpStatusCode.html",
+          "hash": "LYe+dbV9Q+W5JHZLnNf/ww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.HttpWebRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.HttpWebRequest.html",
+          "hash": "tzj63kwclvZeQfUVenbjJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.HttpWebRequestAsyncResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.HttpWebRequestAsyncResult.html",
+          "hash": "FFF5PoFKeh+ylTz0jS6EEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.HttpWebResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.HttpWebResponse.html",
+          "hash": "b/h+Ajl5MnjnzGd+nUbPcQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.ListTextMessagesAsyncResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.ListTextMessagesAsyncResult.html",
+          "hash": "ml4TwMU954JYnGWUjvoPLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.LocationAndTime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.LocationAndTime.html",
+          "hash": "x+ZNT9o4qBJhGF+dOJNwVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.MessageDeleteOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.MessageDeleteOption.html",
+          "hash": "CwYuarykPoACFdLjt1QarQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.MessageState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.MessageState.html",
+          "hash": "YE+v+7NSmVbkOwHSkOXbFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.MessageStatusReport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.MessageStatusReport.html",
+          "hash": "omtHTSCCFKWHvMdEHjCBsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.MmsClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.MmsClient.html",
+          "hash": "mJHWCUGZYeJwBR4iJQS76g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.MmsConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.MmsConfiguration.html",
+          "hash": "tTW5/psRkh9EvoSglDVCnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.MmsMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.MmsMessage.html",
+          "hash": "y8NA+3SRetzIeX4imu6mBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.NetworkRegistrationState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.NetworkRegistrationState.html",
+          "hash": "FK0ZdgOkyeBgFvOtFEbOOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.OpenBearerAsyncResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.OpenBearerAsyncResult.html",
+          "hash": "hS8UXhU7SL/RJcjEKhPkQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.OpenBearerResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.OpenBearerResult.html",
+          "hash": "cO69Hw1qm/9CM1mglCTaNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.PhoneFuncionality.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.PhoneFuncionality.html",
+          "hash": "bc+lsut4qmdhiuA8H+bOXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.PinState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.PinState.html",
+          "hash": "QWyZ1fBPz/ueCwWPCfRCmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.PowerOnAsyncResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.PowerOnAsyncResult.html",
+          "hash": "7Rx7m/SY8GGzm+ZMWl3ZrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.PowerStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.PowerStatus.html",
+          "hash": "w/T4Yjbsg815wLJp7hJBrw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.ProtocolType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.ProtocolType.html",
+          "hash": "iZ+iHShqkExBu3M23GdJ4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.ReturnedState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.ReturnedState.html",
+          "hash": "aGEPqijc/HMnQMn9EJPR7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SIM800H.CallReadyHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SIM800H.CallReadyHandler.html",
+          "hash": "ADyQ7/3juUDntd/hmqbNOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SIM800H.GprsNetworkRegistrationChangedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SIM800H.GprsNetworkRegistrationChangedHandler.html",
+          "hash": "WXxl2TjE5PcXicxQAMBHUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SIM800H.GsmNetworkRegistrationChangedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SIM800H.GsmNetworkRegistrationChangedHandler.html",
+          "hash": "9ZI3vHkM/L6zdE/yO78Dww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SIM800H.PowerStatusChangedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SIM800H.PowerStatusChangedHandler.html",
+          "hash": "uwT8Q5L3jSdYHpoALz1AkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SIM800H.SimCardStatusChangedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SIM800H.SimCardStatusChangedHandler.html",
+          "hash": "lMvFW/FKx+Ez1xZ5P6OUPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SIM800H.SmsReadyHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SIM800H.SmsReadyHandler.html",
+          "hash": "bS9p0w49EHm6IryhW3/sTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SIM800H.SmsSentReferenceReceivedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SIM800H.SmsSentReferenceReceivedHandler.html",
+          "hash": "tIFU2TcbA9EA8ZPC5Slijw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SIM800H.WarningConditionTriggeredHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SIM800H.WarningConditionTriggeredHandler.html",
+          "hash": "bInFyR6IKKcnCsEG4dAzUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SIM800H.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SIM800H.html",
+          "hash": "L6bfZRNSjSTqmlqxTQO3ug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SendMmsMessageAsyncResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SendMmsMessageAsyncResult.html",
+          "hash": "f/AbJsztra6iEmqqv1smNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SendTextMessageAsyncResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SendTextMessageAsyncResult.html",
+          "hash": "WrSLcMrx3YP04x0+0MPbrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SignalStrength.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SignalStrength.html",
+          "hash": "4uUcTmWBm7SAoDWtkjKQ0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SimCardStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SimCardStatus.html",
+          "hash": "ceINjwmPfvs9HL4XkxF65Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SmsProvider.SmsReceivedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SmsProvider.SmsReceivedHandler.html",
+          "hash": "eaAuFNlc54rjl4UtjIP+dg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SmsProvider.SmsStatusReceivedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SmsProvider.SmsStatusReceivedHandler.html",
+          "hash": "XWDvzMDU1sJm+rRRVYKX+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SmsProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SmsProvider.html",
+          "hash": "5qbhXyUjfyiYUGqsqfP4ow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SntpClient.SntpReplyReceivedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SntpClient.SntpReplyReceivedHandler.html",
+          "hash": "Uef6q+r6785c5WVlq1cE0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SntpClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SntpClient.html",
+          "hash": "+rFwthuVk6pfUR021c9frw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SocketError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SocketError.html",
+          "hash": "GN8ImDYYuZ3lrjKAyPYyUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SocketException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SocketException.html",
+          "hash": "QsOk290303aQDEnD7tlGJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SyncNetworkTimeAsyncResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SyncNetworkTimeAsyncResult.html",
+          "hash": "NEIybXa2rkA0xrLAXuxp4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.SyncResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.SyncResult.html",
+          "hash": "1QpjvYwznlzfVR8s4jqeow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.TextMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.TextMessage.html",
+          "hash": "3skHGCrJV1mlX+YBcfU9+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.Uri.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.Uri.html",
+          "hash": "ak4JXOG/dhklVrt4x+ehuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.WarningCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.WarningCondition.html",
+          "hash": "hsleoW1TXCHmv5ADL3/f4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.WebHeaderCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.WebHeaderCollection.html",
+          "hash": "Eb/g4t5GlwR6IcTvY1CzVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.WebRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.WebRequest.html",
+          "hash": "JuEZBw1LzVI9372T6ieS6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Eclo.nF.SIM800H.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Eclo.nF.SIM800H.html",
+          "hash": "kiYpv5iqc20T4gi77MSkjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "YOf2M6wc+/c6EQkmSfCXhw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "Az2NzzNsrXQB+DsF5uh6Tg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "QJ5mhv/cYtnnZlyub+RpaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "u/k7q4cFI4QjueM6MTgLbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
