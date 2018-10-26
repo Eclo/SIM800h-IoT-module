@@ -44,7 +44,7 @@ There are a number of sample projects organized in solutions.
 
 | Sample | .NET nanoFramework | .NETMF |
 |:-|:-:|:-:|
-| HTTP client | [:heavy_multiplication_x:] | [:heavy_check_mark:](https://github.com/Eclo/SIM800h-IoT-module/tree/master/Azure-IoT-Hub-samples/HTTP) |
+| HTTP client | [:heavy_multiplication_x:]() | [:heavy_check_mark:](https://github.com/Eclo/SIM800h-IoT-module/tree/master/Azure-IoT-Hub-samples/HTTP) |
 | AMQP client (coming soon) |  |  |
 
 ## Eagle library
