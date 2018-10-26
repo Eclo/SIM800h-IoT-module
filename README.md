@@ -8,13 +8,15 @@ Please navigate to the project [web page](http://eclo.github.io/SIM800h-IoT-modu
 
 ## .NET nanoFramework Driver
 
+[![NuGet](https://img.shields.io/nuget/v/Eclo.nanoFramework.SIM800H.svg?style=plastic)](https://www.nuget.org/packages/Eclo.nanoFramework.SIM800H)
+
 We actively maintain a .NET nanoFramework driver for this module. It's provided as as a [Nuget package](https://www.nuget.org/packages/Eclo.nanoFramework.SIM800H/).
 
 Check the documentation [here](http://eclo.github.io/SIM800h-IoT-module/nf-docs/api/Eclo.nF.SIM800H.html).
 
 ## .NET Micro Framework Driver
 
-[![NuGet version](https://badge.fury.io/nu/Eclo.NetMF.SIM800H.svg)](https://badge.fury.io/nu/Eclo.NetMF.SIM800H)
+[![NuGet](https://img.shields.io/nuget/v/Eclo.NetMF.SIM800H.svg?style=plastic)](https://www.nuget.org/packages/Eclo.NetMF.SIM800H)
 
 We provide driver for the legacy .NET Micro Framework. For ease of use it's provided as a [Nuget package](https://www.nuget.org/packages/Eclo.NetMF.SIM800H/). 
 
