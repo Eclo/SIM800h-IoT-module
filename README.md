@@ -8,9 +8,9 @@ Please navigate to the project [web page](http://eclo.github.io/SIM800h-IoT-modu
 
 ## .NET nanoFramework Driver
 
-We actively maintain a .NET nanoFramework driver for this module. It's provided as as a [Nuget package](https://www.nuget.org/packages/Eclo.NetMF.SIM800H/).
+We actively maintain a .NET nanoFramework driver for this module. It's provided as as a [Nuget package](https://www.nuget.org/packages/Eclo.nanoFramework.SIM800H/).
 
-Check the documentation [here](http://eclo.github.io/SIM800h-IoT-module/netmf-driver-help/).
+Check the documentation [here](http://eclo.github.io/SIM800h-IoT-module/nf-docs/api/Eclo.nF.SIM800H.html).
 
 ## .NET Micro Framework Driver
 
